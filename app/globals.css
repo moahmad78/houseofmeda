@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-dmsans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-ivory: #F6F1E9;
+  --color-charcoal: #2B2723;
+  --color-moss: #4F5B4A;
+  --color-sand: #E9E0D1;
+  --color-oat: #D4C8B5;
+  --color-taupe: #6B635A;
+  --color-walnut: #8B6B4E;
+}
+
+html {
+  scroll-behavior: auto;
+  background-color: #F6F1E9;
+  color: #2B2723;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F6F1E9;
+  color: #2B2723;
+  overflow-x: hidden;
+  font-family: var(--font-dmsans);
+}
+
+::selection {
+  background-color: #4F5B4A;
+  color: #F6F1E9;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F1E9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4C8B5;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4F5B4A;
+}
+
+/* ==========================================================================
+   ALIVE & RUNNING 3D ARCHITECTURAL ICON ANIMATIONS
+   ========================================================================== */
+
+@keyframes liveFloat3D {
+  0%, 100% {
+    transform: translateY(0px) rotateX(12deg) rotateY(-10deg) rotateZ(0deg);
+    box-shadow: 0 4px 12px rgba(43, 39, 35, 0.08), 0 1px 3px rgba(43, 39, 35, 0.05);
+  }
+  50% {
+    transform: translateY(-6px) rotateX(18deg) rotateY(-4deg) rotateZ(2deg);
+    box-shadow: 0 14px 24px rgba(43, 39, 35, 0.14), 0 3px 6px rgba(43, 39, 35, 0.08);
+  }
+}
+
+@keyframes liveCompassSway {
+  0%, 100% {
+    transform: rotate(-16deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes liveSwatchFan {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(18deg) scale(1.12);
+  }
+}
+
+@keyframes liveSunSpinSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes liveMoonShimmer {
+  0%, 100% {
+    transform: scale(1) rotate(-5deg);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.14) rotate(8deg);
+    opacity: 1;
+  }
+}
+
+@keyframes liveLayersExpand {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-3.5px) scale(1.1);
+  }
+}
+
+@keyframes liveDialogueBounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    transform: translateY(-3px) scale(1.08);
+  }
+  60% {
+    transform: translateY(1px) scale(0.97);
+  }
+}
+
+@keyframes liveCubeWobble {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-10deg) scale(1.08);
+  }
+  75% {
+    transform: rotate(10deg) scale(1.08);
+  }
+}
+
+@keyframes liveHomePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes liveRulerMeasure {
+  0%, 100% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(3px) scale(1.05);
+  }
+}
+
+@keyframes liveBlueprintScan {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-2.5px) scale(1.05);
+  }
+}
+
+@keyframes liveCheckBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes liveWhatsAppPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@keyframes liveArrowNudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(2.5px, -2.5px);
+  }
+}
+
+.animate-live-3d {
+  animation: liveFloat3D 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-live-compass {
+  animation: liveCompassSway 4s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.animate-live-swatch {
+  animation: liveSwatchFan 3.2s ease-in-out infinite;
+  transform-origin: bottom left;
+}
+
+.animate-live-sun {
+  animation: liveSunSpinSlow 14s linear infinite;
+  transform-origin: center center;
+}
+
+.animate-live-moon {
+  animation: liveMoonShimmer 3.5s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.animate-live-layers {
+  animation: liveLayersExpand 3s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.animate-live-dialogue {
+  animation: liveDialogueBounce 2.8s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-live-cube {
+  animation: liveCubeWobble 4.5s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.animate-live-home {
+  animation: liveHomePulse 3.4s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.animate-live-ruler {
+  animation: liveRulerMeasure 3s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.animate-live-blueprint {
+  animation: liveBlueprintScan 3.2s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.animate-live-check {
+  animation: liveCheckBounce 2.5s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+  transform-origin: center center;
+}
+
+.animate-live-whatsapp {
+  animation: liveWhatsAppPulse 2.4s infinite;
+}
+
+.animate-live-arrow {
+  animation: liveArrowNudge 2.2s ease-in-out infinite;
+}
+
+
