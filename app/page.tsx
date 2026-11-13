@@ -1,7 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import { MobileHero } from '@/components/sections/MobileHero';
 import { ScrollJourneyOverlay } from '@/components/sections/ScrollJourneyOverlay';
 import { HomeSections } from '@/components/sections/HomeSections';
 
@@ -12,17 +13,32 @@ const SceneContainer = dynamic(
 );
 
 export default function HomePage() {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="relative w-full">
-      {/* Pinned 3D Architectural Scene Canvas (Fixed background) */}
-      <SceneContainer />
+      {/* PHONE & TABLET VIEW (< 1024px): Fast, Editorial Architectural Hero */}
+      <div className="block lg:hidden">
+        <MobileHero />
+      </div>
 
-      {/* 8-Chapter Scroll-Driven Journey (800vh pinned sequence) */}
-      <ScrollJourneyOverlay />
+      {/* DESKTOP VIEW (>= 1024px): 3D Architectural Scene Canvas + 800vh Scroll Journey */}
+      <div className="hidden lg:block">
+        {isDesktop && <SceneContainer />}
+        <ScrollJourneyOverlay />
+      </div>
 
-      {/* Continuation of Page: Portfolio, Services, Why Choose, Journal, Lead Consultation */}
+      {/* Main Content: Portfolio, Services, Why Choose Us, Journal, Lead Consultation */}
       <HomeSections />
     </div>
   );
 }
-
