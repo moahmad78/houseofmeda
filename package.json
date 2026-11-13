@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "@react-three/drei": "^9.117.3",
     "@react-three/fiber": "^8.17.10",
     "@tabler/icons-react": "^3.50.0",
