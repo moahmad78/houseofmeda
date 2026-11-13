@@ -31,21 +31,17 @@ export function Footer() {
         {/* Top Section: Brand Statement & CTA */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-ivory-linen/15">
           <div className="lg:col-span-7 flex flex-col gap-6">
-            <div className="flex items-center gap-3">
-              <div className="relative w-7 h-10 sm:w-8 sm:h-11 shrink-0">
+            <Link href="/" className="relative flex items-center">
+              <div className="relative h-12 sm:h-14 w-48 sm:w-60">
                 <Image
-                  src="/logo-emblem-light.png"
-                  alt="House of Meda Monogram"
+                  src="/brand-nav-logo-light.png"
+                  alt="House of Meda"
                   fill
-                  className="object-contain"
+                  className="object-contain object-left"
                   priority
                 />
               </div>
-              <div className="h-6 w-[1px] bg-ivory-linen/30 mx-0.5" />
-              <span className="font-serif text-xl sm:text-2xl tracking-[0.2em] text-ivory-linen font-medium uppercase">
-                HOUSE OF MEDA
-              </span>
-            </div>
+            </Link>
             <p className="font-serif text-2xl sm:text-3xl text-ivory-linen/90 font-light max-w-xl leading-relaxed">
               &ldquo;{STUDIO_INFO.tagline}&rdquo;
             </p>

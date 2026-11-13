@@ -70,25 +70,21 @@ export function Header() {
         }`}
       >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
-        {/* Brand Logo & Studio Identity (Arch Monogram | HOUSE OF MEDA) */}
+        {/* Brand Logo & Studio Identity (Official Original Lockup) */}
         <Link
           href="/"
-          className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none focus:ring-1 focus:ring-moss shrink-0"
+          className="relative flex items-center group focus:outline-none focus:ring-1 focus:ring-moss shrink-0 transition-transform duration-300 hover:opacity-90"
           aria-label="House of Meda Home"
         >
-          <div className="relative w-6 h-8 sm:w-7 sm:h-9 shrink-0 transition-transform duration-300 group-hover:scale-105">
+          <div className="relative h-9 sm:h-10 lg:h-11 w-36 sm:w-44 lg:w-48">
             <Image
-              src="/logo-emblem-dark.png"
-              alt="House of Meda Arch Monogram"
+              src="/brand-nav-logo.png"
+              alt="House of Meda"
               fill
-              className="object-contain"
+              className="object-contain object-left"
               priority
             />
           </div>
-          <div className="h-5 sm:h-6 w-[1px] bg-charcoal/30 mx-0.5" />
-          <span className="font-serif text-lg sm:text-xl lg:text-[21px] tracking-[0.22em] text-charcoal font-medium uppercase whitespace-nowrap">
-            HOUSE OF MEDA
-          </span>
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -163,20 +159,16 @@ export function Header() {
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2"
+              className="relative flex items-center"
             >
-              <div className="relative w-5 h-7 shrink-0">
+              <div className="relative h-8 w-36">
                 <Image
-                  src="/logo-emblem-dark.png"
-                  alt="House of Meda Monogram"
+                  src="/brand-nav-logo.png"
+                  alt="House of Meda"
                   fill
-                  className="object-contain"
+                  className="object-contain object-left"
                 />
               </div>
-              <div className="h-4 w-[1px] bg-charcoal/30 mx-0.5" />
-              <span className="font-serif text-sm tracking-[0.2em] text-charcoal font-medium uppercase">
-                HOUSE OF MEDA
-              </span>
             </Link>
 
             <button
