@@ -78,7 +78,7 @@ export function Header() {
         >
           <div className="relative w-6 h-8 sm:w-7 sm:h-9 shrink-0 transition-transform duration-300 group-hover:scale-105">
             <Image
-              src="/logo-emblem-dark.svg"
+              src="/logo-emblem-dark.png"
               alt="House of Meda Arch Monogram"
               fill
               className="object-contain"
@@ -167,7 +167,7 @@ export function Header() {
             >
               <div className="relative w-5 h-7 shrink-0">
                 <Image
-                  src="/logo-emblem-dark.svg"
+                  src="/logo-emblem-dark.png"
                   alt="House of Meda Monogram"
                   fill
                   className="object-contain"
