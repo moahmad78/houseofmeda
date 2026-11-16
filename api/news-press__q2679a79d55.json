@@ -1,0 +1,200 @@
+{
+  "header": {
+    "title": "NEWS & PRESS"
+  },
+  "intro": "Latest press releases, architectural recognitions, and media features by House Of Meda, curated with Intrihub.com.",
+  "posts": [
+    {
+      "id": "news-post-hom-intrihub-top-studios",
+      "slug": "house-of-meda-architectural-vision-commercial-spaces",
+      "title": "House Of Meda: Architectural Vision for Turnkey Commercial Spaces",
+      "excerpt": "House Of Meda: Architectural Vision for Turnkey Commercial Spaces - featured in House Of Meda commercial architecture & build showcase, with coverage on Intrihub.com.",
+      "image": "/assets/news-press/1784891419724-ads-z-tasar-m-1-.png",
+      "imageAsset": {
+        "image": "/assets/news-press/1784891419724-ads-z-tasar-m-1-.png",
+        "zoom": 1,
+        "x": 0,
+        "y": 0,
+        "naturalWidth": 1632,
+        "naturalHeight": 794
+      },
+      "publishedAt": "2026-11-12T10:00:00.000+00:00",
+      "categories": [
+        {
+          "id": "news-cat-intrihub",
+          "slug": "intrihub",
+          "label": "Featured on Intrihub"
+        }
+      ]
+    },
+    {
+      "id": "news-post-hom-future-workspaces",
+      "slug": "intrihub-features-house-of-meda-top-design-studios-2026",
+      "title": "Intrihub.com Features House Of Meda in Top Design Studios 2026",
+      "excerpt": "Intrihub.com Features House Of Meda in Top Design Studios 2026 - featured in House Of Meda commercial architecture & build showcase, with coverage on Intrihub.com.",
+      "image": "/assets/news-press/1778748760590--2.-g-rsel-1632-794.webp",
+      "imageAsset": {
+        "image": "/assets/news-press/1778748760590--2.-g-rsel-1632-794.webp",
+        "zoom": 1,
+        "x": 0,
+        "y": 0,
+        "naturalWidth": 1632,
+        "naturalHeight": 794
+      },
+      "publishedAt": "2026-10-28T09:30:00.000+00:00",
+      "categories": [
+        {
+          "id": "news-cat-workspaces",
+          "slug": "workspaces",
+          "label": "Workspaces"
+        }
+      ]
+    },
+    {
+      "id": "news-post-hom-biophilic-campus",
+      "slug": "office-snapshots-house-of-meda-agile-tech-campus",
+      "title": "Office Snapshots: House Of Meda Unveils Agile Tech Campus",
+      "excerpt": "Office Snapshots: House Of Meda Unveils Agile Tech Campus - featured in House Of Meda commercial architecture & build showcase, with coverage on Intrihub.com.",
+      "image": "/assets/news-press/1778747746879-office-snapshots-nokta-holding-offices.png",
+      "imageAsset": {
+        "image": "/assets/news-press/1778747746879-office-snapshots-nokta-holding-offices.png",
+        "zoom": 1,
+        "x": 0,
+        "y": 0,
+        "naturalWidth": 1632,
+        "naturalHeight": 794
+      },
+      "publishedAt": "2026-09-19T14:15:00.000+00:00",
+      "categories": [
+        {
+          "id": "news-cat-architecture",
+          "slug": "architecture",
+          "label": "Architecture"
+        }
+      ]
+    },
+    {
+      "id": "news-post-hom-founder-dialogue",
+      "slug": "interview-house-of-meda-indian-design-build-evolution",
+      "title": "Interview: House Of Meda on Indian Design & Build Evolution",
+      "excerpt": "Interview: House Of Meda on Indian Design & Build Evolution - featured in House Of Meda commercial architecture & build showcase, with coverage on Intrihub.com.",
+      "image": "/assets/news-press/1778757797457-hom-interview.jpg",
+      "imageAsset": {
+        "image": "/assets/news-press/1778757797457-hom-interview.jpg",
+        "zoom": 1,
+        "x": 0,
+        "y": 0,
+        "naturalWidth": 1632,
+        "naturalHeight": 794
+      },
+      "publishedAt": "2026-08-30T11:00:00.000+00:00",
+      "categories": [
+        {
+          "id": "news-cat-leadership",
+          "slug": "leadership",
+          "label": "Leadership"
+        }
+      ]
+    },
+    {
+      "id": "news-post-hom-commercial-award",
+      "slug": "vogue-living-house-of-meda-luxury-hospitality-interior",
+      "title": "Vogue Living: House Of Meda Crafts Luxury Hospitality Interior",
+      "excerpt": "Vogue Living: House Of Meda Crafts Luxury Hospitality Interior - featured in House Of Meda commercial architecture & build showcase, with coverage on Intrihub.com.",
+      "image": "/assets/news-press/1778683233288-hom_hakkasan_5.jpg",
+      "imageAsset": {
+        "image": "/assets/news-press/1778683233288-hom_hakkasan_5.jpg",
+        "zoom": 1,
+        "x": 0,
+        "y": 0,
+        "naturalWidth": 1632,
+        "naturalHeight": 794
+      },
+      "publishedAt": "2026-08-14T16:20:00.000+00:00",
+      "categories": [
+        {
+          "id": "news-cat-awards",
+          "slug": "awards",
+          "label": "Awards 2026"
+        }
+      ]
+    },
+    {
+      "id": "news-post-hom-intrihub-acoustics",
+      "slug": "house-of-meda-wins-commercial-fitout-year-design-awards",
+      "title": "House Of Meda Wins Commercial Fitout of the Year at Design Awards",
+      "excerpt": "House Of Meda Wins Commercial Fitout of the Year at Design Awards - featured in House Of Meda commercial architecture & build showcase, with coverage on Intrihub.com.",
+      "image": "/assets/news-press/1778683034931-ef4ded20-4ec8-11f1-8f9f-0242ac120002.jpg",
+      "imageAsset": {
+        "image": "/assets/news-press/1778683034931-ef4ded20-4ec8-11f1-8f9f-0242ac120002.jpg",
+        "zoom": 1,
+        "x": 0,
+        "y": 0,
+        "naturalWidth": 1632,
+        "naturalHeight": 794
+      },
+      "publishedAt": "2026-07-22T13:45:00.000+00:00",
+      "categories": [
+        {
+          "id": "news-cat-intrihub",
+          "slug": "intrihub",
+          "label": "Intrihub Spotlight"
+        }
+      ]
+    },
+    {
+      "id": "news-post-hom-hospitality-retail",
+      "slug": "milan-design-week-house-of-meda-biophilic-installations",
+      "title": "Milan Design Week: House Of Meda Showcases Biophilic Installations",
+      "excerpt": "Milan Design Week: House Of Meda Showcases Biophilic Installations - featured in House Of Meda commercial architecture & build showcase, with coverage on Intrihub.com.",
+      "image": "/assets/news-press/1778683391558-37_skoda-mdw-2026_1_aurora-riboni_1170x550.jpg",
+      "imageAsset": {
+        "image": "/assets/news-press/1778683391558-37_skoda-mdw-2026_1_aurora-riboni_1170x550.jpg",
+        "zoom": 1,
+        "x": 0,
+        "y": 0,
+        "naturalWidth": 1632,
+        "naturalHeight": 794
+      },
+      "publishedAt": "2026-06-18T10:10:00.000+00:00",
+      "categories": [
+        {
+          "id": "news-cat-retail",
+          "slug": "hospitality-retail",
+          "label": "Hospitality & Retail"
+        }
+      ]
+    },
+    {
+      "id": "news-post-hom-sustainable-workspaces",
+      "slug": "archdaily-spotlight-house-of-meda-acoustic-workspace-design",
+      "title": "ArchDaily Spotlight: House Of Meda’s Acoustic Workspace Design",
+      "excerpt": "ArchDaily Spotlight: House Of Meda’s Acoustic Workspace Design - featured in House Of Meda commercial architecture & build showcase, with coverage on Intrihub.com.",
+      "image": "/assets/news-press/1776857107844-3.jpg",
+      "imageAsset": {
+        "image": "/assets/news-press/1776857107844-3.jpg",
+        "zoom": 1,
+        "x": 0,
+        "y": 0,
+        "naturalWidth": 1632,
+        "naturalHeight": 794
+      },
+      "publishedAt": "2026-05-29T08:00:00.000+00:00",
+      "categories": [
+        {
+          "id": "news-cat-sustainability",
+          "slug": "sustainability",
+          "label": "Sustainability"
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 1,
+    "pageSize": 8,
+    "totalItems": 8,
+    "hasPrev": false,
+    "hasNext": false
+  }
+}

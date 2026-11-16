@@ -1,0 +1,13 @@
+{
+  "/api/content/expertise": "api/content/expertise",
+  "/api/projects?offset=0&limit=10": "api/projects__q0e747af1e7.json",
+  "/api/projects": "api/projects__q0e747af1e7.json",
+  "/api/content/about": "api/content/about",
+  "/api/case-study?offset=0&limit=10": "api/case-study__q0e747af1e7.json",
+  "/api/case-study": "api/case-study__q0e747af1e7.json",
+  "/api/news-press?page=1": "api/news-press__q2679a79d55.json",
+  "/api/news-press": "api/news-press__q2679a79d55.json",
+  "/api/content/contact": "api/content/contact",
+  "/api/homepage/projects": "api/homepage/projects",
+  "/site.webmanifest": "site.webmanifest"
+}

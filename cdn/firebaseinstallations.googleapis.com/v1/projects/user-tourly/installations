@@ -1,0 +1,9 @@
+{
+  "name": "projects/1098993766011/installations/eH7cbTeJoml0d5Hl6EYiQw",
+  "fid": "eH7cbTeJoml0d5Hl6EYiQw",
+  "refreshToken": "3_AS3qfwJZRU-NtraGwtp_8pEU0mkUTgskUnmmHSNAg8kwkyQUNMR1T4Ffe20OCb22Ed8itGGZDGv2IaWyOW0XIYZoGLHOqlKMxZVC90bDJYHeWfc",
+  "authToken": {
+    "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6MTA5ODk5Mzc2NjAxMTp3ZWI6MWZiYjgzMzNmYWFjM2EwOGUxMWNkZSIsImV4cCI6MTc5NTQwNjQyMSwiZmlkIjoiZUg3Y2JUZUpvbWwwZDVIbDZFWWlRdyIsInByb2plY3ROdW1iZXIiOjEwOTg5OTM3NjYwMTF9.AB2LPV8wRQIhAJXOIN-iyo4JgtZ0KhAtOGq3dsKCWap4PWfRQcJgUFGsAiALzjvXVquoE2knvaPfyNGTH875FU5SsWTUGzjXOR1jhg",
+    "expiresIn": "604800s"
+  }
+}
