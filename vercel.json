@@ -1,0 +1,111 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "echo 'Static build complete'",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/projects",
+      "destination": "/projects.html"
+    },
+    {
+      "source": "/expertise",
+      "destination": "/expertise.html"
+    },
+    {
+      "source": "/case-study",
+      "destination": "/case-study.html"
+    },
+    {
+      "source": "/news-press",
+      "destination": "/news-press.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/api/projects",
+      "destination": "/api/projects__q0e747af1e7.json"
+    },
+    {
+      "source": "/api/case-study",
+      "destination": "/api/case-study__q0e747af1e7.json"
+    },
+    {
+      "source": "/api/news-press",
+      "destination": "/api/news-press__q2679a79d55.json"
+    },
+    {
+      "source": "/api/content/contact",
+      "destination": "/api/content/contact.json"
+    },
+    {
+      "source": "/api/content/about",
+      "destination": "/api/content/about"
+    },
+    {
+      "source": "/api/content/expertise",
+      "destination": "/api/content/expertise"
+    },
+    {
+      "source": "/api/homepage/projects",
+      "destination": "/api/homepage/projects"
+    },
+    {
+      "source": "/hom_showcase_1.mp4",
+      "destination": "/assets/videos/hom_showcase_1.mp4"
+    },
+    {
+      "source": "/hom_showcase_2.mp4",
+      "destination": "/assets/videos/hom_showcase_2.mp4"
+    },
+    {
+      "source": "/hom_showcase_3.mp4",
+      "destination": "/assets/videos/hom_showcase_3.mp4"
+    },
+    {
+      "source": "/hom_showcase_4.mp4",
+      "destination": "/assets/videos/hom_showcase_4.mp4"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/_nuxt/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
