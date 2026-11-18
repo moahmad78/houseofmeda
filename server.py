@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Auto-generated local server for ENI Site Cloner / WebCopier output."""
+"""House of Meda — Official Local Development Server"""
 
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ from urllib.parse import parse_qs, unquote, urlparse
 ROOT = Path(__file__).resolve().parent
 PORT = 8777
 SPA = True
-UNAVAILABLE = ROOT / "webcopier-unavailable.html"
-REPORT = ROOT / "clone_report.json"
+UNAVAILABLE = ROOT / "404.html"
+REPORT = None
 API_ROUTES_PATH = ROOT / "api_routes.json"
 API_BUNDLES_PATH = ROOT / "api_bundles.json"
 
@@ -34,18 +34,18 @@ REPLAY_SHELL = """<!DOCTYPE html>
 <meta charset="utf-8"/>
 <meta http-equiv="Content-Security-Policy" content="frame-src 'self'"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WebCopier</title>
+<title>House of Meda</title>
 <style>
 html,body{margin:0;height:100%;background:#09090b}
 iframe{border:0;width:100%;height:100%;display:block}
 </style>
 </head>
 <body>
-<iframe id="wc-replay" title="Offline replay" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-downloads"></iframe>
+<iframe id="hom-replay" title="House of Meda" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-downloads"></iframe>
 <script>
 (function() {
   var origin = location.origin;
-  var frame = document.getElementById("wc-replay");
+  var frame = document.getElementById("hom-replay");
   function localPath() {
     return location.pathname + location.search + location.hash;
   }
@@ -312,7 +312,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Methods", "GET, HEAD, POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "*")
         self.send_header("Cache-Control", "no-cache")
-        self.send_header("X-WebCopier-Local", "1")
+        self.send_header("X-House-Of-Meda", "1")
         super().end_headers()
 
     def do_OPTIONS(self):
@@ -1036,7 +1036,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                         if cand.is_file():
                             self.path = orig
                             return super().do_GET()
-        if path_only == "/webcopier-saved-pages":
+        if path_only in ("/pages-index", "/saved-pages"):
             return self.send_saved_pages_index()
         runtime = self._alias_runtime_script(path_only)
         if runtime:
@@ -1192,9 +1192,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return None
         if (ROOT / name).is_file():
             return None
-        hidden = ROOT / ".webcopier" / name
-        if hidden.is_file():
-            return "/.webcopier/" + name
         return None
 
     def _send_data_placeholder(self):
@@ -1293,12 +1290,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         return True
 
     def _load_report(self):
-        if not REPORT.is_file():
-            return None
-        try:
-            return json.loads(REPORT.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError):
-            return None
+        return None
 
     def send_saved_pages_index(self):
         report = self._load_report()
@@ -1344,16 +1336,20 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         return None
 
     def _unavailable_bytes(self):
-        report = self._load_report()
         try:
-            from webcopier_unavailable import build_unavailable_html
-            return build_unavailable_html(report).encode("utf-8")
-        except Exception:
-            pass
-        try:
-            return UNAVAILABLE.read_bytes()
+            if (ROOT / "404.html").is_file():
+                return (ROOT / "404.html").read_bytes()
         except OSError:
-            return None
+            pass
+        return (
+            b'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/>'
+            b'<title>House of Meda - 404</title></head><body style="background:#0b0b0b;'
+            b'color:#fff;font-family:sans-serif;text-align:center;padding:100px 20px;">'
+            b'<h1 style="letter-spacing:2px;">HOUSE OF MEDA</h1>'
+            b'<p style="color:#888;">Page Not Found</p>'
+            b'<a href="/" style="color:#d4af37;text-decoration:none;">&larr; Back to Home</a>'
+            b'</body></html>'
+        )
 
     def _contained_in_root(self, candidate):
         try:
@@ -1469,20 +1465,20 @@ def _port_free(host: str, port: int) -> bool:
 def _pick_port(host: str, preferred: int) -> int:
     if preferred > 0 and _port_free(host, preferred):
         return preferred
-    for p in range(max(preferred, 18765), max(preferred, 18765) + 200):
+    for p in range(8777, 8999):
         if _port_free(host, p):
             return p
-    raise SystemExit("No free local port found for WebCopier server.")
+    raise SystemExit("No free local port found for House of Meda server.")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Serve cloned site")
+    parser = argparse.ArgumentParser(description="House of Meda Development Server")
     parser.add_argument("-p", "--port", type=int, default=PORT)
     parser.add_argument("--host", default="127.0.0.1", help="Bind address (default 127.0.0.1)")
     args = parser.parse_args()
 
     port = _pick_port(args.host, args.port)
-    port_file = ROOT / ".webcopier-port"
+    port_file = ROOT / ".hom-port"
     try:
         port_file.write_text(str(port), encoding="utf-8")
     except OSError:
@@ -1491,8 +1487,8 @@ def main():
     handler = functools.partial(Handler, directory=str(ROOT))
     with ThreadingHTTPServer((args.host, port), handler) as httpd:
         url = f"http://{args.host}:{port}/"
-        print(f"WebCopier serving at {url}", flush=True)
-        print(f"WEBCOPIER_READY {url}", flush=True)
+        print(f"House of Meda serving at {url}", flush=True)
+        print(f"HOUSE_OF_MEDA_READY {url}", flush=True)
         print(f"Root: {ROOT}", flush=True)
         print("Press Ctrl+C to stop.", flush=True)
         try:

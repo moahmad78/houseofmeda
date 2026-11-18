@@ -1,4 +1,4 @@
-/* WebCopier — offline section navigation */
+/* House of Meda — Section Navigation */
 (function() {
   const NAV = [];
   if (!NAV || !NAV.length) return;

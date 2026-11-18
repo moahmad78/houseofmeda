@@ -1,8 +1,8 @@
 
-/* WebCopier storage restore */
+/* House of Meda Storage Restore */
 (function() {
   const DUMP = {"localStorage": {"efl-uuid": "f2c2dbe7-3698-476e-812e-b2537f6c3acf", "yoo-newsletter-modal-shown-day-v1": "2026-11-16", "nuxt-color-mode": "light"}, "sessionStorage": {}, "indexedDB": {"firebase-heartbeat-database": {"version": 1, "stores": {"firebase-heartbeat-store": [{"lastSentHeartbeatDate": "2026-11-16", "heartbeats": []}]}, "keyPaths": {"firebase-heartbeat-store": null}, "indexes": {"firebase-heartbeat-store": []}, "keys": {"firebase-heartbeat-store": ["[DEFAULT]!1:1098993766011:web:1fbb8333faac3a08e11cde"]}}, "firebase-installations-database": {"version": 1, "stores": {"firebase-installations-store": [{"fid": "eH7cbTeJoml0d5Hl6EYiQw", "registrationStatus": 2, "refreshToken": "3_AS3qfwJZRU-NtraGwtp_8pEU0mkUTgskUnmmHSNAg8kwkyQUNMR1T4Ffe20OCb22Ed8itGGZDGv2IaWyOW0XIYZoGLHOqlKMxZVC90bDJYHeWfc", "authToken": {"token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6MTA5ODk5Mzc2NjAxMTp3ZWI6MWZiYjgzMzNmYWFjM2EwOGUxMWNkZSIsImV4cCI6MTc5NTQwNjQyMSwiZmlkIjoiZUg3Y2JUZUpvbWwwZDVIbDZFWWlRdyIsInByb2plY3ROdW1iZXIiOjEwOTg5OTM3NjYwMTF9.AB2LPV8wRQIhAJXOIN-iyo4JgtZ0KhAtOGq3dsKCWap4PWfRQcJgUFGsAiALzjvXVquoE2knvaPfyNGTH875FU5SsWTUGzjXOR1jhg", "requestStatus": 2, "expiresIn": 604800000, "creationTime": 1794801622302}}]}, "keyPaths": {"firebase-installations-store": null}, "indexes": {"firebase-installations-store": []}, "keys": {"firebase-installations-store": ["[DEFAULT]!1:1098993766011:web:1fbb8333faac3a08e11cde"]}}}, "limitations": []};
-  const USER_THEME = "wc_user_theme";
+  const USER_THEME = "hom_user_theme";
   window.__wcStorageReady = window.__wcStorageReady || Promise.resolve();
   function patchPersistTheme(raw, val) {
     if (!raw || raw.indexOf("theme") === -1) return raw;
