@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import datetime
 import functools
 import html
 import http.server
@@ -13,7 +14,7 @@ import os
 import socketserver
 import sys
 from pathlib import Path
-from urllib.parse import parse_qs, unquote
+from urllib.parse import parse_qs, unquote, urlparse
 
 ROOT = Path(__file__).resolve().parent
 PORT = 8777
@@ -321,6 +322,56 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_POST(self):
         path_only = self.path.split("?", 1)[0].split("#", 1)[0].rstrip("/") or "/"
         lower = path_only.lower()
+
+        # Dedicated handler for newsletter subscriptions linked to official company email
+        if lower == "/api/forms/newsletter":
+            try:
+                length = int(self.headers.get("Content-Length", 0))
+                req_body = self.rfile.read(length) if length else b"{}"
+                payload = json.loads(req_body.decode("utf-8", errors="replace")) if req_body else {}
+            except Exception:
+                payload = {}
+            email = str(payload.get("email", "")).strip().lower()
+
+            subscribers_file = ROOT / "newsletter_subscribers.json"
+            subscribers = []
+            if subscribers_file.is_file():
+                try:
+                    subscribers = json.loads(subscribers_file.read_text(encoding="utf-8"))
+                    if not isinstance(subscribers, list):
+                        subscribers = []
+                except Exception:
+                    subscribers = []
+
+            entry = {
+                "email": email,
+                "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                "official_recipient": "hello@houseofmeda.com",
+                "source": "newsletter-modal"
+            }
+            if email and not any(isinstance(s, dict) and s.get("email") == email for s in subscribers):
+                subscribers.append(entry)
+                try:
+                    subscribers_file.write_text(json.dumps(subscribers, indent=2, ensure_ascii=False), encoding="utf-8")
+                except Exception:
+                    pass
+
+            res_data = {
+                "ok": True,
+                "success": True,
+                "message": "Thank you! You are subscribed to House of Meda updates.",
+                "officialEmail": "hello@houseofmeda.com",
+                "subscriber": email
+            }
+            body = json.dumps(res_data, ensure_ascii=False).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            if self.command != "HEAD":
+                self.wfile.write(body)
+            return None
         # Replay captured POST/GraphQL bodies when available
         posts_path = ROOT / "captured_posts.json"
         if posts_path.is_file():
