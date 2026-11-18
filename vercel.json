@@ -35,8 +35,16 @@
       "destination": "/api/projects__q0e747af1e7.json"
     },
     {
+      "source": "/api/projects/(.*)",
+      "destination": "/api/projects/$1.json"
+    },
+    {
       "source": "/api/case-study",
       "destination": "/api/case-study__q0e747af1e7.json"
+    },
+    {
+      "source": "/api/case-study/(.*)",
+      "destination": "/api/case-study/$1.json"
     },
     {
       "source": "/api/news-press",

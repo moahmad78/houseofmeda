@@ -1,0 +1,221 @@
+{
+  "header": {
+    "theme": "white"
+  },
+  "hero": {
+    "brand": "NOBU",
+    "location": "Bengaluru",
+    "backgroundDesktop": "/assets/projects/detail/1777041941157-yoointerior_the-leela-palace-signature-dining_19.jpg",
+    "backgroundMobile": "/assets/projects/detail/1777041941157-yoointerior_the-leela-palace-signature-dining_19.jpg",
+    "backgroundMediaType": "image",
+    "backgroundTransform": {
+      "zoom": 1,
+      "x": 0,
+      "y": 0
+    },
+    "overlayOpacity": 0.35,
+    "scrollLabel": "SCROLL DOWN"
+  },
+  "factsDesktop": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "factsMobile": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "desktopGallery": {
+    "height": 4050,
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/projects/detail/1777041941157-yoointerior_the-leela-palace-signature-dining_19.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/projects/detail/1777041965846-yoointerior_the-leela-palace-signature-dining_14.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/projects/detail/1777041987061-yoointerior_the-leela-palace-signature-dining_9.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/projects/detail/videos/1777378582279-nobu-640-x-361.mp4",
+        "mediaType": "video",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/projects/detail/videos/1777378720111-nobu-640-x-853.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/projects/detail/images/1777535819400-yoointerior_the-leela-palace-signature-dining_14.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/projects/detail/1777042035071-yoointerior_the-leela-palace-signature-dining_10.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/projects/detail/1777042043800-yoointerior_the-leela-palace-signature-dining_17.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-9",
+        "image": "/assets/projects/detail/videos/1777378816591-nobu-390-x-520.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "mobileGallery": {
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/projects/detail/1777041941157-yoointerior_the-leela-palace-signature-dining_19.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/projects/detail/1777041965846-yoointerior_the-leela-palace-signature-dining_14.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/projects/detail/1777041987061-yoointerior_the-leela-palace-signature-dining_9.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/projects/detail/videos/1777378582279-nobu-640-x-361.mp4",
+        "mediaType": "video",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/projects/detail/videos/1777378720111-nobu-640-x-853.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/projects/detail/images/1777535819400-yoointerior_the-leela-palace-signature-dining_14.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/projects/detail/1777042035071-yoointerior_the-leela-palace-signature-dining_10.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/projects/detail/1777042043800-yoointerior_the-leela-palace-signature-dining_17.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-9",
+        "image": "/assets/projects/detail/videos/1777378816591-nobu-390-x-520.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "navigation": {
+    "desktop": {
+      "prevLabel": "PREV",
+      "prevTitle": "OLEA & BAR",
+      "prevSlug": "olea-bar",
+      "centerImage": "/assets/projects/detail/1777041941157-yoointerior_the-leela-palace-signature-dining_19.jpg",
+      "nextLabel": "NEXT",
+      "nextTitle": "TATA LEADERSHIP TOWER",
+      "nextSlug": "tata-leadership-tower-bengaluru"
+    },
+    "mobile": {
+      "prevLabel": "PREV",
+      "prevTitle": "OLEA & BAR",
+      "prevSlug": "olea-bar",
+      "nextLabel": "NEXT",
+      "nextTitle": "TATA LEADERSHIP TOWER",
+      "nextSlug": "tata-leadership-tower-bengaluru"
+    }
+  },
+  "seo": {
+    "title": "NOBU | House of Meda",
+    "description": "Bespoke interior design for NOBU by House of Meda."
+  }
+}

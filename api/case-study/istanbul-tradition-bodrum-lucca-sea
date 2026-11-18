@@ -1,0 +1,207 @@
+{
+  "header": {
+    "theme": "white"
+  },
+  "hero": {
+    "brand": "LUCCA BY THE SEA",
+    "location": "Bengaluru",
+    "backgroundDesktop": "/assets/case-study/detail/1778771008022--3.g-rsel-816-1088.webp",
+    "backgroundMobile": "/assets/case-study/detail/1778771008022--3.g-rsel-816-1088.webp",
+    "backgroundMediaType": "image",
+    "backgroundTransform": {
+      "zoom": 1,
+      "x": 0,
+      "y": 0
+    },
+    "overlayOpacity": 0.35,
+    "scrollLabel": "SCROLL DOWN"
+  },
+  "factsDesktop": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design+Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "factsMobile": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design+Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "desktopGallery": {
+    "height": 3600,
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/case-study/detail/1778771003536--2.-g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/case-study/detail/1778771008022--3.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/case-study/detail/1778771014096--4.g-rsel-640-361.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/case-study/detail/1778771027086--5.g-rsel-640-853.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/case-study/detail/1778771032432--6.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/case-study/detail/1778771037296--7.g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/case-study/detail/1778771066724--8.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/case-study/detail/1778771071046--9.g-rsel-390-520.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "mobileGallery": {
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/case-study/detail/1778771003536--2.-g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/case-study/detail/1778771008022--3.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/case-study/detail/1778771014096--4.g-rsel-640-361.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/case-study/detail/1778771027086--5.g-rsel-640-853.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/case-study/detail/1778771032432--6.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/case-study/detail/1778771037296--7.g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/case-study/detail/1778771066724--8.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/case-study/detail/1778771071046--9.g-rsel-390-520.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "navigation": {
+    "desktop": {
+      "prevLabel": "PREV",
+      "prevTitle": "IOKI ON THE BEACH",
+      "prevSlug": "representative-japanese-cuisine-bodrum-ioki-beach",
+      "centerImage": "/assets/case-study/detail/1778771008022--3.g-rsel-816-1088.webp",
+      "nextLabel": "NEXT",
+      "nextTitle": "CHAKRA",
+      "nextSlug": "chakra"
+    },
+    "mobile": {
+      "prevLabel": "PREV",
+      "prevTitle": "IOKI ON THE BEACH",
+      "prevSlug": "representative-japanese-cuisine-bodrum-ioki-beach",
+      "nextLabel": "NEXT",
+      "nextTitle": "CHAKRA",
+      "nextSlug": "chakra"
+    }
+  },
+  "seo": {
+    "title": "LUCCA BY THE SEA | House of Meda",
+    "description": "Bespoke interior design for LUCCA BY THE SEA by House of Meda."
+  }
+}

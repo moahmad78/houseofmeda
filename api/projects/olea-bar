@@ -1,0 +1,221 @@
+{
+  "header": {
+    "theme": "white"
+  },
+  "hero": {
+    "brand": "OLEA & BAR",
+    "location": "Bengaluru",
+    "backgroundDesktop": "/assets/projects/detail/images/1782141739208--1.g-rsel-1728-1038.webp",
+    "backgroundMobile": "/assets/projects/detail/images/1782141739208--1.g-rsel-1728-1038.webp",
+    "backgroundMediaType": "image",
+    "backgroundTransform": {
+      "zoom": 1,
+      "x": 0,
+      "y": 0
+    },
+    "overlayOpacity": 0.35,
+    "scrollLabel": "SCROLL DOWN"
+  },
+  "factsDesktop": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design+Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "factsMobile": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design+Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "desktopGallery": {
+    "height": 4050,
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/projects/detail/images/1782141739208--1.g-rsel-1728-1038.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/projects/detail/images/1782141744823--2.-g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/projects/detail/images/1782141750694--3.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/projects/detail/videos/1777378950182-olea-640-x-361.mp4",
+        "mediaType": "video",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/projects/detail/videos/1777379204650-olea-640-x-853.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/projects/detail/images/1782141757488--6.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/projects/detail/images/1782141764893--7.g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/projects/detail/images/1782141770195--8.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-9",
+        "image": "/assets/projects/detail/videos/1777379036863-olea-390-x-520.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "mobileGallery": {
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/projects/detail/images/1782141739208--1.g-rsel-1728-1038.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/projects/detail/images/1782141744823--2.-g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/projects/detail/images/1782141750694--3.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/projects/detail/videos/1777378950182-olea-640-x-361.mp4",
+        "mediaType": "video",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/projects/detail/videos/1777379204650-olea-640-x-853.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/projects/detail/images/1782141757488--6.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/projects/detail/images/1782141764893--7.g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/projects/detail/images/1782141770195--8.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-9",
+        "image": "/assets/projects/detail/videos/1777379036863-olea-390-x-520.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "navigation": {
+    "desktop": {
+      "prevLabel": "PREV",
+      "prevTitle": "Maison Revka",
+      "prevSlug": "maison-revka-mandarin-oriental",
+      "centerImage": "/assets/projects/detail/images/1782141739208--1.g-rsel-1728-1038.webp",
+      "nextLabel": "NEXT",
+      "nextTitle": "NOBU",
+      "nextSlug": "the-leela-palace-signature-dining"
+    },
+    "mobile": {
+      "prevLabel": "PREV",
+      "prevTitle": "Maison Revka",
+      "prevSlug": "maison-revka-mandarin-oriental",
+      "nextLabel": "NEXT",
+      "nextTitle": "NOBU",
+      "nextSlug": "the-leela-palace-signature-dining"
+    }
+  },
+  "seo": {
+    "title": "OLEA & BAR | House of Meda",
+    "description": "Bespoke interior design for OLEA & BAR by House of Meda."
+  }
+}

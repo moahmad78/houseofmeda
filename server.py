@@ -529,7 +529,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def _wants_html_document(self) -> bool:
         """True for normal browser navigations; False for Next.js RSC / data fetches."""
         raw = self.path or ""
-        path_only = unquote(raw.split("?", 1)[0].split("#", 1)[0])
+        path_only = unquote(raw.split("?", 1)[0].split("#", 1)[0]).rstrip("/") or "/"
+        if path_only.startswith("/api/") or path_only == "/api":
+            return False
         suffix = Path(path_only).suffix.lower()
         if suffix in {
             ".js", ".mjs", ".cjs", ".css", ".map", ".json", ".wasm", ".zip",
@@ -971,6 +973,46 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 return super().do_GET()
         raw_early = self.path.split("#", 1)[0]
         path_early = raw_early.split("?", 1)[0].rstrip("/") or "/"
+
+        # Dedicated API routes resolution (projects, case-study, news-press, content, etc.)
+        if path_early.startswith("/api/") or path_early == "/api":
+            routes = self._load_api_routes()
+            hit = self._resolve_api_route(raw_early, routes)
+            if not hit and path_early in routes:
+                hit = routes[path_early]
+            if not hit:
+                for k, v in routes.items():
+                    if k.split("?", 1)[0] == path_early:
+                        hit = v
+                        break
+            if not hit:
+                rel = path_early.lstrip("/")
+                cand = ROOT / rel
+                if cand.is_file():
+                    hit = rel
+                elif (ROOT / (rel + ".json")).is_file():
+                    hit = rel + ".json"
+            if hit:
+                hit_file = ROOT / str(hit).lstrip("/")
+                if hit_file.is_file():
+                    data = hit_file.read_bytes()
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/json; charset=utf-8")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.send_header("Content-Length", str(len(data)))
+                    self.end_headers()
+                    if self.command != "HEAD":
+                        self.wfile.write(data)
+                    return None
+            body = b"{}"
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            if self.command != "HEAD":
+                self.wfile.write(body)
+            return None
         if self._is_top_level_browser_nav() and self._wants_html_document():
             if self._redirect_storage_html_path(path_early):
                 return None

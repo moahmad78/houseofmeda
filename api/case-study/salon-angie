@@ -1,0 +1,207 @@
+{
+  "header": {
+    "theme": "white"
+  },
+  "hero": {
+    "brand": "SALON ANGIE",
+    "location": "Bengaluru",
+    "backgroundDesktop": "/assets/case-study/detail/1778768915038-1778661429250-3.go-rsel-816-1088.webp",
+    "backgroundMobile": "/assets/case-study/detail/1778768915038-1778661429250-3.go-rsel-816-1088.webp",
+    "backgroundMediaType": "image",
+    "backgroundTransform": {
+      "zoom": 1,
+      "x": 0,
+      "y": 0
+    },
+    "overlayOpacity": 0.35,
+    "scrollLabel": "SCROLL DOWN"
+  },
+  "factsDesktop": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "factsMobile": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "desktopGallery": {
+    "height": 3600,
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/case-study/detail/1778768910579-1778661423804-2.-go-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/case-study/detail/1778768915038-1778661429250-3.go-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/case-study/detail/1778768919700-1778661433901-4.go-rsel-640-361.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/case-study/detail/1778768936670-1778661440114-5.go-rsel-640-853.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/case-study/detail/1778768940191-1778661444475-6.go-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/case-study/detail/1778768944445-1778661449217-7.go-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/case-study/detail/1778768956522-1778661453802-8.go-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/case-study/detail/1778768960201-1778661458184-9.go-rsel-390-520.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "mobileGallery": {
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/case-study/detail/1778768910579-1778661423804-2.-go-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/case-study/detail/1778768915038-1778661429250-3.go-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/case-study/detail/1778768919700-1778661433901-4.go-rsel-640-361.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/case-study/detail/1778768936670-1778661440114-5.go-rsel-640-853.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/case-study/detail/1778768940191-1778661444475-6.go-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/case-study/detail/1778768944445-1778661449217-7.go-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/case-study/detail/1778768956522-1778661453802-8.go-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/case-study/detail/1778768960201-1778661458184-9.go-rsel-390-520.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "navigation": {
+    "desktop": {
+      "prevLabel": "PREV",
+      "prevTitle": "BAŞBUĞ AUTOMOTIVE",
+      "prevSlug": "basbug-automotive",
+      "centerImage": "/assets/case-study/detail/1778768915038-1778661429250-3.go-rsel-816-1088.webp",
+      "nextLabel": "NEXT",
+      "nextTitle": "D MARIS KITCHEN",
+      "nextSlug": "d-maris-kitchen"
+    },
+    "mobile": {
+      "prevLabel": "PREV",
+      "prevTitle": "BAŞBUĞ AUTOMOTIVE",
+      "prevSlug": "basbug-automotive",
+      "nextLabel": "NEXT",
+      "nextTitle": "D MARIS KITCHEN",
+      "nextSlug": "d-maris-kitchen"
+    }
+  },
+  "seo": {
+    "title": "SALON ANGIE | House of Meda",
+    "description": "Bespoke interior design for SALON ANGIE by House of Meda."
+  }
+}

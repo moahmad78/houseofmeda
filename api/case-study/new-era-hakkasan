@@ -1,0 +1,207 @@
+{
+  "header": {
+    "theme": "white"
+  },
+  "hero": {
+    "brand": "HAKKASAN",
+    "location": "Bengaluru",
+    "backgroundDesktop": "/assets/case-study/detail/1778774998885-3.jpg",
+    "backgroundMobile": "/assets/case-study/detail/1778774998885-3.jpg",
+    "backgroundMediaType": "image",
+    "backgroundTransform": {
+      "zoom": 1,
+      "x": 0,
+      "y": 0
+    },
+    "overlayOpacity": 0.35,
+    "scrollLabel": "SCROLL DOWN"
+  },
+  "factsDesktop": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design+Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "factsMobile": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design+Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "desktopGallery": {
+    "height": 3600,
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/case-study/detail/1778774991638-2.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/case-study/detail/1778774998885-3.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/case-study/detail/1778775240297-4.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/case-study/detail/1778775295977-6.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/case-study/detail/1778775455069-slot5.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/case-study/detail/1778775331970-7.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/case-study/detail/1778775346044-8.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/case-study/detail/1778775378430-9.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "mobileGallery": {
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/case-study/detail/1778774991638-2.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/case-study/detail/1778774998885-3.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/case-study/detail/1778775240297-4.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/case-study/detail/1778775295977-6.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/case-study/detail/1778775455069-slot5.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/case-study/detail/1778775331970-7.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/case-study/detail/1778775346044-8.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/case-study/detail/1778775378430-9.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "navigation": {
+    "desktop": {
+      "prevLabel": "PREV",
+      "prevTitle": "D MARIS BAY LOUNGE",
+      "prevSlug": "d-maris-bay-lounge",
+      "centerImage": "/assets/case-study/detail/1778774998885-3.jpg",
+      "nextLabel": "NEXT",
+      "nextTitle": "BEYMEN ADANA",
+      "nextSlug": "beymen-adana"
+    },
+    "mobile": {
+      "prevLabel": "PREV",
+      "prevTitle": "D MARIS BAY LOUNGE",
+      "prevSlug": "d-maris-bay-lounge",
+      "nextLabel": "NEXT",
+      "nextTitle": "BEYMEN ADANA",
+      "nextSlug": "beymen-adana"
+    }
+  },
+  "seo": {
+    "title": "HAKKASAN | House of Meda",
+    "description": "Bespoke interior design for HAKKASAN by House of Meda."
+  }
+}

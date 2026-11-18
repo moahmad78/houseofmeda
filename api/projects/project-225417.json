@@ -1,0 +1,221 @@
+{
+  "header": {
+    "theme": "white"
+  },
+  "hero": {
+    "brand": "HAKKASAN",
+    "location": "Bengaluru",
+    "backgroundDesktop": "/assets/projects/detail/images/1782141593575--1.g-rsel-1728-1038.webp",
+    "backgroundMobile": "/assets/projects/detail/images/1782141593575--1.g-rsel-1728-1038.webp",
+    "backgroundMediaType": "image",
+    "backgroundTransform": {
+      "zoom": 1,
+      "x": 0,
+      "y": 0
+    },
+    "overlayOpacity": 0.35,
+    "scrollLabel": "SCROLL DOWN"
+  },
+  "factsDesktop": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design+Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "factsMobile": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design+Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "F&B"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "desktopGallery": {
+    "height": 4050,
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/projects/detail/images/1782141593575--1.g-rsel-1728-1038.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/projects/detail/images/1782141597927--2.-g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/projects/detail/images/1782141605258--3.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/projects/detail/videos/1777374526425-hakkasan-640-x-361.mp4",
+        "mediaType": "video",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/projects/detail/images/1782141612126--5.g-rsel-640-853.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/projects/detail/videos/1777536551728-restaurant_with_glowing_202604081501.mp4",
+        "mediaType": "video",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/projects/detail/images/1782141625660--7.g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/projects/detail/images/1782141634531--8.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-9",
+        "image": "/assets/projects/detail/videos/1777374389263-hakkasan-390-x-520.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "mobileGallery": {
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/projects/detail/images/1782141593575--1.g-rsel-1728-1038.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/projects/detail/images/1782141597927--2.-g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/projects/detail/images/1782141605258--3.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/projects/detail/videos/1777374526425-hakkasan-640-x-361.mp4",
+        "mediaType": "video",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/projects/detail/images/1782141612126--5.g-rsel-640-853.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/projects/detail/videos/1777536551728-restaurant_with_glowing_202604081501.mp4",
+        "mediaType": "video",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/projects/detail/images/1782141625660--7.g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/projects/detail/images/1782141634531--8.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-9",
+        "image": "/assets/projects/detail/videos/1777374389263-hakkasan-390-x-520.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "navigation": {
+    "desktop": {
+      "prevLabel": "PREV",
+      "prevTitle": "TATA LEADERSHIP TOWER",
+      "prevSlug": "tata-leadership-tower-bengaluru",
+      "centerImage": "/assets/projects/detail/images/1782141593575--1.g-rsel-1728-1038.webp",
+      "nextLabel": "NEXT",
+      "nextTitle": "MOLU",
+      "nextSlug": "molu"
+    },
+    "mobile": {
+      "prevLabel": "PREV",
+      "prevTitle": "TATA LEADERSHIP TOWER",
+      "prevSlug": "tata-leadership-tower-bengaluru",
+      "nextLabel": "NEXT",
+      "nextTitle": "MOLU",
+      "nextSlug": "molu"
+    }
+  },
+  "seo": {
+    "title": "HAKKASAN | House of Meda",
+    "description": "Bespoke interior design for HAKKASAN by House of Meda."
+  }
+}

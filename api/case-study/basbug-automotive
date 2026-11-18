@@ -1,0 +1,207 @@
+{
+  "header": {
+    "theme": "white"
+  },
+  "hero": {
+    "brand": "BAŞBUĞ AUTOMOTIVE",
+    "location": "Bengaluru",
+    "backgroundDesktop": "/assets/case-study/detail/1778769135643--3.g-rsel-816-1088.webp",
+    "backgroundMobile": "/assets/case-study/detail/1778769135643--3.g-rsel-816-1088.webp",
+    "backgroundMediaType": "image",
+    "backgroundTransform": {
+      "zoom": 1,
+      "x": 0,
+      "y": 0
+    },
+    "overlayOpacity": 0.35,
+    "scrollLabel": "SCROLL DOWN"
+  },
+  "factsDesktop": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design+Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "Office"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "factsMobile": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design+Build"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "Office"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "desktopGallery": {
+    "height": 3600,
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/case-study/detail/1778769130594--2.-g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/case-study/detail/1778769135643--3.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/case-study/detail/1778769140128--4.g-rsel-640-361.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/case-study/detail/1778769148913--5.g-rsel-640-853.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/case-study/detail/1778769153120--6.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/case-study/detail/1778769157967--7.g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/case-study/detail/1778769173321--8.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/case-study/detail/1778769178218--9.g-rsel-390-520.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "mobileGallery": {
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/case-study/detail/1778769130594--2.-g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/case-study/detail/1778769135643--3.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/case-study/detail/1778769140128--4.g-rsel-640-361.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/case-study/detail/1778769148913--5.g-rsel-640-853.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/case-study/detail/1778769153120--6.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/case-study/detail/1778769157967--7.g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/case-study/detail/1778769173321--8.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/case-study/detail/1778769178218--9.g-rsel-390-520.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "navigation": {
+    "desktop": {
+      "prevLabel": "PREV",
+      "prevTitle": "KOLEKTIF HOUSE ATASEHİR",
+      "prevSlug": "co-working-space-design-venue-changed-understanding-doing-work-ana-tolian-side-istanbul-kolektif-house",
+      "centerImage": "/assets/case-study/detail/1778769135643--3.g-rsel-816-1088.webp",
+      "nextLabel": "NEXT",
+      "nextTitle": "SALON ANGIE",
+      "nextSlug": "salon-angie"
+    },
+    "mobile": {
+      "prevLabel": "PREV",
+      "prevTitle": "KOLEKTIF HOUSE ATASEHİR",
+      "prevSlug": "co-working-space-design-venue-changed-understanding-doing-work-ana-tolian-side-istanbul-kolektif-house",
+      "nextLabel": "NEXT",
+      "nextTitle": "SALON ANGIE",
+      "nextSlug": "salon-angie"
+    }
+  },
+  "seo": {
+    "title": "BAŞBUĞ AUTOMOTIVE | House of Meda",
+    "description": "Bespoke interior design for BAŞBUĞ AUTOMOTIVE by House of Meda."
+  }
+}

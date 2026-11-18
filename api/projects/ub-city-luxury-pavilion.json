@@ -1,0 +1,221 @@
+{
+  "header": {
+    "theme": "white"
+  },
+  "hero": {
+    "brand": "BEYMEN",
+    "location": "Bengaluru",
+    "backgroundDesktop": "/assets/projects/detail/1776837967235-hom_beymen-hilltown_12.jpg",
+    "backgroundMobile": "/assets/projects/detail/1776837967235-hom_beymen-hilltown_12.jpg",
+    "backgroundMediaType": "image",
+    "backgroundTransform": {
+      "zoom": 1,
+      "x": 0,
+      "y": 0
+    },
+    "overlayOpacity": 0.35,
+    "scrollLabel": "SCROLL DOWN"
+  },
+  "factsDesktop": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "Retail"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "factsMobile": [
+    [
+      {
+        "label": "LOCATION",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "EXPERTISE",
+        "value": "Design"
+      }
+    ],
+    [
+      {
+        "label": "CATEGORY",
+        "value": "Retail"
+      },
+      {
+        "label": "YEAR",
+        "value": "2026"
+      }
+    ]
+  ],
+  "desktopGallery": {
+    "height": 4050,
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/projects/detail/1776837967235-hom_beymen-hilltown_12.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/projects/detail/1776837982321-hom_beymen-hilltown_16.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/projects/detail/images/1782137184242--3.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/projects/detail/videos/1777376208080-beymen-hilltown-640-x-361.mp4",
+        "mediaType": "video",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/projects/detail/images/1782137224195--5.g-rsel-640-853.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/projects/detail/images/1782137233888--6.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/projects/detail/images/1782137303809--7.g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/projects/detail/images/1782137316168--8.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-9",
+        "image": "/assets/projects/detail/videos/1777376296397-beymen-hill-390-x-520.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "mobileGallery": {
+    "items": [
+      {
+        "id": "detail-1",
+        "image": "/assets/projects/detail/1776837967235-hom_beymen-hilltown_12.jpg",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-2",
+        "image": "/assets/projects/detail/1776837982321-hom_beymen-hilltown_16.jpg",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-3",
+        "image": "/assets/projects/detail/images/1782137184242--3.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-4",
+        "image": "/assets/projects/detail/videos/1777376208080-beymen-hilltown-640-x-361.mp4",
+        "mediaType": "video",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-5",
+        "image": "/assets/projects/detail/images/1782137224195--5.g-rsel-640-853.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-6",
+        "image": "/assets/projects/detail/images/1782137233888--6.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-7",
+        "image": "/assets/projects/detail/images/1782137303809--7.g-rsel-1632-794.webp",
+        "mediaType": "image",
+        "align": "center",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-8",
+        "image": "/assets/projects/detail/images/1782137316168--8.g-rsel-816-1088.webp",
+        "mediaType": "image",
+        "align": "start",
+        "hasBaseFill": false
+      },
+      {
+        "id": "detail-9",
+        "image": "/assets/projects/detail/videos/1777376296397-beymen-hill-390-x-520.mp4",
+        "mediaType": "video",
+        "align": "center",
+        "hasBaseFill": false
+      }
+    ]
+  },
+  "navigation": {
+    "desktop": {
+      "prevLabel": "PREV",
+      "prevTitle": "NUUP HOTEL",
+      "prevSlug": "nuup-restaurant",
+      "centerImage": "/assets/projects/detail/1776837967235-hom_beymen-hilltown_12.jpg",
+      "nextLabel": "NEXT",
+      "nextTitle": "INFOSYS EXECUTIVE CAMPUS",
+      "nextSlug": "infosys-executive-campus-bengaluru"
+    },
+    "mobile": {
+      "prevLabel": "PREV",
+      "prevTitle": "NUUP HOTEL",
+      "prevSlug": "nuup-restaurant",
+      "nextLabel": "NEXT",
+      "nextTitle": "INFOSYS EXECUTIVE CAMPUS",
+      "nextSlug": "infosys-executive-campus-bengaluru"
+    }
+  },
+  "seo": {
+    "title": "BEYMEN | House of Meda",
+    "description": "Bespoke interior design for BEYMEN by House of Meda."
+  }
+}
