@@ -87,76 +87,58 @@
     "subtitleAccentTwo": "timelessness.",
     "cards": [
       {
-        "image": "/assets/about/content/section-image-01.jpg",
+        "index": "01",
         "name": "INTEGRITY",
         "roleLabel": "OUR PHILOSOPHY",
         "roleValue": "We build trust the same way we build homes — carefully, honestly, and to last.",
         "educationLabel": "HOUSE OF MEDA",
-        "educationValue": "Bengaluru Studio"
+        "educationValue": "Foundation & Trust",
+        "image": ""
       },
       {
-        "image": "/assets/about/content/section-image-02.jpg",
+        "index": "02",
         "name": "EVOLUTION",
         "roleLabel": "OUR PHILOSOPHY",
         "roleValue": "Our work is a continuous process of refinement, learning, and improvement.",
         "educationLabel": "HOUSE OF MEDA",
-        "educationValue": "Refinement & Growth"
+        "educationValue": "Refinement & Growth",
+        "image": ""
       },
       {
-        "image": "/assets/about/content/section-image-03.jpg",
+        "index": "03",
         "name": "COLLABORATION",
         "roleLabel": "OUR PHILOSOPHY",
         "roleValue": "Design is a shared process between client, designer, and craftsman.",
         "educationLabel": "HOUSE OF MEDA",
-        "educationValue": "Shared Craft"
+        "educationValue": "Shared Craft",
+        "image": ""
       },
       {
-        "image": "/assets/home/projects/project-stregis.jpg",
+        "index": "04",
         "name": "CLARITY",
         "roleLabel": "OUR PHILOSOPHY",
         "roleValue": "We pursue simplicity in form, function, and communication.",
         "educationLabel": "HOUSE OF MEDA",
-        "educationValue": "Pure Simplicity"
+        "educationValue": "Pure Simplicity",
+        "image": ""
       },
       {
-        "image": "/assets/home/projects/project-nokta.jpg",
+        "index": "05",
         "name": "THOUGHTFULNESS",
         "roleLabel": "OUR PHILOSOPHY",
         "roleValue": "Each detail is considered for purpose, proportion, and experience.",
         "educationLabel": "HOUSE OF MEDA",
-        "educationValue": "Intentional Detail"
+        "educationValue": "Intentional Detail",
+        "image": ""
       },
       {
-        "image": "/assets/home/projects/project-thy.jpg",
-        "name": "FORWARD THINKING",
-        "roleLabel": "OUR PHILOSOPHY",
-        "roleValue": "We design not for the moment, but for the many years that follow.",
-        "educationLabel": "HOUSE OF MEDA",
-        "educationValue": "Enduring Vision"
-      },
-      {
-        "image": "/assets/about/content/team-lead.jpg",
-        "name": "SINCERITY",
-        "roleLabel": "OUR PHILOSOPHY",
-        "roleValue": "We work with honest intent and respect for both people and process.",
-        "educationLabel": "HOUSE OF MEDA",
-        "educationValue": "Honest Intent"
-      },
-      {
-        "image": "/assets/about/content/team-member-01.jpg",
-        "name": "EMPATHY",
-        "roleLabel": "OUR PHILOSOPHY",
-        "roleValue": "We design by listening first, understanding lives before drawing lines.",
-        "educationLabel": "HOUSE OF MEDA",
-        "educationValue": "Listening First"
-      },
-      {
-        "image": "/assets/about/content/team-member-02.jpg",
+        "index": "06",
         "name": "TIMELESSNESS",
         "roleLabel": "OUR PHILOSOPHY",
         "roleValue": "We prioritise longevity over trends and permanence over fashion.",
         "educationLabel": "HOUSE OF MEDA",
-        "educationValue": "Permanence Over Fashion"
+        "educationValue": "Permanence Over Fashion",
+        "image": ""
       }
     ],
     "restOfUsLabel": "rest of us",
