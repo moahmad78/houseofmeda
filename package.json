@@ -3,7 +3,9 @@
   "version": "2.1.0",
   "private": true,
   "scripts": {
-    "build": "echo 'Static build complete'",
-    "start": "python server.py -p 8777"
+    "dev": "python server.py -p 8777",
+    "serve": "python server.py -p 8777",
+    "start": "python server.py -p 8777",
+    "build": "echo 'Static build complete'"
   }
 }
