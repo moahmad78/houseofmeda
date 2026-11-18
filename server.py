@@ -1311,8 +1311,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 safe_href = html.escape(str(href).lstrip("/"))
                 items += f'<li><a href="/{safe_href}">{html.escape(str(url))}</a> <code>{safe_href}</code></li>'
         body = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><title>Saved pages</title>
-        <base href="/"/><style>body{font-family:system-ui;background:#0b0f14;color:#e8eef4;padding:1.5rem}
-        a{color:#2ec4b6} code{color:#8aa0b2;font-size:.8rem} li{margin:.45rem 0}</style></head>
+        <base href="/"/><style>body{{font-family:system-ui;background:#0b0f14;color:#e8eef4;padding:1.5rem}}
+        a{{color:#2ec4b6}} code{{color:#8aa0b2;font-size:.8rem}} li{{margin:.45rem 0}}</style></head>
         <body><h1>Saved pages ({count})</h1><p>Origin: {origin}</p><ul>{items or "<li>None</li>"}</ul>
         <p><a href="/">← Home</a></p></body></html>""".encode("utf-8")
         self.send_response(200)
