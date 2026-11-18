@@ -212,48 +212,8 @@
     }
   } catch (e) {}
   const UNAVAILABLE = "/";
-  function showOfflineNotice(message, opts) { return; }
-    opts = opts || {};
-    try {
-      if (!__wcNoticeEl) {
-        __wcNoticeEl = document.createElement("div");
-        __wcNoticeEl.setAttribute("data-webcopier-notice", "1");
-        __wcNoticeEl.style.cssText =
-          "position:fixed;z-index:2147483646;left:16px;right:16px;bottom:16px;max-width:420px;margin:0 auto;" +
-          "background:#111;color:#f5f5f5;border:1px solid #333;border-radius:10px;padding:12px 14px;" +
-          "font:13px/1.4 system-ui,sans-serif;box-shadow:0 8px 28px rgba(0,0,0,.35);display:flex;gap:10px;align-items:flex-start;";
-        document.documentElement.appendChild(__wcNoticeEl);
-      }
-      __wcNoticeEl.innerHTML = "";
-      const text = document.createElement("div");
-      text.style.flex = "1";
-      text.textContent = message;
-      __wcNoticeEl.appendChild(text);
-      if (opts.href) {
-        const a = document.createElement("a");
-        a.href = opts.href;
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-        a.textContent = opts.buttonLabel || "Open live";
-        a.style.cssText = "color:#9cf;white-space:nowrap;margin-top:2px;";
-        __wcNoticeEl.appendChild(a);
-      }
-      const close = document.createElement("button");
-      close.type = "button";
-      close.textContent = "×";
-      close.style.cssText =
-        "background:transparent;border:0;color:#aaa;font-size:18px;line-height:1;cursor:pointer;padding:0 2px;";
-      close.onclick = function () {
-        if (__wcNoticeEl && __wcNoticeEl.parentNode) __wcNoticeEl.parentNode.removeChild(__wcNoticeEl);
-        __wcNoticeEl = null;
-      };
-      __wcNoticeEl.appendChild(close);
-      clearTimeout(showOfflineNotice._t);
-      showOfflineNotice._t = setTimeout(function () {
-        if (__wcNoticeEl && __wcNoticeEl.parentNode) __wcNoticeEl.parentNode.removeChild(__wcNoticeEl);
-        __wcNoticeEl = null;
-      }, opts.ttl || 8000);
-    } catch (e) {}
+  function showOfflineNotice(message, opts) {
+    return;
   }
 
   function logStub(url, reason) {
