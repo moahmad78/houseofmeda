@@ -5,8 +5,8 @@
   "hero": {
     "brand": "NOBU",
     "location": "Bengaluru",
-    "backgroundDesktop": "/assets/projects/detail/1777041941157-yoointerior_the-leela-palace-signature-dining_19.jpg",
-    "backgroundMobile": "/assets/projects/detail/1777041941157-yoointerior_the-leela-palace-signature-dining_19.jpg",
+    "backgroundDesktop": "/assets/projects/detail/1777041941157-hom_the-leela-palace-signature-dining_19.jpg",
+    "backgroundMobile": "/assets/projects/detail/1777041941157-hom_the-leela-palace-signature-dining_19.jpg",
     "backgroundMediaType": "image",
     "backgroundTransform": {
       "zoom": 1,
@@ -65,21 +65,21 @@
     "items": [
       {
         "id": "detail-1",
-        "image": "/assets/projects/detail/1777041941157-yoointerior_the-leela-palace-signature-dining_19.jpg",
+        "image": "/assets/projects/detail/1777041941157-hom_the-leela-palace-signature-dining_19.jpg",
         "mediaType": "image",
         "align": "center",
         "hasBaseFill": false
       },
       {
         "id": "detail-2",
-        "image": "/assets/projects/detail/1777041965846-yoointerior_the-leela-palace-signature-dining_14.jpg",
+        "image": "/assets/projects/detail/1777041965846-hom_the-leela-palace-signature-dining_14.jpg",
         "mediaType": "image",
         "align": "start",
         "hasBaseFill": false
       },
       {
         "id": "detail-3",
-        "image": "/assets/projects/detail/1777041987061-yoointerior_the-leela-palace-signature-dining_9.jpg",
+        "image": "/assets/projects/detail/1777041987061-hom_the-leela-palace-signature-dining_9.jpg",
         "mediaType": "image",
         "align": "center",
         "hasBaseFill": false
@@ -100,21 +100,21 @@
       },
       {
         "id": "detail-6",
-        "image": "/assets/projects/detail/images/1777535819400-yoointerior_the-leela-palace-signature-dining_14.jpg",
+        "image": "/assets/projects/detail/images/1777535819400-hom_the-leela-palace-signature-dining_14.jpg",
         "mediaType": "image",
         "align": "start",
         "hasBaseFill": false
       },
       {
         "id": "detail-7",
-        "image": "/assets/projects/detail/1777042035071-yoointerior_the-leela-palace-signature-dining_10.jpg",
+        "image": "/assets/projects/detail/1777042035071-hom_the-leela-palace-signature-dining_10.jpg",
         "mediaType": "image",
         "align": "center",
         "hasBaseFill": false
       },
       {
         "id": "detail-8",
-        "image": "/assets/projects/detail/1777042043800-yoointerior_the-leela-palace-signature-dining_17.jpg",
+        "image": "/assets/projects/detail/1777042043800-hom_the-leela-palace-signature-dining_17.jpg",
         "mediaType": "image",
         "align": "start",
         "hasBaseFill": false
@@ -132,21 +132,21 @@
     "items": [
       {
         "id": "detail-1",
-        "image": "/assets/projects/detail/1777041941157-yoointerior_the-leela-palace-signature-dining_19.jpg",
+        "image": "/assets/projects/detail/1777041941157-hom_the-leela-palace-signature-dining_19.jpg",
         "mediaType": "image",
         "align": "center",
         "hasBaseFill": false
       },
       {
         "id": "detail-2",
-        "image": "/assets/projects/detail/1777041965846-yoointerior_the-leela-palace-signature-dining_14.jpg",
+        "image": "/assets/projects/detail/1777041965846-hom_the-leela-palace-signature-dining_14.jpg",
         "mediaType": "image",
         "align": "start",
         "hasBaseFill": false
       },
       {
         "id": "detail-3",
-        "image": "/assets/projects/detail/1777041987061-yoointerior_the-leela-palace-signature-dining_9.jpg",
+        "image": "/assets/projects/detail/1777041987061-hom_the-leela-palace-signature-dining_9.jpg",
         "mediaType": "image",
         "align": "center",
         "hasBaseFill": false
@@ -167,21 +167,21 @@
       },
       {
         "id": "detail-6",
-        "image": "/assets/projects/detail/images/1777535819400-yoointerior_the-leela-palace-signature-dining_14.jpg",
+        "image": "/assets/projects/detail/images/1777535819400-hom_the-leela-palace-signature-dining_14.jpg",
         "mediaType": "image",
         "align": "start",
         "hasBaseFill": false
       },
       {
         "id": "detail-7",
-        "image": "/assets/projects/detail/1777042035071-yoointerior_the-leela-palace-signature-dining_10.jpg",
+        "image": "/assets/projects/detail/1777042035071-hom_the-leela-palace-signature-dining_10.jpg",
         "mediaType": "image",
         "align": "center",
         "hasBaseFill": false
       },
       {
         "id": "detail-8",
-        "image": "/assets/projects/detail/1777042043800-yoointerior_the-leela-palace-signature-dining_17.jpg",
+        "image": "/assets/projects/detail/1777042043800-hom_the-leela-palace-signature-dining_17.jpg",
         "mediaType": "image",
         "align": "start",
         "hasBaseFill": false
@@ -200,7 +200,7 @@
       "prevLabel": "PREV",
       "prevTitle": "OLEA & BAR",
       "prevSlug": "olea-bar",
-      "centerImage": "/assets/projects/detail/1777041941157-yoointerior_the-leela-palace-signature-dining_19.jpg",
+      "centerImage": "/assets/projects/detail/1777041941157-hom_the-leela-palace-signature-dining_19.jpg",
       "nextLabel": "NEXT",
       "nextTitle": "TATA LEADERSHIP TOWER",
       "nextSlug": "tata-leadership-tower-bengaluru"
