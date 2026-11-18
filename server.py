@@ -298,14 +298,17 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def copyfile(self, source, outputfile):
         remaining = getattr(self, "_wc_range_length", None)
-        if remaining is None:
-            return super().copyfile(source, outputfile)
-        while remaining > 0:
-            chunk = source.read(min(65536, remaining))
-            if not chunk:
-                break
-            outputfile.write(chunk)
-            remaining -= len(chunk)
+        try:
+            if remaining is None:
+                return super().copyfile(source, outputfile)
+            while remaining > 0:
+                chunk = source.read(min(65536, remaining))
+                if not chunk:
+                    break
+                outputfile.write(chunk)
+                remaining -= len(chunk)
+        except (ConnectionResetError, BrokenPipeError, ConnectionAbortedError):
+            pass
 
     def end_headers(self):
         self.send_header("Access-Control-Allow-Origin", "*")
@@ -405,7 +408,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             "/healthcheck",
             "/health",
         )
-        if lower in stub_paths or lower.endswith(".ashx") or "/api/" in lower or "/json/" in lower:
+        if lower in stub_paths or lower.endswith(".ashx") or "/api/" in lower or "/json/" in lower or "/installations" in lower:
             body = b'{"ok":true}' if lower in stub_paths else b"{}"
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
@@ -414,7 +417,13 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             if self.command != "HEAD":
                 self.wfile.write(body)
             return None
-        self.send_error(501, "Unsupported method ('POST')")
+        body = b'{"ok":true}'
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        if self.command != "HEAD":
+            self.wfile.write(body)
         return None
 
     def _load_api_routes(self):
