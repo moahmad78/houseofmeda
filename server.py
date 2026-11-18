@@ -974,6 +974,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         raw_early = self.path.split("#", 1)[0]
         path_early = raw_early.split("?", 1)[0].rstrip("/") or "/"
 
+        # Remove case-study: redirect to /projects
+        if path_early == "/case-study" or path_early.startswith("/case-study/") or path_early == "/case-study.html":
+            self.send_response(301)
+            self.send_header("Location", "/projects")
+            self.send_header("Cache-Control", "no-cache")
+            self.end_headers()
+            return None
+
         # Dedicated API routes resolution (projects, case-study, news-press, content, etc.)
         if path_early.startswith("/api/") or path_early == "/api":
             routes = self._load_api_routes()

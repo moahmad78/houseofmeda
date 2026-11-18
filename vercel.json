@@ -5,6 +5,18 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/case-study",
+      "destination": "/projects",
+      "permanent": true
+    },
+    {
+      "source": "/case-study/:match*",
+      "destination": "/projects",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/about",
@@ -17,10 +29,6 @@
     {
       "source": "/expertise",
       "destination": "/expertise.html"
-    },
-    {
-      "source": "/case-study",
-      "destination": "/case-study.html"
     },
     {
       "source": "/news-press",
