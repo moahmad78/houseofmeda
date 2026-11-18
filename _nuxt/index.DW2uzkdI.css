@@ -118,3 +118,11 @@
     gap: 16px !important;
   }
 }
+
+
+/* House of Meda - White Navbar Logo exclusively for Home Page Hero Navbar */
+.home-page .page-top-header-logo img,
+.hero .page-top-header-logo img {
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.95 !important;
+}

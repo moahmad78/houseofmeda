@@ -1439,6 +1439,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         candidates = [
             ROOT / rel,
             ROOT / (rel + ".html"),
+            ROOT / (rel + ".json"),
             ROOT / rel / "index.html",
             ROOT / "pages" / rel,
             ROOT / "pages" / (rel + ".html"),
