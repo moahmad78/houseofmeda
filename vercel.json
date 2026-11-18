@@ -89,9 +89,26 @@
     {
       "source": "/hom_showcase_4.mp4",
       "destination": "/assets/videos/hom_showcase_4.mp4"
+    },
+    {
+      "source": "/cdn/media.yoointerior.com/assets/:path*",
+      "destination": "/assets/:path*"
     }
   ],
   "headers": [
+    {
+      "source": "/(.*)\\.mp4",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "video/mp4"
+        },
+        {
+          "key": "Accept-Ranges",
+          "value": "bytes"
+        }
+      ]
+    },
     {
       "source": "/api/(.*)",
       "headers": [

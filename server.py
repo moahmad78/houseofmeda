@@ -966,6 +966,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def do_GET(self):
 
+        # Strip external host if proxied/forwarded
+        if self.path.startswith("http://") or self.path.startswith("https://"):
+            from urllib.parse import urlparse
+            p_res = urlparse(self.path)
+            self.path = p_res.path + ("?" + p_res.query if p_res.query else "")
+
+        # Route media.yoointerior.com to local relative assets
+        if self.path.startswith("/media.yoointerior.com/"):
+            self.path = "/" + self.path[len("/media.yoointerior.com/"):]
+        elif self.path.startswith("/cdn/media.yoointerior.com/"):
+            self.path = "/" + self.path[len("/cdn/media.yoointerior.com/"):]
+
         # Route hero videos to assets/videos/
         for vname in ["hom_showcase_1.mp4", "hom_showcase_2.mp4", "hom_showcase_3.mp4", "hom_showcase_4.mp4"]:
             if self.path.endswith(vname):
@@ -1428,6 +1440,19 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             ROOT / "images" / rel,
             ROOT / "fonts" / rel,
         ]
+        if rel.startswith("assets/"):
+            candidates.append(ROOT / "cdn" / "media.yoointerior.com" / rel)
+            candidates.append(ROOT / "assets" / "projects" / "detail" / "videos" / Path(rel).name)
+        elif rel.startswith("cdn/media.yoointerior.com/"):
+            sub_rel = rel[len("cdn/media.yoointerior.com/"):]
+            candidates.append(ROOT / sub_rel)
+            candidates.append(ROOT / "assets" / sub_rel)
+        elif rel.startswith("media.yoointerior.com/"):
+            sub_rel = rel[len("media.yoointerior.com/"):]
+            candidates.append(ROOT / sub_rel)
+            candidates.append(ROOT / "assets" / sub_rel)
+            candidates.append(ROOT / "cdn" / "media.yoointerior.com" / sub_rel)
+
         if rel.startswith("pages/"):
             candidates.append(ROOT / rel)
             candidates.append(ROOT / (rel + ".html"))
