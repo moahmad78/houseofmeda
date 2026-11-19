@@ -478,4 +478,120 @@ img.bg-tile ~ img.bg-tile {
   }
 })();
 </script>
+<script id="hom-footer-trail-script">
+(function() {
+  var TRAIL_IMAGES = [
+    "/assets/case-study/detail/1778752804704--2.-g-rsel-1632-794.webp",
+    "/assets/case-study/detail/1778768148800--2.-g-rsel-1632-794.webp",
+    "/assets/case-study/detail/1778770283500--2.-g-rsel-1632-794.webp",
+    "/assets/case-study/detail/1778771233237--2.-g-rsel-1632-794.webp",
+    "/assets/case-study/detail/1778770711183-1778505570654-2.-g-rsel-1632-794.webp",
+    "/assets/case-study/detail/1778768910579-1778661423804-2.-go-rsel-1632-794.webp",
+    "/assets/case-study/detail/1778771003536--2.-g-rsel-1632-794.webp"
+  ];
+
+  var PRESETS = [
+    { width: 224, height: 152, offsetX: -14, offsetY: 12, rotation: -2.5, driftX: -12, driftY: -16 },
+    { width: 240, height: 160, offsetX: 18, offsetY: -10, rotation: 1.8, driftX: 14, driftY: -18 },
+    { width: 216, height: 148, offsetX: -20, offsetY: -14, rotation: -1.2, driftX: -16, driftY: 14 },
+    { width: 232, height: 156, offsetX: 12, offsetY: 16, rotation: 2.2, driftX: 18, driftY: 12 },
+    { width: 228, height: 150, offsetX: -16, offsetY: 10, rotation: -2, driftX: -14, driftY: -14 }
+  ];
+
+  var MAX_ITEMS = 5;
+  var MIN_DIST = 45;
+  var MIN_TIME = 45;
+  var DURATION = 850;
+
+  function initFooterTrail() {
+    var footers = document.querySelectorAll('.footer-background');
+    footers.forEach(function(footer) {
+      if (footer.dataset.homTrailInitialized) return;
+      footer.dataset.homTrailInitialized = 'true';
+
+      var trailContainer = footer.querySelector('.footer-project-trail');
+      if (!trailContainer) {
+        trailContainer = document.createElement('div');
+        trailContainer.className = 'footer-project-trail';
+        trailContainer.setAttribute('aria-hidden', 'true');
+        footer.insertBefore(trailContainer, footer.firstChild);
+      }
+
+      var lastX = -9999;
+      var lastY = -9999;
+      var lastTime = 0;
+      var presetIdx = 0;
+      var imageIdx = 0;
+
+      function spawnItem(x, y, w, h) {
+        var preset = PRESETS[presetIdx % PRESETS.length];
+        var imageSrc = TRAIL_IMAGES[imageIdx % TRAIL_IMAGES.length];
+        presetIdx++;
+        imageIdx++;
+
+        var halfW = preset.width / 2 + 10;
+        var halfH = preset.height / 2 + 10;
+        var finalX = Math.min(Math.max(x, halfW), Math.max(halfW, w - halfW));
+        var finalY = Math.min(Math.max(y, halfH), Math.max(halfH, h - halfH));
+
+        var item = document.createElement('div');
+        item.className = 'footer-project-trail__item';
+        item.style.left = finalX + 'px';
+        item.style.top = finalY + 'px';
+        item.style.width = preset.width + 'px';
+        item.style.height = preset.height + 'px';
+        item.style.setProperty('--footer-trail-rotation', preset.rotation + 'deg');
+        item.style.setProperty('--footer-trail-drift-x', preset.driftX + 'px');
+        item.style.setProperty('--footer-trail-drift-y', preset.driftY + 'px');
+
+        var img = document.createElement('img');
+        img.className = 'footer-project-trail__image';
+        img.src = imageSrc;
+        img.alt = '';
+        img.decoding = 'async';
+        item.appendChild(img);
+
+        trailContainer.appendChild(item);
+
+        while (trailContainer.children.length > MAX_ITEMS) {
+          trailContainer.removeChild(trailContainer.firstChild);
+        }
+
+        setTimeout(function() {
+          if (item.parentNode === trailContainer) {
+            trailContainer.removeChild(item);
+          }
+        }, DURATION + 50);
+      }
+
+      footer.addEventListener('pointermove', function(e) {
+        if (e.pointerType && e.pointerType !== 'mouse') return;
+        var rect = footer.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        var now = performance.now();
+
+        var dist = Math.hypot(x - lastX, y - lastY);
+        if (dist >= MIN_DIST && (now - lastTime) >= MIN_TIME) {
+          lastX = x;
+          lastY = y;
+          lastTime = now;
+          spawnItem(x, y, rect.width, rect.height);
+        }
+      }, { passive: true });
+
+      footer.addEventListener('pointerleave', function() {
+        lastX = -9999;
+        lastY = -9999;
+      }, { passive: true });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFooterTrail);
+  } else {
+    initFooterTrail();
+  }
+})();
+</script>
 </body></html>
