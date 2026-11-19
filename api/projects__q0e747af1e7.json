@@ -1,1 +1,876 @@
-{"header": {"theme": "black"}, "intro": {"title": "PROJECTS"}, "decoration": {"backgroundWord": "PROJEcTS - PROJEcTS", "backgroundWordRows": [1309.5, 2010, 3048, 4568]}, "filters": {"tabs": {"expertise": "Expertise", "category": "Category"}, "categoryPanelTitle": "Select the Categories", "categoryOptions": ["All", "Hospitality", "F&B", "Retail", "Office", "Others"], "activeCategoryOption": "All", "selectedGroups": [], "clearFilterLabel": "Clear filter", "mobileTriggerLabel": "Filters", "mobileSheetTitle": "FILTERS", "mobileShowResultLabel": "Show Result"}, "projects": [{"id": "project-856565", "slug": "gigi-rigolatto-3", "category": "F&B", "expertise": "Build", "title": "Gigi Rigolatto", "place": "", "image": "/assets/projects/detail/images/1785321976882--1.g-rsel-1728-1038.webp", "imageCandidates": [{"image": "/assets/projects/detail/images/1785321976882--1.g-rsel-1728-1038.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1802, "slotKey": "hero", "slotIndex": 1}, {"image": "/assets/projects/detail/images/1785321985457--2.-g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1460, "slotKey": "slot01", "slotIndex": 2}, {"image": "/assets/projects/detail/images/1785321991170--3.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1875, "naturalHeight": 2500, "slotKey": "slot02", "slotIndex": 3}, {"image": "/assets/projects/detail/images/1785321994593--4.g-rsel-640-361.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 846, "slotKey": "slot03", "slotIndex": 4}, {"image": "/assets/projects/detail/images/1785321999403--5.g-rsel-640-853.webp", "mediaType": "image", "naturalWidth": 2000, "naturalHeight": 2666, "slotKey": "slot04", "slotIndex": 5}, {"image": "/assets/projects/detail/images/1785322002602--6.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot05", "slotIndex": 6}, {"image": "/assets/projects/detail/images/1785322007564--7.g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 2500, "naturalHeight": 1216, "slotKey": "slot06", "slotIndex": 7}, {"image": "/assets/projects/detail/images/1785322013935--8.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot07", "slotIndex": 8}, {"image": "/assets/projects/detail/images/1785322017578--9.g-rsel-390-520.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot08", "slotIndex": 9}]}, {"id": "project-459341", "slug": "maison-revka-mandarin-oriental", "category": "F&B", "expertise": "Build", "title": "Maison Revka", "place": "", "image": "/assets/projects/detail/images/1782461613318--1.g-rsel-1728-1038.webp", "imageCandidates": [{"image": "/assets/projects/detail/images/1782461613318--1.g-rsel-1728-1038.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1802, "slotKey": "hero", "slotIndex": 1}, {"image": "/assets/projects/detail/images/1782461619535--2.-g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1460, "slotKey": "slot01", "slotIndex": 2}, {"image": "/assets/projects/detail/images/1782461625754--3.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1875, "naturalHeight": 2500, "slotKey": "slot02", "slotIndex": 3}, {"image": "/assets/projects/detail/images/1782461631191--4.g-rsel-640-361.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 846, "slotKey": "slot03", "slotIndex": 4}, {"image": "/assets/projects/detail/images/1782461636226--5.g-rsel-640-853.webp", "mediaType": "image", "naturalWidth": 2000, "naturalHeight": 2666, "slotKey": "slot04", "slotIndex": 5}, {"image": "/assets/projects/detail/images/1782461641005--6.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot05", "slotIndex": 6}, {"image": "/assets/projects/detail/images/1782461646786--7.g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 2500, "naturalHeight": 1216, "slotKey": "slot06", "slotIndex": 7}, {"image": "/assets/projects/detail/images/1782461653855--8.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot07", "slotIndex": 8}, {"image": "/assets/projects/detail/images/1782461659158--9.g-rsel-390-520.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot08", "slotIndex": 9}]}, {"id": "project-074205", "slug": "olea-bar", "category": "F&B", "expertise": "Design+Build", "title": "OLEA & BAR", "place": "", "image": "/assets/projects/detail/images/1782141739208--1.g-rsel-1728-1038.webp", "imageCandidates": [{"image": "/assets/projects/detail/images/1782141739208--1.g-rsel-1728-1038.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1802, "slotKey": "hero", "slotIndex": 1}, {"image": "/assets/projects/detail/images/1782141744823--2.-g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1460, "slotKey": "slot01", "slotIndex": 2}, {"image": "/assets/projects/detail/images/1782141750694--3.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1875, "naturalHeight": 2500, "slotKey": "slot02", "slotIndex": 3}, {"image": "/assets/projects/detail/videos/1777378950182-olea-640-x-361.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 360, "slotKey": "slot03", "slotIndex": 4}, {"image": "/assets/projects/detail/videos/1777379204650-olea-640-x-853.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 852, "slotKey": "slot04", "slotIndex": 5}, {"image": "/assets/projects/detail/images/1782141757488--6.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot05", "slotIndex": 6}, {"image": "/assets/projects/detail/images/1782141764893--7.g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 2500, "naturalHeight": 1216, "slotKey": "slot06", "slotIndex": 7}, {"image": "/assets/projects/detail/images/1782141770195--8.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot07", "slotIndex": 8}, {"image": "/assets/projects/detail/videos/1777379036863-olea-390-x-520.mp4", "mediaType": "video", "naturalWidth": 390, "naturalHeight": 520, "slotKey": "slot08", "slotIndex": 9}]}, {"id": "project-922200", "slug": "the-leela-palace-signature-dining", "category": "F&B", "expertise": "Build", "title": "NOBU", "place": "", "image": "/assets/projects/detail/1777041941157-hom_the-leela-palace-signature-dining_19.jpg", "imageCandidates": [{"image": "/assets/projects/detail/1777041941157-hom_the-leela-palace-signature-dining_19.jpg", "mediaType": "image", "naturalWidth": 2232, "naturalHeight": 1488, "slotKey": "hero", "slotIndex": 1}, {"image": "/assets/projects/detail/1777041965846-hom_the-leela-palace-signature-dining_14.jpg", "mediaType": "image", "naturalWidth": 2232, "naturalHeight": 1488, "slotKey": "slot01", "slotIndex": 2}, {"image": "/assets/projects/detail/1777041987061-hom_the-leela-palace-signature-dining_9.jpg", "mediaType": "image", "naturalWidth": 2232, "naturalHeight": 1488, "slotKey": "slot02", "slotIndex": 3}, {"image": "/assets/projects/detail/videos/1777378582279-nobu-640-x-361.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 360, "slotKey": "slot03", "slotIndex": 4}, {"image": "/assets/projects/detail/videos/1777378720111-nobu-640-x-853.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 852, "slotKey": "slot04", "slotIndex": 5}, {"image": "/assets/projects/detail/images/1777535819400-hom_the-leela-palace-signature-dining_14.jpg", "mediaType": "image", "naturalWidth": 2232, "naturalHeight": 1488, "slotKey": "slot05", "slotIndex": 6}, {"image": "/assets/projects/detail/1777042035071-hom_the-leela-palace-signature-dining_10.jpg", "mediaType": "image", "naturalWidth": 2231, "naturalHeight": 1488, "slotKey": "slot06", "slotIndex": 7}, {"image": "/assets/projects/detail/1777042043800-hom_the-leela-palace-signature-dining_17.jpg", "mediaType": "image", "naturalWidth": 2231, "naturalHeight": 1488, "slotKey": "slot07", "slotIndex": 8}, {"image": "/assets/projects/detail/videos/1777378816591-nobu-390-x-520.mp4", "mediaType": "video", "naturalWidth": 390, "naturalHeight": 520, "slotKey": "slot08", "slotIndex": 9}]}, {"id": "project-741810", "slug": "tata-leadership-tower-bengaluru", "category": "Office", "expertise": "Build", "title": "TATA LEADERSHIP TOWER", "place": "", "image": "/assets/projects/detail/1777039763909-hom_thy-accounting_10.jpg", "imageCandidates": [{"image": "/assets/projects/detail/1777039763909-hom_thy-accounting_10.jpg", "mediaType": "image", "naturalWidth": 2238, "naturalHeight": 1492, "slotKey": "hero", "slotIndex": 1}, {"image": "/assets/projects/detail/1777039773525-hom_thy-accounting_9.jpg", "mediaType": "image", "naturalWidth": 2238, "naturalHeight": 1492, "slotKey": "slot01", "slotIndex": 2}, {"image": "/assets/projects/detail/1777039784347-hom_thy-accounting_15.jpg", "mediaType": "image", "naturalWidth": 1492, "naturalHeight": 2238, "slotKey": "slot02", "slotIndex": 3}, {"image": "/assets/projects/detail/videos/1777377352739-thy-640-x-361.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 360, "slotKey": "slot03", "slotIndex": 4}, {"image": "/assets/projects/detail/videos/1777377433129-thy-640-x-853.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 852, "slotKey": "slot04", "slotIndex": 5}, {"image": "/assets/projects/detail/images/1777536198148-hom_thy-accounting_1.jpg", "mediaType": "image", "naturalWidth": 2239, "naturalHeight": 1492, "slotKey": "slot05", "slotIndex": 6}, {"image": "/assets/projects/detail/1777039826131-hom_thy-accounting_4.jpg", "mediaType": "image", "naturalWidth": 2238, "naturalHeight": 1492, "slotKey": "slot06", "slotIndex": 7}, {"image": "/assets/projects/detail/1777039847333-hom_thy-accounting_17.jpg", "mediaType": "image", "naturalWidth": 1492, "naturalHeight": 2239, "slotKey": "slot07", "slotIndex": 8}, {"image": "/assets/projects/detail/videos/1777377566268-thy-390-x-520.mp4", "mediaType": "video", "naturalWidth": 390, "naturalHeight": 520, "slotKey": "slot08", "slotIndex": 9}]}, {"id": "project-225417", "slug": "hakkasan", "category": "F&B", "expertise": "Design+Build", "title": "HAKKASAN", "place": "", "image": "/assets/projects/detail/images/1782141593575--1.g-rsel-1728-1038.webp", "imageCandidates": [{"image": "/assets/projects/detail/images/1782141593575--1.g-rsel-1728-1038.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1802, "slotKey": "hero", "slotIndex": 1}, {"image": "/assets/projects/detail/images/1782141597927--2.-g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1460, "slotKey": "slot01", "slotIndex": 2}, {"image": "/assets/projects/detail/images/1782141605258--3.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1875, "naturalHeight": 2500, "slotKey": "slot02", "slotIndex": 3}, {"image": "/assets/projects/detail/videos/1777374526425-hakkasan-640-x-361.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 360, "slotKey": "slot03", "slotIndex": 4}, {"image": "/assets/projects/detail/images/1782141612126--5.g-rsel-640-853.webp", "mediaType": "image", "naturalWidth": 2000, "naturalHeight": 2666, "slotKey": "slot04", "slotIndex": 5}, {"image": "/assets/projects/detail/videos/1777536551728-restaurant_with_glowing_202604081501.mp4", "mediaType": "video", "naturalWidth": 1280, "naturalHeight": 720, "slotKey": "slot05", "slotIndex": 6}, {"image": "/assets/projects/detail/images/1782141625660--7.g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 2500, "naturalHeight": 1216, "slotKey": "slot06", "slotIndex": 7}, {"image": "/assets/projects/detail/images/1782141634531--8.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot07", "slotIndex": 8}, {"image": "/assets/projects/detail/videos/1777374389263-hakkasan-390-x-520.mp4", "mediaType": "video", "naturalWidth": 390, "naturalHeight": 520, "slotKey": "slot08", "slotIndex": 9}]}, {"id": "project-637731", "slug": "molu", "category": "Retail", "expertise": "Design+Build", "title": "MOLU", "place": "", "image": "/assets/projects/detail/images/1782141664506--1.g-rsel-1728-1038.webp", "imageCandidates": [{"image": "/assets/projects/detail/images/1782141664506--1.g-rsel-1728-1038.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1802, "slotKey": "hero", "slotIndex": 1}, {"image": "/assets/projects/detail/images/1782141685926--2.-g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1460, "slotKey": "slot01", "slotIndex": 2}, {"image": "/assets/projects/detail/images/1782141693141--3.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1875, "naturalHeight": 2500, "slotKey": "slot02", "slotIndex": 3}, {"image": "/assets/projects/detail/videos/1777378315525-molu-640-x-361.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 360, "slotKey": "slot03", "slotIndex": 4}, {"image": "/assets/projects/detail/videos/1777378366098-molu-640-x-853.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 852, "slotKey": "slot04", "slotIndex": 5}, {"image": "/assets/projects/detail/images/1782141698941--6.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot05", "slotIndex": 6}, {"image": "/assets/projects/detail/images/1782141704218--7.g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 2500, "naturalHeight": 1216, "slotKey": "slot06", "slotIndex": 7}, {"image": "/assets/projects/detail/images/1782141710369--8.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot07", "slotIndex": 8}, {"image": "/assets/projects/detail/videos/1777378447163-molu-390-x-520.mp4", "mediaType": "video", "naturalWidth": 390, "naturalHeight": 520, "slotKey": "slot08", "slotIndex": 9}]}, {"id": "project-534441", "slug": "nuup-restaurant", "category": "Hospitality", "expertise": "Design+Build", "title": "NUUP HOTEL", "place": "", "image": "/assets/projects/detail/images/1781186055624--1.g-rsel-1728-1038.webp", "imageCandidates": [{"image": "/assets/projects/detail/images/1781186055624--1.g-rsel-1728-1038.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1802, "slotKey": "hero", "slotIndex": 1}, {"image": "/assets/projects/detail/images/1781186065199--2.-g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1460, "slotKey": "slot01", "slotIndex": 2}, {"image": "/assets/projects/detail/images/1781186072768--3.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1875, "naturalHeight": 2500, "slotKey": "slot02", "slotIndex": 3}, {"image": "/assets/projects/detail/videos/1777373712799-nuup-640-x-361.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 360, "slotKey": "slot03", "slotIndex": 4}, {"image": "/assets/projects/detail/videos/1777374159928-nuup-640-x-853.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 852, "slotKey": "slot04", "slotIndex": 5}, {"image": "/assets/projects/detail/images/1781186083268--6.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot05", "slotIndex": 6}, {"image": "/assets/projects/detail/images/1781186095974--7.g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 2500, "naturalHeight": 1216, "slotKey": "slot06", "slotIndex": 7}, {"image": "/assets/projects/detail/images/1781186104766--8.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot07", "slotIndex": 8}, {"image": "/assets/projects/detail/images/1781186111077--9.g-rsel-390-520.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot08", "slotIndex": 9}]}, {"id": "project-551684", "slug": "ub-city-luxury-pavilion", "category": "Retail", "expertise": "Design", "title": "BEYMEN", "place": "", "image": "/assets/projects/detail/1776837967235-hom_beymen-hilltown_12.jpg", "imageCandidates": [{"image": "/assets/projects/detail/1776837967235-hom_beymen-hilltown_12.jpg", "mediaType": "image", "naturalWidth": 1818, "naturalHeight": 1212, "slotKey": "hero", "slotIndex": 1}, {"image": "/assets/projects/detail/1776837982321-hom_beymen-hilltown_16.jpg", "mediaType": "image", "naturalWidth": 1818, "naturalHeight": 1212, "slotKey": "slot01", "slotIndex": 2}, {"image": "/assets/projects/detail/images/1782137184242--3.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1875, "naturalHeight": 2500, "slotKey": "slot02", "slotIndex": 3}, {"image": "/assets/projects/detail/videos/1777376208080-beymen-hilltown-640-x-361.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 360, "slotKey": "slot03", "slotIndex": 4}, {"image": "/assets/projects/detail/images/1782137224195--5.g-rsel-640-853.webp", "mediaType": "image", "naturalWidth": 2000, "naturalHeight": 2666, "slotKey": "slot04", "slotIndex": 5}, {"image": "/assets/projects/detail/images/1782137233888--6.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot05", "slotIndex": 6}, {"image": "/assets/projects/detail/images/1782137303809--7.g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 2500, "naturalHeight": 1216, "slotKey": "slot06", "slotIndex": 7}, {"image": "/assets/projects/detail/images/1782137316168--8.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot07", "slotIndex": 8}, {"image": "/assets/projects/detail/videos/1777376296397-beymen-hill-390-x-520.mp4", "mediaType": "video", "naturalWidth": 390, "naturalHeight": 520, "slotKey": "slot08", "slotIndex": 9}]}, {"id": "project-546620", "slug": "infosys-executive-campus-bengaluru", "category": "Office", "expertise": "Design+Build", "title": "INFOSYS EXECUTIVE CAMPUS", "place": "", "image": "/assets/projects/detail/images/1782138923684--1.g-rsel-1728-1038.webp", "imageCandidates": [{"image": "/assets/projects/detail/images/1782138923684--1.g-rsel-1728-1038.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1802, "slotKey": "hero", "slotIndex": 1}, {"image": "/assets/projects/detail/images/1782138930634--2.g-rsel-1728-1038.webp", "mediaType": "image", "naturalWidth": 3000, "naturalHeight": 1460, "slotKey": "slot01", "slotIndex": 2}, {"image": "/assets/projects/detail/images/1782138937237--3.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1875, "naturalHeight": 2500, "slotKey": "slot02", "slotIndex": 3}, {"image": "/assets/projects/detail/videos/1777372152920-infosys-executive-campus-bengaluru-640-x-361.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 360, "slotKey": "slot03", "slotIndex": 4}, {"image": "/assets/projects/detail/videos/1777372462920-infosys-executive-campus-bengaluru-640-x-853.mp4", "mediaType": "video", "naturalWidth": 640, "naturalHeight": 852, "slotKey": "slot04", "slotIndex": 5}, {"image": "/assets/projects/detail/images/1782138965328--6.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot05", "slotIndex": 6}, {"image": "/assets/projects/detail/images/1782138971038--7.g-rsel-1632-794.webp", "mediaType": "image", "naturalWidth": 2500, "naturalHeight": 1216, "slotKey": "slot06", "slotIndex": 7}, {"image": "/assets/projects/detail/images/1782138976176--8.g-rsel-816-1088.webp", "mediaType": "image", "naturalWidth": 1500, "naturalHeight": 2000, "slotKey": "slot07", "slotIndex": 8}, {"image": "/assets/projects/detail/videos/1777372580861-infosys-executive-campus-bengaluru-390-x-520.mp4", "mediaType": "video", "naturalWidth": 390, "naturalHeight": 520, "slotKey": "slot08", "slotIndex": 9}]}], "pagination": {"offset": 0, "limit": 10, "total": 72, "hasMore": true}}
+{
+  "header": {
+    "theme": "black"
+  },
+  "intro": {
+    "title": "PROJECTS"
+  },
+  "decoration": {
+    "backgroundWord": "PROJEcTS - PROJEcTS",
+    "backgroundWordRows": [
+      1309.5,
+      2010,
+      3048,
+      4568
+    ]
+  },
+  "filters": {
+    "tabs": {
+      "expertise": "Expertise",
+      "category": "Category"
+    },
+    "categoryPanelTitle": "Select the Categories",
+    "categoryOptions": [
+      "All",
+      "Hospitality",
+      "F&B",
+      "Retail",
+      "Office",
+      "Others"
+    ],
+    "activeCategoryOption": "All",
+    "selectedGroups": [],
+    "clearFilterLabel": "Clear filter",
+    "mobileTriggerLabel": "Filters",
+    "mobileSheetTitle": "FILTERS",
+    "mobileShowResultLabel": "Show Result"
+  },
+  "projects": [
+    {
+      "id": "project-856565",
+      "slug": "gigi-rigolatto-3",
+      "category": "F&B",
+      "expertise": "Build",
+      "title": "Gigi Rigolatto",
+      "place": "",
+      "image": "/assets/projects/detail/images/1785321976882--1.g-rsel-1728-1038.webp",
+      "imageCandidates": [
+        {
+          "image": "/assets/projects/detail/images/1785321976882--1.g-rsel-1728-1038.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1802,
+          "slotKey": "hero",
+          "slotIndex": 1
+        },
+        {
+          "image": "/assets/projects/detail/images/1785321985457--2.-g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1460,
+          "slotKey": "slot01",
+          "slotIndex": 2
+        },
+        {
+          "image": "/assets/projects/detail/images/1785321991170--3.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1875,
+          "naturalHeight": 2500,
+          "slotKey": "slot02",
+          "slotIndex": 3
+        },
+        {
+          "image": "/assets/projects/detail/images/1785321994593--4.g-rsel-640-361.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 846,
+          "slotKey": "slot03",
+          "slotIndex": 4
+        },
+        {
+          "image": "/assets/projects/detail/images/1785321999403--5.g-rsel-640-853.webp",
+          "mediaType": "image",
+          "naturalWidth": 2000,
+          "naturalHeight": 2666,
+          "slotKey": "slot04",
+          "slotIndex": 5
+        },
+        {
+          "image": "/assets/projects/detail/images/1785322002602--6.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot05",
+          "slotIndex": 6
+        },
+        {
+          "image": "/assets/projects/detail/images/1785322007564--7.g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 2500,
+          "naturalHeight": 1216,
+          "slotKey": "slot06",
+          "slotIndex": 7
+        },
+        {
+          "image": "/assets/projects/detail/images/1785322013935--8.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot07",
+          "slotIndex": 8
+        },
+        {
+          "image": "/assets/projects/detail/images/1785322017578--9.g-rsel-390-520.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot08",
+          "slotIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "project-459341",
+      "slug": "maison-revka-mandarin-oriental",
+      "category": "F&B",
+      "expertise": "Build",
+      "title": "Maison Revka",
+      "place": "",
+      "image": "/assets/projects/detail/images/1782461613318--1.g-rsel-1728-1038.webp",
+      "imageCandidates": [
+        {
+          "image": "/assets/projects/detail/images/1782461613318--1.g-rsel-1728-1038.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1802,
+          "slotKey": "hero",
+          "slotIndex": 1
+        },
+        {
+          "image": "/assets/projects/detail/images/1782461619535--2.-g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1460,
+          "slotKey": "slot01",
+          "slotIndex": 2
+        },
+        {
+          "image": "/assets/projects/detail/images/1782461625754--3.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1875,
+          "naturalHeight": 2500,
+          "slotKey": "slot02",
+          "slotIndex": 3
+        },
+        {
+          "image": "/assets/projects/detail/images/1782461631191--4.g-rsel-640-361.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 846,
+          "slotKey": "slot03",
+          "slotIndex": 4
+        },
+        {
+          "image": "/assets/projects/detail/images/1782461636226--5.g-rsel-640-853.webp",
+          "mediaType": "image",
+          "naturalWidth": 2000,
+          "naturalHeight": 2666,
+          "slotKey": "slot04",
+          "slotIndex": 5
+        },
+        {
+          "image": "/assets/projects/detail/images/1782461641005--6.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot05",
+          "slotIndex": 6
+        },
+        {
+          "image": "/assets/projects/detail/images/1782461646786--7.g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 2500,
+          "naturalHeight": 1216,
+          "slotKey": "slot06",
+          "slotIndex": 7
+        },
+        {
+          "image": "/assets/projects/detail/images/1782461653855--8.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot07",
+          "slotIndex": 8
+        },
+        {
+          "image": "/assets/projects/detail/images/1782461659158--9.g-rsel-390-520.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot08",
+          "slotIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "project-074205",
+      "slug": "olea-bar",
+      "category": "F&B",
+      "expertise": "Design+Build",
+      "title": "OLEA & BAR",
+      "place": "",
+      "image": "/assets/projects/detail/images/1782141739208--1.g-rsel-1728-1038.webp",
+      "imageCandidates": [
+        {
+          "image": "/assets/projects/detail/images/1782141739208--1.g-rsel-1728-1038.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1802,
+          "slotKey": "hero",
+          "slotIndex": 1
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141744823--2.-g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1460,
+          "slotKey": "slot01",
+          "slotIndex": 2
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141750694--3.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1875,
+          "naturalHeight": 2500,
+          "slotKey": "slot02",
+          "slotIndex": 3
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777378950182-olea-640-x-361.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 360,
+          "slotKey": "slot03",
+          "slotIndex": 4
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777379204650-olea-640-x-853.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 852,
+          "slotKey": "slot04",
+          "slotIndex": 5
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141757488--6.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot05",
+          "slotIndex": 6
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141764893--7.g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 2500,
+          "naturalHeight": 1216,
+          "slotKey": "slot06",
+          "slotIndex": 7
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141770195--8.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot07",
+          "slotIndex": 8
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777379036863-olea-390-x-520.mp4",
+          "mediaType": "video",
+          "naturalWidth": 390,
+          "naturalHeight": 520,
+          "slotKey": "slot08",
+          "slotIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "project-922200",
+      "slug": "the-leela-palace-signature-dining",
+      "category": "F&B",
+      "expertise": "Build",
+      "title": "NOBU",
+      "place": "",
+      "image": "/assets/projects/detail/1777041941157-hom_the-leela-palace-signature-dining_19.jpg",
+      "imageCandidates": [
+        {
+          "image": "/assets/projects/detail/1777041941157-hom_the-leela-palace-signature-dining_19.jpg",
+          "mediaType": "image",
+          "naturalWidth": 2232,
+          "naturalHeight": 1488,
+          "slotKey": "hero",
+          "slotIndex": 1
+        },
+        {
+          "image": "/assets/projects/detail/1777041965846-hom_the-leela-palace-signature-dining_14.jpg",
+          "mediaType": "image",
+          "naturalWidth": 2232,
+          "naturalHeight": 1488,
+          "slotKey": "slot01",
+          "slotIndex": 2
+        },
+        {
+          "image": "/assets/projects/detail/1777041987061-hom_the-leela-palace-signature-dining_9.jpg",
+          "mediaType": "image",
+          "naturalWidth": 2232,
+          "naturalHeight": 1488,
+          "slotKey": "slot02",
+          "slotIndex": 3
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777378582279-nobu-640-x-361.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 360,
+          "slotKey": "slot03",
+          "slotIndex": 4
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777378720111-nobu-640-x-853.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 852,
+          "slotKey": "slot04",
+          "slotIndex": 5
+        },
+        {
+          "image": "/assets/projects/detail/images/1777535819400-hom_the-leela-palace-signature-dining_14.jpg",
+          "mediaType": "image",
+          "naturalWidth": 2232,
+          "naturalHeight": 1488,
+          "slotKey": "slot05",
+          "slotIndex": 6
+        },
+        {
+          "image": "/assets/projects/detail/1777042035071-hom_the-leela-palace-signature-dining_10.jpg",
+          "mediaType": "image",
+          "naturalWidth": 2231,
+          "naturalHeight": 1488,
+          "slotKey": "slot06",
+          "slotIndex": 7
+        },
+        {
+          "image": "/assets/projects/detail/1777042043800-hom_the-leela-palace-signature-dining_17.jpg",
+          "mediaType": "image",
+          "naturalWidth": 2231,
+          "naturalHeight": 1488,
+          "slotKey": "slot07",
+          "slotIndex": 8
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777378816591-nobu-390-x-520.mp4",
+          "mediaType": "video",
+          "naturalWidth": 390,
+          "naturalHeight": 520,
+          "slotKey": "slot08",
+          "slotIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "project-741810",
+      "slug": "tata-leadership-tower-bengaluru",
+      "category": "Office",
+      "expertise": "Build",
+      "title": "TATA LEADERSHIP TOWER",
+      "place": "",
+      "image": "/assets/projects/detail/1777039763909-hom_thy-accounting_10.jpg",
+      "imageCandidates": [
+        {
+          "image": "/assets/projects/detail/1777039763909-hom_thy-accounting_10.jpg",
+          "mediaType": "image",
+          "naturalWidth": 2238,
+          "naturalHeight": 1492,
+          "slotKey": "hero",
+          "slotIndex": 1
+        },
+        {
+          "image": "/assets/projects/detail/1777039773525-hom_thy-accounting_9.jpg",
+          "mediaType": "image",
+          "naturalWidth": 2238,
+          "naturalHeight": 1492,
+          "slotKey": "slot01",
+          "slotIndex": 2
+        },
+        {
+          "image": "/assets/projects/detail/1777039784347-hom_thy-accounting_15.jpg",
+          "mediaType": "image",
+          "naturalWidth": 1492,
+          "naturalHeight": 2238,
+          "slotKey": "slot02",
+          "slotIndex": 3
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777377352739-thy-640-x-361.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 360,
+          "slotKey": "slot03",
+          "slotIndex": 4
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777377433129-thy-640-x-853.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 852,
+          "slotKey": "slot04",
+          "slotIndex": 5
+        },
+        {
+          "image": "/assets/projects/detail/images/1777536198148-hom_thy-accounting_1.jpg",
+          "mediaType": "image",
+          "naturalWidth": 2239,
+          "naturalHeight": 1492,
+          "slotKey": "slot05",
+          "slotIndex": 6
+        },
+        {
+          "image": "/assets/projects/detail/1777039826131-hom_thy-accounting_4.jpg",
+          "mediaType": "image",
+          "naturalWidth": 2238,
+          "naturalHeight": 1492,
+          "slotKey": "slot06",
+          "slotIndex": 7
+        },
+        {
+          "image": "/assets/projects/detail/1777039847333-hom_thy-accounting_17.jpg",
+          "mediaType": "image",
+          "naturalWidth": 1492,
+          "naturalHeight": 2239,
+          "slotKey": "slot07",
+          "slotIndex": 8
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777377566268-thy-390-x-520.mp4",
+          "mediaType": "video",
+          "naturalWidth": 390,
+          "naturalHeight": 520,
+          "slotKey": "slot08",
+          "slotIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "project-225417",
+      "slug": "hakkasan",
+      "category": "F&B",
+      "expertise": "Design+Build",
+      "title": "HAKKASAN",
+      "place": "",
+      "image": "/assets/projects/detail/images/1782141593575--1.g-rsel-1728-1038.webp",
+      "imageCandidates": [
+        {
+          "image": "/assets/projects/detail/images/1782141593575--1.g-rsel-1728-1038.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1802,
+          "slotKey": "hero",
+          "slotIndex": 1
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141597927--2.-g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1460,
+          "slotKey": "slot01",
+          "slotIndex": 2
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141605258--3.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1875,
+          "naturalHeight": 2500,
+          "slotKey": "slot02",
+          "slotIndex": 3
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777374526425-hakkasan-640-x-361.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 360,
+          "slotKey": "slot03",
+          "slotIndex": 4
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141612126--5.g-rsel-640-853.webp",
+          "mediaType": "image",
+          "naturalWidth": 2000,
+          "naturalHeight": 2666,
+          "slotKey": "slot04",
+          "slotIndex": 5
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777536551728-restaurant_with_glowing_202604081501.mp4",
+          "mediaType": "video",
+          "naturalWidth": 1280,
+          "naturalHeight": 720,
+          "slotKey": "slot05",
+          "slotIndex": 6
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141625660--7.g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 2500,
+          "naturalHeight": 1216,
+          "slotKey": "slot06",
+          "slotIndex": 7
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141634531--8.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot07",
+          "slotIndex": 8
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777374389263-hakkasan-390-x-520.mp4",
+          "mediaType": "video",
+          "naturalWidth": 390,
+          "naturalHeight": 520,
+          "slotKey": "slot08",
+          "slotIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "project-637731",
+      "slug": "molu",
+      "category": "Retail",
+      "expertise": "Design+Build",
+      "title": "MOLU",
+      "place": "",
+      "image": "/assets/projects/detail/images/1782141664506--1.g-rsel-1728-1038.webp",
+      "imageCandidates": [
+        {
+          "image": "/assets/projects/detail/images/1782141664506--1.g-rsel-1728-1038.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1802,
+          "slotKey": "hero",
+          "slotIndex": 1
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141685926--2.-g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1460,
+          "slotKey": "slot01",
+          "slotIndex": 2
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141693141--3.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1875,
+          "naturalHeight": 2500,
+          "slotKey": "slot02",
+          "slotIndex": 3
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777378315525-molu-640-x-361.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 360,
+          "slotKey": "slot03",
+          "slotIndex": 4
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777378366098-molu-640-x-853.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 852,
+          "slotKey": "slot04",
+          "slotIndex": 5
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141698941--6.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot05",
+          "slotIndex": 6
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141704218--7.g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 2500,
+          "naturalHeight": 1216,
+          "slotKey": "slot06",
+          "slotIndex": 7
+        },
+        {
+          "image": "/assets/projects/detail/images/1782141710369--8.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot07",
+          "slotIndex": 8
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777378447163-molu-390-x-520.mp4",
+          "mediaType": "video",
+          "naturalWidth": 390,
+          "naturalHeight": 520,
+          "slotKey": "slot08",
+          "slotIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "project-534441",
+      "slug": "nuup-restaurant",
+      "category": "Hospitality",
+      "expertise": "Design+Build",
+      "title": "NUUP HOTEL",
+      "place": "",
+      "image": "/assets/projects/detail/images/1781186055624--1.g-rsel-1728-1038.webp",
+      "imageCandidates": [
+        {
+          "image": "/assets/projects/detail/images/1781186055624--1.g-rsel-1728-1038.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1802,
+          "slotKey": "hero",
+          "slotIndex": 1
+        },
+        {
+          "image": "/assets/projects/detail/images/1781186065199--2.-g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1460,
+          "slotKey": "slot01",
+          "slotIndex": 2
+        },
+        {
+          "image": "/assets/projects/detail/images/1781186072768--3.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1875,
+          "naturalHeight": 2500,
+          "slotKey": "slot02",
+          "slotIndex": 3
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777373712799-nuup-640-x-361.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 360,
+          "slotKey": "slot03",
+          "slotIndex": 4
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777374159928-nuup-640-x-853.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 852,
+          "slotKey": "slot04",
+          "slotIndex": 5
+        },
+        {
+          "image": "/assets/projects/detail/images/1781186083268--6.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot05",
+          "slotIndex": 6
+        },
+        {
+          "image": "/assets/projects/detail/images/1781186095974--7.g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 2500,
+          "naturalHeight": 1216,
+          "slotKey": "slot06",
+          "slotIndex": 7
+        },
+        {
+          "image": "/assets/projects/detail/images/1781186104766--8.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot07",
+          "slotIndex": 8
+        },
+        {
+          "image": "/assets/projects/detail/images/1781186111077--9.g-rsel-390-520.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot08",
+          "slotIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "project-551684",
+      "slug": "ub-city-luxury-pavilion",
+      "category": "Retail",
+      "expertise": "Design",
+      "title": "BEYMEN",
+      "place": "",
+      "image": "/assets/projects/detail/1776837967235-hom_beymen-hilltown_12.jpg",
+      "imageCandidates": [
+        {
+          "image": "/assets/projects/detail/1776837967235-hom_beymen-hilltown_12.jpg",
+          "mediaType": "image",
+          "naturalWidth": 1818,
+          "naturalHeight": 1212,
+          "slotKey": "hero",
+          "slotIndex": 1
+        },
+        {
+          "image": "/assets/projects/detail/1776837982321-hom_beymen-hilltown_16.jpg",
+          "mediaType": "image",
+          "naturalWidth": 1818,
+          "naturalHeight": 1212,
+          "slotKey": "slot01",
+          "slotIndex": 2
+        },
+        {
+          "image": "/assets/projects/detail/images/1782137184242--3.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1875,
+          "naturalHeight": 2500,
+          "slotKey": "slot02",
+          "slotIndex": 3
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777376208080-beymen-hilltown-640-x-361.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 360,
+          "slotKey": "slot03",
+          "slotIndex": 4
+        },
+        {
+          "image": "/assets/projects/detail/images/1782137224195--5.g-rsel-640-853.webp",
+          "mediaType": "image",
+          "naturalWidth": 2000,
+          "naturalHeight": 2666,
+          "slotKey": "slot04",
+          "slotIndex": 5
+        },
+        {
+          "image": "/assets/projects/detail/images/1782137233888--6.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot05",
+          "slotIndex": 6
+        },
+        {
+          "image": "/assets/projects/detail/images/1782137303809--7.g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 2500,
+          "naturalHeight": 1216,
+          "slotKey": "slot06",
+          "slotIndex": 7
+        },
+        {
+          "image": "/assets/projects/detail/images/1782137316168--8.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot07",
+          "slotIndex": 8
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777376296397-beymen-hill-390-x-520.mp4",
+          "mediaType": "video",
+          "naturalWidth": 390,
+          "naturalHeight": 520,
+          "slotKey": "slot08",
+          "slotIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "project-546620",
+      "slug": "infosys-executive-campus-bengaluru",
+      "category": "Office",
+      "expertise": "Design+Build",
+      "title": "INFOSYS EXECUTIVE CAMPUS",
+      "place": "",
+      "image": "/assets/projects/detail/images/1782138923684--1.g-rsel-1728-1038.webp",
+      "imageCandidates": [
+        {
+          "image": "/assets/projects/detail/images/1782138923684--1.g-rsel-1728-1038.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1802,
+          "slotKey": "hero",
+          "slotIndex": 1
+        },
+        {
+          "image": "/assets/projects/detail/images/1782138930634--2.g-rsel-1728-1038.webp",
+          "mediaType": "image",
+          "naturalWidth": 3000,
+          "naturalHeight": 1460,
+          "slotKey": "slot01",
+          "slotIndex": 2
+        },
+        {
+          "image": "/assets/projects/detail/images/1782138937237--3.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1875,
+          "naturalHeight": 2500,
+          "slotKey": "slot02",
+          "slotIndex": 3
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777372152920-infosys-executive-campus-bengaluru-640-x-361.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 360,
+          "slotKey": "slot03",
+          "slotIndex": 4
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777372462920-infosys-executive-campus-bengaluru-640-x-853.mp4",
+          "mediaType": "video",
+          "naturalWidth": 640,
+          "naturalHeight": 852,
+          "slotKey": "slot04",
+          "slotIndex": 5
+        },
+        {
+          "image": "/assets/projects/detail/images/1782138965328--6.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot05",
+          "slotIndex": 6
+        },
+        {
+          "image": "/assets/projects/detail/images/1782138971038--7.g-rsel-1632-794.webp",
+          "mediaType": "image",
+          "naturalWidth": 2500,
+          "naturalHeight": 1216,
+          "slotKey": "slot06",
+          "slotIndex": 7
+        },
+        {
+          "image": "/assets/projects/detail/images/1782138976176--8.g-rsel-816-1088.webp",
+          "mediaType": "image",
+          "naturalWidth": 1500,
+          "naturalHeight": 2000,
+          "slotKey": "slot07",
+          "slotIndex": 8
+        },
+        {
+          "image": "/assets/projects/detail/videos/1777372580861-infosys-executive-campus-bengaluru-390-x-520.mp4",
+          "mediaType": "video",
+          "naturalWidth": 390,
+          "naturalHeight": 520,
+          "slotKey": "slot08",
+          "slotIndex": 9
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 10,
+    "total": 10,
+    "hasMore": false
+  }
+}
