@@ -536,26 +536,39 @@ body.about-page-active .page-top-header.hom-nav-scrolled {
   position: relative !important;
   min-height: 720px !important;
   height: 100svh !important;
-  background: #000000 !important;
+  background: transparent !important;
   overflow: hidden !important;
 }
 
-.about-hero-bg {
+.about-hero video.about-hero-video,
+video.about-hero-bg {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   object-position: center !important;
+  z-index: 1 !important;
   display: block !important;
   opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Hide static placeholder images so video is 100% visible */
+.about-hero img.about-hero-bg,
+.about-hero img.about-hero-bg-desktop,
+.about-hero img.about-hero-bg-mobile {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 .about-hero-overlay {
   position: absolute !important;
   inset: 0 !important;
-  background: rgba(0, 0, 0, 0.45) !important;
-  z-index: 1 !important;
+  background: rgba(0, 0, 0, 0.25) !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
 }
 
 
@@ -1292,30 +1305,39 @@ body.about-page-active .page-top-header.hom-nav-scrolled {
   height: 100svh !important;
   min-height: 720px !important;
   width: 100% !important;
-  background: #000000 !important;
+  background: transparent !important;
 }
 
 .about-hero video.about-hero-video,
-.about-hero-video {
+.about-hero-video,
+video.about-hero-bg {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   object-position: center !important;
-  z-index: 0 !important;
+  z-index: 1 !important;
   display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-.about-hero-bg {
-  z-index: 0 !important;
+/* Hide static background images so video is 100% visible */
+.about-hero img.about-hero-bg,
+.about-hero img.about-hero-bg-desktop,
+.about-hero img.about-hero-bg-mobile {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  z-index: -1 !important;
 }
 
 .about-hero-overlay {
   position: absolute !important;
   inset: 0 !important;
-  background: rgba(0, 0, 0, 0.4) !important;
-  z-index: 1 !important;
+  background: rgba(0, 0, 0, 0.22) !important;
+  z-index: 2 !important;
   pointer-events: none !important;
 }
 
@@ -1331,7 +1353,7 @@ h1.about-hero-title {
   margin: 0 !important;
   width: auto !important;
   max-width: 90vw !important;
-  z-index: 2 !important;
+  z-index: 10 !important;
   color: #ffffff !important;
   display: flex !important;
   justify-content: center !important;
@@ -1362,7 +1384,7 @@ h1.about-hero-title {
   bottom: 33px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  z-index: 2 !important;
+  z-index: 10 !important;
 }
 </style>
 </head><body  class="about-page-active"><!--teleport start anchor--><div class="site-opener" style="--site-opener-reveal-duration:1400ms;--site-opener-exit-duration:300ms;" role="presentation" data-v-663ca57a><div class="site-opener__frame" data-v-663ca57a><div class="site-opener__copy" data-v-663ca57a><p class="site-opener__line site-opener__line--main" aria-hidden="true" data-v-663ca57a><span class="site-opener__accent" data-v-663ca57a>Welcome to</span><span class="site-opener__core" data-v-663ca57a> House Of Meda</span></p><span class="site-opener__edge-shadow" aria-hidden="true" data-v-663ca57a></span></div></div></div><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><div id="__nuxt"><div class="min-h-screen"><div class="public-layout-shell min-h-screen bg-[#f9f9f9] text-black" data-v-0670cf9d><main data-v-0670cf9d><!--[--><section class="about-page" data-node-id="1:1956" style="--about-accent:#705335;" data-v-2103ac93><section class="about-hero" data-node-id="1:1997" data-v-2103ac93><video autoplay="True" loop="True" muted="True" playsinline="True" disablepictureinpicture="" disableremoteplayback="" preload="auto" class="about-hero-bg about-hero-video" poster="/assets/about/hero/hero-bg-desktop.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
@@ -1768,7 +1790,7 @@ h1.about-hero-title {
       video.setAttribute('autoplay', '');
       video.setAttribute('disablepictureinpicture', '');
       video.setAttribute('disableremoteplayback', '');
-      video.style.cssText = 'position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;';
+      video.style.cssText = 'position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; display: block; opacity: 1; visibility: visible;';
       
       var src = document.createElement('source');
       src.src = '/assets/videos/hom_showcase_1.mp4';
@@ -1776,14 +1798,25 @@ h1.about-hero-title {
       video.appendChild(src);
       
       hero.insertBefore(video, hero.firstChild);
-      video.play().catch(function() {});
     } else {
-      if (video.paused) {
-        video.play().catch(function() {});
-      }
+      video.style.zIndex = '1';
+      video.style.display = 'block';
+      video.style.opacity = '1';
+      video.style.visibility = 'visible';
     }
 
-    // Ensure title remains centered
+    if (video.paused) {
+      video.muted = true;
+      video.play().catch(function() {});
+    }
+
+    // Hide any static images inside hero so video is not blocked
+    var staticImgs = hero.querySelectorAll('img.about-hero-bg, img.about-hero-bg-desktop, img.about-hero-bg-mobile');
+    staticImgs.forEach(function(img) {
+      img.style.setProperty('display', 'none', 'important');
+    });
+
+    // Ensure title remains centered on top of video
     var title = hero.querySelector('.about-hero-title');
     if (title && title.style.left !== '50%') {
       title.style.setProperty('left', '50%', 'important');
@@ -1793,6 +1826,7 @@ h1.about-hero-title {
       title.style.setProperty('text-align', 'center', 'important');
       title.style.setProperty('display', 'flex', 'important');
       title.style.setProperty('justify-content', 'center', 'important');
+      title.style.setProperty('z-index', '10', 'important');
     }
   }
 
@@ -1801,8 +1835,23 @@ h1.about-hero-title {
   } else {
     ensureAboutHeroVideo();
   }
-  [100, 400, 1000, 2500].forEach(function(ms) {
+  [50, 150, 400, 1000, 2500].forEach(function(ms) {
     setTimeout(ensureAboutHeroVideo, ms);
+  });
+
+  // Autoplay fallback on user interaction
+  function onFirstInteract() {
+    var v = document.querySelector('.about-hero video');
+    if (v && v.paused) {
+      v.muted = true;
+      v.play().catch(function() {});
+    }
+    ['click', 'touchstart', 'scroll'].forEach(function(evt) {
+      document.removeEventListener(evt, onFirstInteract);
+    });
+  }
+  ['click', 'touchstart', 'scroll'].forEach(function(evt) {
+    document.addEventListener(evt, onFirstInteract, { passive: true, once: true });
   });
 
   var observer = new MutationObserver(function() {
