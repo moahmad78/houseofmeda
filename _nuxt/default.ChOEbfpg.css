@@ -474,3 +474,125 @@ img.bg-tile ~ img.bg-tile {
     grid-template-columns: 1fr !important;
   }
 }
+
+
+/* FLOATING BADGES (QUOTATION + WHATSAPP) */
+.hom-quotation-wrap,
+.awwwards-badge,
+.awwwards-badge.hom-quotation-wrap {
+  line-height: 1 !important;
+  position: fixed !important;
+  right: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 99999 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  gap: 12px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.hom-quotation-badge,
+.hom-whatsapp-badge {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 48px !important;
+  padding: 16px 0 18px 0 !important;
+  background: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-right: none !important;
+  border-radius: 8px 0 0 8px !important;
+  box-shadow: -4px 8px 30px rgba(0, 0, 0, 0.08) !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  outline: none !important;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease !important;
+  user-select: none !important;
+}
+
+.hom-quotation-badge {
+  height: 160px !important;
+}
+
+.hom-whatsapp-badge {
+  height: 154px !important;
+}
+
+.hom-quotation-badge:hover,
+.hom-quotation-badge:focus-visible,
+.hom-whatsapp-badge:hover,
+.hom-whatsapp-badge:focus-visible {
+  transform: translateX(-4px) !important;
+  background: #111111 !important;
+  color: #ffffff !important;
+  box-shadow: -8px 12px 32px rgba(0, 0, 0, 0.22) !important;
+}
+
+.hom-quotation-badge:hover .hom-badge-icon {
+  color: #c49a6c !important;
+}
+
+.hom-whatsapp-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 22px !important;
+  height: 22px !important;
+  color: #25D366 !important;
+  transition: transform 0.25s ease !important;
+}
+
+.hom-whatsapp-badge:hover .hom-whatsapp-icon {
+  color: #25D366 !important;
+  transform: scale(1.15) !important;
+}
+
+.hom-badge-icon {
+  font-family: "Fraunces", "Cinzel", "Georgia", serif !important;
+  font-size: 23px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.02em !important;
+  color: #705335 !important;
+  transition: color 0.2s ease !important;
+}
+
+.hom-badge-text {
+  writing-mode: vertical-rl !important;
+  transform: rotate(180deg) !important;
+  text-orientation: mixed !important;
+  font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 640px) {
+  .hom-quotation-badge {
+    width: 42px !important;
+    height: 135px !important;
+    padding: 12px 0 14px 0 !important;
+  }
+  .hom-whatsapp-badge {
+    width: 42px !important;
+    height: 130px !important;
+    padding: 12px 0 14px 0 !important;
+  }
+  .hom-badge-icon {
+    font-size: 19px !important;
+  }
+  .hom-badge-text {
+    font-size: 9px !important;
+  }
+  .hom-whatsapp-icon {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}

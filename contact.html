@@ -663,9 +663,131 @@ img.bg-tile ~ img.bg-tile {
   }
 }
 </style>
+<style>
+/* FLOATING BADGES (QUOTATION + WHATSAPP) */
+.hom-quotation-wrap,
+.awwwards-badge,
+.awwwards-badge.hom-quotation-wrap {
+  line-height: 1 !important;
+  position: fixed !important;
+  right: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 99999 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  gap: 12px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.hom-quotation-badge,
+.hom-whatsapp-badge {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 48px !important;
+  padding: 16px 0 18px 0 !important;
+  background: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-right: none !important;
+  border-radius: 8px 0 0 8px !important;
+  box-shadow: -4px 8px 30px rgba(0, 0, 0, 0.08) !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  outline: none !important;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease !important;
+  user-select: none !important;
+}
+
+.hom-quotation-badge {
+  height: 160px !important;
+}
+
+.hom-whatsapp-badge {
+  height: 154px !important;
+}
+
+.hom-quotation-badge:hover,
+.hom-quotation-badge:focus-visible,
+.hom-whatsapp-badge:hover,
+.hom-whatsapp-badge:focus-visible {
+  transform: translateX(-4px) !important;
+  background: #111111 !important;
+  color: #ffffff !important;
+  box-shadow: -8px 12px 32px rgba(0, 0, 0, 0.22) !important;
+}
+
+.hom-quotation-badge:hover .hom-badge-icon {
+  color: #c49a6c !important;
+}
+
+.hom-whatsapp-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 22px !important;
+  height: 22px !important;
+  color: #25D366 !important;
+  transition: transform 0.25s ease !important;
+}
+
+.hom-whatsapp-badge:hover .hom-whatsapp-icon {
+  color: #25D366 !important;
+  transform: scale(1.15) !important;
+}
+
+.hom-badge-icon {
+  font-family: "Fraunces", "Cinzel", "Georgia", serif !important;
+  font-size: 23px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.02em !important;
+  color: #705335 !important;
+  transition: color 0.2s ease !important;
+}
+
+.hom-badge-text {
+  writing-mode: vertical-rl !important;
+  transform: rotate(180deg) !important;
+  text-orientation: mixed !important;
+  font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 640px) {
+  .hom-quotation-badge {
+    width: 42px !important;
+    height: 135px !important;
+    padding: 12px 0 14px 0 !important;
+  }
+  .hom-whatsapp-badge {
+    width: 42px !important;
+    height: 130px !important;
+    padding: 12px 0 14px 0 !important;
+  }
+  .hom-badge-icon {
+    font-size: 19px !important;
+  }
+  .hom-badge-text {
+    font-size: 9px !important;
+  }
+  .hom-whatsapp-icon {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+</style>
 </head><body  class="contact-page-active"><!--teleport start anchor--><div class="site-opener" style="--site-opener-reveal-duration:1400ms;--site-opener-exit-duration:300ms;" role="presentation" data-v-663ca57a><div class="site-opener__frame" data-v-663ca57a><div class="site-opener__copy" data-v-663ca57a><p class="site-opener__line site-opener__line--main" aria-hidden="true" data-v-663ca57a><span class="site-opener__accent" data-v-663ca57a>Welcome to</span><span class="site-opener__core" data-v-663ca57a> House Of Meda</span></p><span class="site-opener__edge-shadow" aria-hidden="true" data-v-663ca57a></span></div></div></div><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><div id="__nuxt"><div class="min-h-screen"><div class="public-layout-shell min-h-screen bg-[#f9f9f9] text-black" data-v-0670cf9d><main data-v-0670cf9d><!--[--><section class="contact-page" data-node-id="1:1618" data-v-ca296ebd><div class="contact-page-shell" data-v-ca296ebd><div class="page-top-header page-top-header--pre-enter" inert aria-hidden="true" data-v-ca296ebd data-v-396ee670><a href="/" class="page-top-header-logo" aria-label="House of Meda" tabindex="-1" data-v-396ee670><img src="/assets/expertise/header/logo.svg" alt="House Of Meda" data-v-396ee670 decoding="async"></a><button class="page-top-header-menu" type="button" aria-label="Menu" aria-expanded="false" tabindex="-1" data-v-396ee670><img src="/assets/expertise/header/menu-icon.svg" alt="" aria-hidden="true" data-v-396ee670 decoding="async"></button><!--[--><!----><!--teleport start--><!--teleport end--><!--]--></div><section class="contact-hero" data-v-ca296ebd><h1 class="contact-title" data-node-id="1:1659" data-v-ca296ebd data-v-7beae6bc><!--[--><span class="line-mask-motion-text__mask" data-v-7beae6bc><span class="line-mask-motion-text__line" style="opacity:0;transform:translateY(150%);" data-v-7beae6bc><!--[--><!--[--><!--[-->CONTACT<!--]--><!--]--><!--]--></span></span><!--]--><span class="line-mask-motion-text__measure" aria-hidden="true" data-v-7beae6bc><!--[--><!--[--><span class="" data-copy-word-index="0" data-v-7beae6bc>CONTACT</span><!--]--><!--]--></span></h1><div class="contact-tagline-shell" data-v-ca296ebd><p class="contact-tagline" data-node-id="1:1661" data-v-ca296ebd><!--[--><span class="contact-tagline-line-mask" data-v-ca296ebd><span class="contact-tagline-line" style="opacity:1;transform:translateY(100%);" data-v-ca296ebd><!--[--><!--[--><!--[-->We<!--]--><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><!--[-->carry<!--]--><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><!--[-->the<!--]--><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><!--[-->flag<!--]--><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><!--[-->of<!--]--><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="contact-tagline-accent" data-v-ca296ebd>success,</span><!--]--><!--[--><!--[-->
 <!--]--><!--]--><!--[--><!--[-->around<!--]--><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><!--[-->the<!--]--><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="contact-tagline-accent" data-v-ca296ebd>world.</span><!--]--><!--]--></span></span><!--]--></p><p class="contact-tagline contact-tagline-measure" aria-hidden="true" data-v-ca296ebd><!--[--><!--[--><span class="" data-copy-word-index="0" data-v-ca296ebd>We</span><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="" data-copy-word-index="1" data-v-ca296ebd>carry</span><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="" data-copy-word-index="2" data-v-ca296ebd>the</span><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="" data-copy-word-index="3" data-v-ca296ebd>flag</span><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="" data-copy-word-index="4" data-v-ca296ebd>of</span><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="contact-tagline-accent" data-copy-word-index="5" data-v-ca296ebd>success,</span><!--]--><!--[--><!--[-->
-<!--]--><!--]--><!--[--><span class="" data-copy-word-index="6" data-v-ca296ebd>around</span><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="" data-copy-word-index="7" data-v-ca296ebd>the</span><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="contact-tagline-accent" data-copy-word-index="8" data-v-ca296ebd>world.</span><!--]--><!--]--></p></div></section></div><!--[--><section class="contact-map-shell" data-v-ca296ebd><div class="contact-map-stage" data-v-ca296ebd><div class="contact-map-frame" data-v-ca296ebd><div class="contact-map-placeholder" data-v-ca296ebd></div></div></div></section><!--]--><!--teleport start--><!--teleport end--></section><!--]--></main><!----><!--teleport start--><!--teleport end--><!----><!----><div class="awwwards-badge hom-quotation-wrap" id="awwwards"><button id="hom-quotation-trigger" class="hom-quotation-badge" type="button" aria-label="Request Quotation"><span class="hom-badge-icon">Q.</span><span class="hom-badge-text">QUOTATION</span></button></div><footer class="hom-footer hom-footer" data-node-id="1:587" data-v-0670cf9d data-v-79966a0d><img src="/assets/footer/top-line.svg" alt="" aria-hidden="true" class="footer-top-line" data-v-79966a0d decoding="async"><div class="footer-container" data-node-id="1:588" data-v-79966a0d><div class="footer-links" data-node-id="1:589" data-v-79966a0d><a href="/" class="footer-logo-wrap" aria-label="Go to homepage" data-node-id="1:590" data-v-79966a0d><img src="/assets/footer/logo.svg" alt="House Of Meda" class="footer-logo" data-v-79966a0d decoding="async"></a><nav class="footer-nav" aria-label="Footer navigation" data-node-id="1:626" data-v-79966a0d><!--[--><!--[--><a href="/expertise" class="nav-link" data-v-79966a0d>EXPERTISE</a><!--]--><!--[--><a href="/projects" class="nav-link" data-v-79966a0d>PROJECTS</a><!--]--><!--[--><a href="/about" class="nav-link" data-v-79966a0d>ABOUT</a><!--]--><!--[--><a href="/news-press" class="nav-link" data-v-79966a0d>NEWS &amp; PRESS</a><!--]--><!--[--><a aria-current="page" href="/contact" class="router-link-active router-link-exact-active nav-link" data-v-79966a0d>CONTACT</a><!--]--><!--]--></nav><div class="social-links" data-node-id="1:633" data-v-79966a0d><!--[--><!--[--><a href="https://www.facebook.com/people/House-Of-Meda/61587195871156/" target="_blank" rel="noreferrer noopener" class="social-link" data-v-79966a0d><span data-v-79966a0d>Facebook</span><span aria-hidden="true" data-v-79966a0d>→</span></a><!--]--><!--[--><a href="https://www.instagram.com/house_of.meda/" target="_blank" rel="noreferrer noopener" class="social-link" data-v-79966a0d><span data-v-79966a0d>Instagram</span><span aria-hidden="true" data-v-79966a0d>→</span></a><!--]--><!--[--><a href="https://in.linkedin.com/company/house-of-meda" target="_blank" rel="noreferrer noopener" class="social-link" data-v-79966a0d><span data-v-79966a0d>Linkedin</span><span aria-hidden="true" data-v-79966a0d>→</span></a><!--]--><!--[--><a href="https://pin.it/3nQYIsZy4" target="_blank" rel="noreferrer noopener" class="social-link" data-v-79966a0d><span data-v-79966a0d>Pinterest</span><span aria-hidden="true" data-v-79966a0d>→</span></a><!--]--><!--]--></div><div class="newsletter" data-node-id="1:652" data-v-79966a0d><p class="newsletter-title" data-v-79966a0d>Newsletter</p><form class="newsletter-form" aria-label="Newsletter form" data-v-79966a0d><input value="" class="newsletter-input" type="email" placeholder="Your Email Address" aria-label="Your Email Address" data-v-79966a0d><button class="newsletter-submit" type="submit" aria-label="Newsletter" data-v-79966a0d>→</button></form><!----></div></div><div class="footer-privacy-row" data-v-79966a0d=""><a class="footer-privacy-link" data-v-79966a0d="" href="/pages/projects.html"><span data-v-79966a0d="">Data Privacy</span><span aria-hidden="true" data-v-79966a0d="">→</span></a></div><div class="footer-info" data-node-id="1:661" data-v-79966a0d><p class="info-text" data-v-79966a0d>HOUSE OF MEDA DESIGN + BUILD STUDIO PVT. LTD.</p><p class="info-text" data-v-79966a0d>©2026 HOUSE OF MEDA, ALL RIGHTS RESERVED.</p><p class="info-credit" data-v-79966a0d><span class="credit-muted" data-v-79966a0d>Designed by</span><a href="https://www.instagram.com/sahil_sheikh78/" target="_blank" rel="noreferrer noopener" class="credit-link" data-v-79966a0d>Sahil Sheikh</a></p></div><div class="footer-background" data-node-id="1:665" data-v-0670cf9d="" data-v-79966a0d=""><img alt="House of Meda" aria-hidden="true" class="bg-tile" data-v-79966a0d="" src="/assets/footer/background-1.svg" style="max-width:min(850px, 85vw); height:auto; margin:0 auto; display:block;" decoding="async"/></div></div></footer></div></div></div><div id="teleports"></div><script>window.__NUXT__={};window.__NUXT__.config={public:{siteUrl:"https://houseofmeda.com",supabase:{url:"https://kbusjbnltvpstuavckvd.supabase.co",key:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidXNqYm5sdHZwc3R1YXZja3ZkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQxOTMxMDMsImV4cCI6MjA4OTc2OTEwM30.hdlysoe9AUCgbDNfv6TRueMFiD3FnZDDoFgMPpzPxfI",redirect:true,redirectOptions:{login:"/auth/login",callback:"/auth/callback",exclude:["/**"],cookieRedirect:false,saveRedirectToCookie:false},cookieName:"sb",cookiePrefix:"sb-kbusjbnltvpstuavckvd-auth-token",useSsrCookies:true,cookieOptions:{maxAge:28800,sameSite:"lax",secure:true},clientOptions:{}},i18n:{baseUrl:"",defaultLocale:"en",defaultDirection:"ltr",strategy:"prefix_except_default",lazy:false,rootRedirect:"",routesNameSeparator:"___",defaultLocaleRouteNameSuffix:"default",skipSettingLocaleOnNavigate:false,differentDomains:false,trailingSlash:false,locales:[{code:"en",name:"English",files:[{path:"/src/i18n/locales/en.json",cache:""}]}],detectBrowserLanguage:{alwaysRedirect:false,cookieCrossOrigin:false,cookieDomain:"",cookieKey:"i18n_redirected",cookieSecure:false,fallbackLocale:"en",redirectOn:"no prefix",useCookie:true},experimental:{localeDetector:"localeDetector.ts",switchLocalePathLinkSSR:false,autoImportTranslationFunctions:false,typedPages:true,typedOptionsAndMessages:false,generatedLocaleFilePathFormat:"absolute",alternateLinkCanonicalQueries:false,hmr:true},multiDomainLocales:false,domainLocales:{en:{domain:""}}}},app:{baseURL:"/",buildId:"215151b9-820f-4566-991c-820071f564e3",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script>
+<!--]--><!--]--><!--[--><span class="" data-copy-word-index="6" data-v-ca296ebd>around</span><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="" data-copy-word-index="7" data-v-ca296ebd>the</span><!--]--><!--[--><!--[--> <!--]--><!--]--><!--[--><span class="contact-tagline-accent" data-copy-word-index="8" data-v-ca296ebd>world.</span><!--]--><!--]--></p></div></section></div><!--[--><section class="contact-map-shell" data-v-ca296ebd><div class="contact-map-stage" data-v-ca296ebd><div class="contact-map-frame" data-v-ca296ebd><div class="contact-map-placeholder" data-v-ca296ebd></div></div></div></section><!--]--><!--teleport start--><!--teleport end--></section><!--]--></main><!----><!--teleport start--><!--teleport end--><!----><!----><div class="awwwards-badge hom-quotation-wrap" id="awwwards"><button id="hom-quotation-trigger" class="hom-quotation-badge" type="button" aria-label="Request Quotation"><span class="hom-badge-icon">Q.</span><span class="hom-badge-text">QUOTATION</span></button><a id="hom-whatsapp-trigger" class="hom-whatsapp-badge" href="https://wa.me/918553303558?text=Hello%20House%20of%20Meda%2C%20I%20would%20like%20to%20inquire%20about%20your%20design%20and%20architecture%20services." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><span class="hom-whatsapp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></span><span class="hom-badge-text">WHATSAPP</span></a></div><footer class="hom-footer hom-footer" data-node-id="1:587" data-v-0670cf9d data-v-79966a0d><img src="/assets/footer/top-line.svg" alt="" aria-hidden="true" class="footer-top-line" data-v-79966a0d decoding="async"><div class="footer-container" data-node-id="1:588" data-v-79966a0d><div class="footer-links" data-node-id="1:589" data-v-79966a0d><a href="/" class="footer-logo-wrap" aria-label="Go to homepage" data-node-id="1:590" data-v-79966a0d><img src="/assets/footer/logo.svg" alt="House Of Meda" class="footer-logo" data-v-79966a0d decoding="async"></a><nav class="footer-nav" aria-label="Footer navigation" data-node-id="1:626" data-v-79966a0d><!--[--><!--[--><a href="/expertise" class="nav-link" data-v-79966a0d>EXPERTISE</a><!--]--><!--[--><a href="/projects" class="nav-link" data-v-79966a0d>PROJECTS</a><!--]--><!--[--><a href="/about" class="nav-link" data-v-79966a0d>ABOUT</a><!--]--><!--[--><a href="/news-press" class="nav-link" data-v-79966a0d>NEWS &amp; PRESS</a><!--]--><!--[--><a aria-current="page" href="/contact" class="router-link-active router-link-exact-active nav-link" data-v-79966a0d>CONTACT</a><!--]--><!--]--></nav><div class="social-links" data-node-id="1:633" data-v-79966a0d><!--[--><!--[--><a href="https://www.facebook.com/people/House-Of-Meda/61587195871156/" target="_blank" rel="noreferrer noopener" class="social-link" data-v-79966a0d><span data-v-79966a0d>Facebook</span><span aria-hidden="true" data-v-79966a0d>→</span></a><!--]--><!--[--><a href="https://www.instagram.com/house_of.meda/" target="_blank" rel="noreferrer noopener" class="social-link" data-v-79966a0d><span data-v-79966a0d>Instagram</span><span aria-hidden="true" data-v-79966a0d>→</span></a><!--]--><!--[--><a href="https://in.linkedin.com/company/house-of-meda" target="_blank" rel="noreferrer noopener" class="social-link" data-v-79966a0d><span data-v-79966a0d>Linkedin</span><span aria-hidden="true" data-v-79966a0d>→</span></a><!--]--><!--[--><a href="https://pin.it/3nQYIsZy4" target="_blank" rel="noreferrer noopener" class="social-link" data-v-79966a0d><span data-v-79966a0d>Pinterest</span><span aria-hidden="true" data-v-79966a0d>→</span></a><!--]--><!--]--></div><div class="newsletter" data-node-id="1:652" data-v-79966a0d><p class="newsletter-title" data-v-79966a0d>Newsletter</p><form class="newsletter-form" aria-label="Newsletter form" data-v-79966a0d><input value="" class="newsletter-input" type="email" placeholder="Your Email Address" aria-label="Your Email Address" data-v-79966a0d><button class="newsletter-submit" type="submit" aria-label="Newsletter" data-v-79966a0d>→</button></form><!----></div></div><div class="footer-privacy-row" data-v-79966a0d=""><a class="footer-privacy-link" data-v-79966a0d="" href="/pages/projects.html"><span data-v-79966a0d="">Data Privacy</span><span aria-hidden="true" data-v-79966a0d="">→</span></a></div><div class="footer-info" data-node-id="1:661" data-v-79966a0d><p class="info-text" data-v-79966a0d>HOUSE OF MEDA DESIGN + BUILD STUDIO PVT. LTD.</p><p class="info-text" data-v-79966a0d>©2026 HOUSE OF MEDA, ALL RIGHTS RESERVED.</p><p class="info-credit" data-v-79966a0d><span class="credit-muted" data-v-79966a0d>Designed by</span><a href="https://www.instagram.com/sahil_sheikh78/" target="_blank" rel="noreferrer noopener" class="credit-link" data-v-79966a0d>Sahil Sheikh</a></p></div><div class="footer-background" data-node-id="1:665" data-v-0670cf9d="" data-v-79966a0d=""><img alt="House of Meda" aria-hidden="true" class="bg-tile" data-v-79966a0d="" src="/assets/footer/background-1.svg" style="max-width:min(850px, 85vw); height:auto; margin:0 auto; display:block;" decoding="async"/></div></div></footer></div></div></div><div id="teleports"></div><script>window.__NUXT__={};window.__NUXT__.config={public:{siteUrl:"https://houseofmeda.com",supabase:{url:"https://kbusjbnltvpstuavckvd.supabase.co",key:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtidXNqYm5sdHZwc3R1YXZja3ZkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQxOTMxMDMsImV4cCI6MjA4OTc2OTEwM30.hdlysoe9AUCgbDNfv6TRueMFiD3FnZDDoFgMPpzPxfI",redirect:true,redirectOptions:{login:"/auth/login",callback:"/auth/callback",exclude:["/**"],cookieRedirect:false,saveRedirectToCookie:false},cookieName:"sb",cookiePrefix:"sb-kbusjbnltvpstuavckvd-auth-token",useSsrCookies:true,cookieOptions:{maxAge:28800,sameSite:"lax",secure:true},clientOptions:{}},i18n:{baseUrl:"",defaultLocale:"en",defaultDirection:"ltr",strategy:"prefix_except_default",lazy:false,rootRedirect:"",routesNameSeparator:"___",defaultLocaleRouteNameSuffix:"default",skipSettingLocaleOnNavigate:false,differentDomains:false,trailingSlash:false,locales:[{code:"en",name:"English",files:[{path:"/src/i18n/locales/en.json",cache:""}]}],detectBrowserLanguage:{alwaysRedirect:false,cookieCrossOrigin:false,cookieDomain:"",cookieKey:"i18n_redirected",cookieSecure:false,fallbackLocale:"en",redirectOn:"no prefix",useCookie:true},experimental:{localeDetector:"localeDetector.ts",switchLocalePathLinkSSR:false,autoImportTranslationFunctions:false,typedPages:true,typedOptionsAndMessages:false,generatedLocaleFilePathFormat:"absolute",alternateLinkCanonicalQueries:false,hmr:true},multiDomainLocales:false,domainLocales:{en:{domain:""}}}},app:{baseURL:"/",buildId:"215151b9-820f-4566-991c-820071f564e3",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script>
 <script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__">[["ShallowReactive",1],{"data":2,"state":129,"once":138,"_errors":139,"serverRendered":135,"path":28,"pinia":141},["ShallowReactive",3],{"shared-cms-footer":4,"shared-cms-menu":72,"cms-contact":101},{"headerThemes":5,"logoImage":8,"topLineImage":9,"navLinks":10,"socialLinks":29,"legalLinks":42,"newsletterTitle":58,"newsletterPlaceholder":59,"newsletterButtonLabel":60,"infoLineOne":61,"infoLineTwo":62,"creditPrefix":63,"creditName":64,"creditHref":65,"backgroundTiles":66},{"homepage":6,"about":6,"expertise":7,"contact":7,"projects":7,"projectDetail":6,"caseStudy":6,"caseStudyDetail":6,"newsPress":7,"newsPressDetail":7},"white","black","/assets/footer/logo.svg","/assets/footer/top-line.svg",[11,14,17,20,23,26],{"label":12,"href":13},"EXPERTISE","/expertise",{"label":15,"href":16},"PROJECTS","/projects",{"label":18,"href":19},"ABOUT","/about",{"label":21,"href":22},"CASE STUDY","/case-study",{"label":24,"href":25},"NEWS & PRESS","/news-press",{"label":27,"href":28},"CONTACT","/contact",[30,33,36,39],{"label":31,"href":32},"Facebook","https://www.facebook.com/people/House-Of-Meda/61587195871156/",{"label":34,"href":35},"Instagram","https://www.instagram.com/house_of.meda/",{"label":37,"href":38},"Linkedin","https://in.linkedin.com/company/house-of-meda",{"label":40,"href":41},"Pinterest","https://pin.it/3nQYIsZy4",[43,46,49,52,55],{"label":44,"href":45},"Information Disclosure Text On Cameras","/kvkk/information-disclosure-text-on-cameras",{"label":47,"href":48},"Express Consent Statement For Customers On Data Transfer Abroad","/kvkk/express-consent-statement-for-customers-on-data-transfer-abroad",{"label":50,"href":51},"Information Disclosure Text For Customers Within The Scope Of Lppd","/kvkk/information-disclosure-text-for-customers-within-the-scope-of-lppd",{"label":53,"href":54},"Cookie Policy","/kvkk/cookie-policy",{"label":56,"href":57},"Text Of Consent For Commercial Electronic Messages","/kvkk/text-of-consent-for-commercial-electronic-messages","Newsletter","Your Email Address","→","HOUSE OF MEDA DESIGN + BUILD STUDIO PVT. LTD.","©2026 HOUSE OF MEDA, ALL RIGHTS RESERVED.","Designed by","Sahil Sheikh","https://www.instagram.com/sahil_sheikh78/",[67,68,69,70,71],"/assets/footer/background-1.svg","/assets/footer/background-2.svg","/assets/footer/background-3.svg","/assets/footer/background-4.svg","/assets/footer/background-5.svg",{"closeIconImage":73,"dividerImage":74,"mainLinks":75,"cards":88},"/assets/menu/menu-close.svg","/assets/menu/menu-divider.svg",[76,78,80,82,84,86],{"label":77,"href":13},"Expertise",{"label":79,"href":16},"Projects",{"label":81,"href":19},"About",{"label":83,"href":22},"Case Study",{"label":85,"href":25},"News & Press",{"label":87,"href":28},"Contact",[89,93,97],{"title":150,"href":91,"image":92},"Design","/projects?category=Residential","/assets/menu/menu-residential.webp",{"title":151,"href":95,"image":96},"Build","/projects?category=Hospitality","/assets/menu/menu-hospitality.webp",{"title":152,"href":99,"image":100},"Design + Build","/projects?category=Commercial","/assets/menu/menu-commercial.webp",{"header":102,"intro":103,"map":108},{"theme":7},{"pageTitle":27,"lineMainStart":104,"lineAccentOne":105,"lineMainMiddle":106,"lineAccentTwo":107},"We carry the flag of","success,","around the","world.",{"tileLayerUrl":109,"tileLayerAttribution":110,"locations":111},"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png","&copy; OpenStreetMap contributors &copy; CARTO",[112,122],{"id":113,"tabLabel":113,"cardTitle":113,"address":114,"phone":115,"email":116,"ctaLabel":117,"ctaHref":118,"latitude":119,"longitude":120,"zoom":121},"Head Office","House Of Meda, 46/3A, Hosur Rd, Kudlu Gate, Krishna Reddy Industrial Area, Hosapalaya, Muneshwara Nagar, Bengaluru, Karnataka 560068","+91 8553303558","hello@houseofmeda.com","CONTACT US","mailto:hello@houseofmeda.com?subject=House%20of%20Meda%20Inquiry",12.8918,77.6416,15,{"id":123,"tabLabel":123,"cardTitle":123,"address":124,"phone":125,"email":116,"ctaLabel":117,"ctaHref":126,"latitude":127,"longitude":128,"zoom":121},"Design Studio","House Of Meda, 46/3A, Hosur Rd, Kudlu Gate, Krishna Reddy Industrial Area, Hosapalaya, Muneshwara Nagar, Bengaluru, Karnataka 560068","+91 8553303558","mailto:hello@houseofmeda.com?subject=House%20of%20Meda%20Inquiry",12.8918,77.6416,["Reactive",130],{"$ssupabase_session":131,"$ssupabase_user":131,"$snuxt-i18n-meta":132,"$scolor-mode":133,"$ssite-opener-active":135,"$sfooter-project-trail-project-pool-v2":137,"$sfooter-project-trail-project-pool-loaded":136,"$sfooter-project-trail-project-pool-pending":136,"$sfooter-project-trail-project-pool-load-after-ts":131,"$spage-top-header-revealed-once":136},null,{},{"preference":134,"value":134,"unknown":135,"forced":136},"light",true,false,[],["Set"],["ShallowReactive",140],{"shared-cms-menu":131,"shared-cms-footer":131,"cms-contact":131},{"public-content":142},{"cms":143,"homepageProjects":131,"projectsPages":144,"caseStudyPages":145,"newsPressPages":146,"projectDetails":147,"caseStudyDetails":148,"newsPressDetails":149},{"contact":101},{},{},{},{},{},{},"Residential","Hospitality","Commercial"]</script>
 
 <!-- HOUSE OF MEDA - EDITORIAL LUXURY WHITE QUOTATION MODAL -->
@@ -741,6 +863,31 @@ img.bg-tile ~ img.bg-tile {
     }
   };
 
+  
+  function ensurePills() {
+    var wrap = document.getElementById("awwwards");
+    if (!wrap) return;
+    if (!wrap.querySelector("#hom-whatsapp-trigger")) {
+      var wa = document.createElement("a");
+      wa.id = "hom-whatsapp-trigger";
+      wa.className = "hom-whatsapp-badge";
+      wa.href = "https://wa.me/918553303558?text=Hello%20House%20of%20Meda%2C%20I%20would%20like%20to%20inquire%20about%20your%20design%20and%20architecture%20services.";
+      wa.target = "_blank";
+      wa.rel = "noopener noreferrer";
+      wa.setAttribute("aria-label", "Chat on WhatsApp");
+      wa.innerHTML = '<span class="hom-whatsapp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></span><span class="hom-badge-text">WHATSAPP</span>';
+      wrap.appendChild(wa);
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", ensurePills);
+  } else {
+    ensurePills();
+  }
+  setTimeout(ensurePills, 400);
+  setTimeout(ensurePills, 1200);
+  setTimeout(ensurePills, 2500);
+
   window.closeHomQuoteModal = function() {
     var modal = document.getElementById("hom-quotation-modal");
     if (modal) {
@@ -750,7 +897,8 @@ img.bg-tile ~ img.bg-tile {
   };
 
   document.addEventListener("click", function(e) {
-    var trigger = e.target.closest("#hom-quotation-trigger, .hom-quotation-badge, #awwwards");
+    if (e.target.closest("#hom-whatsapp-trigger, .hom-whatsapp-badge")) return;
+    var trigger = e.target.closest("#hom-quotation-trigger, .hom-quotation-badge");
     if (trigger) {
       e.preventDefault();
       window.openHomQuoteModal();
