@@ -1,4 +1,102 @@
-<!DOCTYPE html><html  lang="en" class="public-root-scrollbar-visible"><head><meta charset="utf-8">
+<!DOCTYPE html><html  lang="en" class="public-root-scrollbar-visible"><head>
+<script id="hom-filter-interceptor">
+(function() {
+  const origFetch = window.fetch;
+  if (!origFetch) return;
+
+  let baseData = null;
+
+  function runFilter(data, cats, exps) {
+    const normCats = (cats || []).map(function(c) { return c.trim().toLowerCase(); }).filter(function(c) { return c && c !== 'all'; });
+    const normExps = (exps || []).map(function(e) { return e.trim().toLowerCase(); }).filter(function(e) { return e && e !== 'all'; });
+    const knownCats = new Set(['hospitality', 'f&b', 'retail', 'office']);
+
+    const filtered = (data.projects || []).filter(function(p) {
+      const pCat = (p.category || '').trim().toLowerCase();
+      const pExp = (p.expertise || '').trim().toLowerCase();
+
+      if (normCats.length > 0) {
+        let catMatch = false;
+        for (let i = 0; i < normCats.length; i++) {
+          const c = normCats[i];
+          if (c === 'others') {
+            if (!knownCats.has(pCat)) { catMatch = true; break; }
+          } else if (pCat === c || pCat.indexOf(c) !== -1) {
+            catMatch = true; break;
+          }
+        }
+        if (!catMatch) return false;
+      }
+
+      if (normExps.length > 0) {
+        let expMatch = false;
+        for (let i = 0; i < normExps.length; i++) {
+          const e = normExps[i];
+          if (e === pExp) {
+            expMatch = true; break;
+          } else if (e === 'design' && pExp.indexOf('design') !== -1) {
+            expMatch = true; break;
+          } else if (e === 'build' && (pExp === 'build' || (pExp.indexOf('design') === -1 && pExp.indexOf('build') !== -1))) {
+            expMatch = true; break;
+          } else if (e === 'design+build' && (pExp === 'design+build' || (pExp.indexOf('design') !== -1 && pExp.indexOf('build') !== -1))) {
+            expMatch = true; break;
+          }
+        }
+        if (!expMatch) return false;
+      }
+
+      return true;
+    });
+
+    return Object.assign({}, data, {
+      projects: filtered,
+      pagination: {
+        offset: 0,
+        limit: 10,
+        total: filtered.length,
+        hasMore: false
+      }
+    });
+  }
+
+  window.fetch = async function(resource, init) {
+    let urlStr = '';
+    if (typeof resource === 'string') {
+      urlStr = resource;
+    } else if (resource && resource.url) {
+      urlStr = resource.url;
+    }
+
+    if (urlStr && (urlStr.indexOf('/api/projects') !== -1 || urlStr.indexOf('api/projects') !== -1)) {
+      try {
+        const u = new URL(urlStr, window.location.origin);
+        const path = u.pathname.replace(/\/+$/, '');
+        if (path === '/api/projects') {
+          const cats = u.searchParams.getAll('category');
+          const exps = u.searchParams.getAll('expertise');
+
+          if (!baseData) {
+            const res = await origFetch('/api/projects__q0e747af1e7.json');
+            baseData = await res.json();
+          }
+
+          const filtered = runFilter(baseData, cats, exps);
+          return new Response(JSON.stringify(filtered), {
+            status: 200,
+            headers: {
+              'Content-Type': 'application/json; charset=utf-8',
+              'Access-Control-Allow-Origin': '*'
+            }
+          });
+        }
+      } catch (err) {
+        console.warn('[HOM Filter]', err);
+      }
+    }
+    return origFetch.apply(this, arguments);
+  };
+})();
+</script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>House of Meda</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">

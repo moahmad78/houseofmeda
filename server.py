@@ -1025,6 +1025,67 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 hit_file = ROOT / str(hit).lstrip("/")
                 if hit_file.is_file():
                     data = hit_file.read_bytes()
+                    if path_early == "/api/projects":
+                        try:
+                            from urllib.parse import parse_qs as _parse_qs, urlparse as _urlparse
+                            parsed_u = _urlparse(raw_early)
+                            qs = _parse_qs(parsed_u.query)
+                            raw_cats = qs.get("category", [])
+                            raw_exps = qs.get("expertise", [])
+                            norm_cats = [c.strip().lower() for c in raw_cats if c.strip() and c.strip().lower() != "all"]
+                            norm_exps = [e.strip().lower() for e in raw_exps if e.strip() and e.strip().lower() != "all"]
+                            
+                            pj_obj = json.loads(data.decode("utf-8"))
+                            known_cats = {"hospitality", "f&b", "retail", "office"}
+                            
+                            filtered = []
+                            for p in pj_obj.get("projects", []):
+                                p_cat = (p.get("category") or "").strip().lower()
+                                p_exp = (p.get("expertise") or "").strip().lower()
+                                
+                                if norm_cats:
+                                    cat_match = False
+                                    for c in norm_cats:
+                                        if c == "others":
+                                            if p_cat not in known_cats:
+                                                cat_match = True
+                                                break
+                                        elif p_cat == c or c in p_cat:
+                                            cat_match = True
+                                            break
+                                    if not cat_match:
+                                        continue
+                                        
+                                if norm_exps:
+                                    exp_match = False
+                                    for e in norm_exps:
+                                        if e == p_exp:
+                                            exp_match = True
+                                            break
+                                        elif e == "design" and "design" in p_exp:
+                                            exp_match = True
+                                            break
+                                        elif e == "build" and (p_exp == "build" or ("design" not in p_exp and "build" in p_exp)):
+                                            exp_match = True
+                                            break
+                                        elif e == "design+build" and (p_exp == "design+build" or ("design" in p_exp and "build" in p_exp)):
+                                            exp_match = True
+                                            break
+                                    if not exp_match:
+                                        continue
+                                        
+                                filtered.append(p)
+                                
+                            pj_obj["projects"] = filtered
+                            pj_obj["pagination"] = {
+                                "offset": 0,
+                                "limit": 10,
+                                "total": len(filtered),
+                                "hasMore": False
+                            }
+                            data = json.dumps(pj_obj, ensure_ascii=False).encode("utf-8")
+                        except Exception:
+                            pass
                     self.send_response(200)
                     self.send_header("Content-Type", "application/json; charset=utf-8")
                     self.send_header("Access-Control-Allow-Origin", "*")
