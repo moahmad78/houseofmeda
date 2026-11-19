@@ -229,27 +229,34 @@
 </style><style id="hom-about-permanence">
 /* House of Meda - About Page Complete Layout, Visibility & Typography Permanence */
 
-/* 1. Navbar Visibility & Contrast (Hero + Body) */
-.about-page .page-top-header,
-.about-page .page-top-header--pre-enter,
-.about-page .page-top-header--hidden,
-.about-page .page-top-header--visible,
-.about-hero .page-top-header {
-  opacity: 1 !important;
+/* 1. Navbar in About Hero: Static absolute header that scrolls naturally with the hero */
+.about-hero {
+  position: relative !important;
+}
+
+.about-hero .page-top-header,
+.about-page .about-hero .page-top-header {
+  position: absolute !important;
+  top: var(--page-top-header-top, 48px) !important;
+  left: 50% !important;
   transform: translate3d(-50%, 0, 0) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
   pointer-events: auto !important;
   z-index: 90 !important;
 }
 
-/* Smart inversion so logo and menu are white on dark hero, and crisp black on light body */
-.about-page .page-top-header-logo img,
-.about-page .page-top-header-menu img {
+.about-hero .page-top-header-logo img,
+.about-hero .page-top-header-menu img {
   filter: brightness(0) invert(1) !important;
   opacity: 0.95 !important;
 }
 
-.about-page .page-top-header {
-  mix-blend-mode: difference !important;
+@media (max-width: 768px) {
+  .about-hero .page-top-header,
+  .about-page .about-hero .page-top-header {
+    top: var(--page-top-header-top, 24px) !important;
+  }
 }
 
 /* 2. Hero Background, Title & Scroll Indicator */
