@@ -518,3 +518,51 @@
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+
+/* 1. Navbar in About Hero: Visible at top, immediately hides on scroll */
+.about-hero {
+  position: relative !important;
+}
+
+.about-hero .page-top-header,
+.about-page .about-hero .page-top-header,
+body.about-page-active .about-hero .page-top-header {
+  position: absolute !important;
+  top: var(--page-top-header-top, 48px) !important;
+  left: 50% !important;
+  transform: translate3d(-50%, 0, 0) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transition: opacity 0.25s ease, transform 0.25s ease !important;
+  z-index: 90 !important;
+}
+
+/* Hide navbar completely as soon as page scrolls */
+.about-page .page-top-header.hom-nav-scrolled,
+.about-hero .page-top-header.hom-nav-scrolled,
+.about-page .page-top-header--hidden,
+body.about-page-active .page-top-header.hom-nav-scrolled {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translate3d(-50%, -100%, 0) !important;
+  transition: opacity 0.25s ease, transform 0.25s ease !important;
+}
+
+.about-hero .page-top-header-logo img,
+.about-hero .page-top-header-menu img,
+.about-page .page-top-header-logo img,
+.about-page .page-top-header-menu img {
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.95 !important;
+}
+
+@media (max-width: 768px) {
+  .about-hero .page-top-header,
+  .about-page .page-top-header,
+  .about-page .about-hero .page-top-header {
+    top: var(--page-top-header-top, 24px) !important;
+  }
+}

@@ -434,13 +434,14 @@
 </style><style id="hom-about-permanence">
 /* House of Meda - About Page Complete Layout, Visibility & Typography Permanence */
 
-/* 1. Navbar in About Hero: Static absolute header that scrolls naturally with the hero */
+/* 1. Navbar in About Hero: Visible at top, immediately hides on scroll */
 .about-hero {
   position: relative !important;
 }
 
 .about-hero .page-top-header,
-.about-page .about-hero .page-top-header {
+.about-page .about-hero .page-top-header,
+body.about-page-active .about-hero .page-top-header {
   position: absolute !important;
   top: var(--page-top-header-top, 48px) !important;
   left: 50% !important;
@@ -448,17 +449,33 @@
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
+  transition: opacity 0.25s ease, transform 0.25s ease !important;
   z-index: 90 !important;
 }
 
+/* Hide navbar completely as soon as page scrolls */
+.about-page .page-top-header.hom-nav-scrolled,
+.about-hero .page-top-header.hom-nav-scrolled,
+.about-page .page-top-header--hidden,
+body.about-page-active .page-top-header.hom-nav-scrolled {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translate3d(-50%, -100%, 0) !important;
+  transition: opacity 0.25s ease, transform 0.25s ease !important;
+}
+
 .about-hero .page-top-header-logo img,
-.about-hero .page-top-header-menu img {
+.about-hero .page-top-header-menu img,
+.about-page .page-top-header-logo img,
+.about-page .page-top-header-menu img {
   filter: brightness(0) invert(1) !important;
   opacity: 0.95 !important;
 }
 
 @media (max-width: 768px) {
   .about-hero .page-top-header,
+  .about-page .page-top-header,
   .about-page .about-hero .page-top-header {
     top: var(--page-top-header-top, 24px) !important;
   }
@@ -1305,6 +1322,29 @@
   } else {
     window.addEventListener('load', function(){ setTimeout(dismissOpener, 1200); });
     setTimeout(dismissOpener, 2000);
+  }
+})();
+</script>
+<script id="hom-about-navbar-scroll">
+(function() {
+  function initAboutNavbar() {
+    var header = document.querySelector('.about-hero .page-top-header, .page-top-header');
+    if (!header) return;
+    function handleScroll() {
+      var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+      if (y > 30) {
+        header.classList.add('hom-nav-scrolled');
+      } else {
+        header.classList.remove('hom-nav-scrolled');
+      }
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAboutNavbar);
+  } else {
+    initAboutNavbar();
   }
 })();
 </script>
