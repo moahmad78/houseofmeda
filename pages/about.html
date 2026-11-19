@@ -1060,7 +1060,77 @@ body.about-page-active .page-top-header.hom-nav-scrolled {
   .hom-badge-text {
     font-size: 9.5px !important;
   }
-}</style>
+}
+
+/* 7. Story Section Image Height Reduction & Whitespace Elimination */
+.about-page .story-image-main,
+.about-page .story-image-secondary {
+  height: 520px !important;
+  max-height: 520px !important;
+  aspect-ratio: auto !important;
+  overflow: hidden !important;
+  border-radius: 8px !important;
+}
+
+.about-page .story-row.row-secondary {
+  align-items: stretch !important;
+}
+
+.about-page .story-row.row-secondary .story-image-secondary {
+  height: auto !important;
+  max-height: 546px !important;
+  align-self: stretch !important;
+}
+
+.about-page .story-image-main img,
+.about-page .story-image-secondary img,
+.about-page .story-image-main .about-story-media,
+.about-page .story-image-secondary .about-story-media {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.about-page .story-side-column {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+/* Eliminate excessive empty white space before Our Philosophy */
+.about-page .about-content {
+  gap: 120px !important;
+}
+
+.about-page .about-story {
+  gap: 120px !important;
+}
+
+@media (max-width: 1200px) {
+  .about-page .story-image-main,
+  .about-page .story-image-secondary {
+    height: 420px !important;
+    max-height: 420px !important;
+  }
+  .about-page .about-content,
+  .about-page .about-story {
+    gap: 72px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page .story-image-main,
+  .about-page .story-image-secondary {
+    height: 280px !important;
+    max-height: 280px !important;
+  }
+  .about-page .about-content,
+  .about-page .about-story {
+    gap: 48px !important;
+  }
+}
+</style>
 <link href="/_nuxt/entry.LZZ4tNNH.css" rel="stylesheet"/>
 <link href="/_nuxt/default.ChOEbfpg.css" rel="stylesheet"/>
 <link href="/_nuxt/about.BufcynZ0.css" rel="stylesheet"/>
