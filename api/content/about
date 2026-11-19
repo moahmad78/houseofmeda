@@ -18,12 +18,12 @@
     "headlineMainMiddle": "and",
     "headlineAccentTwo": "feeling",
     "quoteAuthor": "House of Meda",
-    "description": "House of Meda is a bespoke interior design studio based in Bengaluru. Meda — A refined balance between form and feeling — The art of shaping interiors that are intentional, timeless, and deeply connected to the people who inhabit them. We believe a home should not just look beautiful, but feel effortless to live in. Our work is rooted in restraint, clarity, and thoughtful detailing — creating interiors that age gracefully and stay."
+    "description": "House of Meda is a bespoke interior design studio based in Bengaluru. Meda \u2014 A refined balance between form and feeling \u2014 The art of shaping interiors that are intentional, timeless, and deeply connected to the people who inhabit them. We believe a home should not just look beautiful, but feel effortless to live in. Our work is rooted in restraint, clarity, and thoughtful detailing \u2014 creating interiors that age gracefully and stay."
   },
   "story": {
     "showcaseImage": "/assets/about/content/1778004563517-thy..mp4",
-    "mainImage": "/assets/about/content/1777996154558-nobu_.jpg",
-    "secondaryImage": "/assets/about/content/1777996015930-beymen.avif",
+    "mainImage": "/assets/about/content/section-image-01.jpg",
+    "secondaryImage": "/assets/about/content/section-image-02.jpg",
     "tertiaryImage": "/assets/about/content/1778004583443-hakkasan-640-x-360.mp4",
     "showcaseMedia": {
       "url": "/assets/about/content/1778004563517-thy..mp4",
@@ -37,7 +37,7 @@
       "naturalHeight": 720
     },
     "mainMedia": {
-      "url": "/assets/about/content/1777996154558-nobu_.jpg",
+      "url": "/assets/about/content/section-image-01.jpg",
       "mediaType": "image",
       "transform": {
         "zoom": 1,
@@ -48,7 +48,7 @@
       "naturalHeight": 1073
     },
     "secondaryMedia": {
-      "url": "/assets/about/content/1777996015930-beymen.avif",
+      "url": "/assets/about/content/section-image-02.jpg",
       "mediaType": "image",
       "transform": {
         "zoom": 1,
@@ -73,7 +73,7 @@
     "headlineAccentOne": "people",
     "headlineMainMiddle": ", lifestyle and",
     "headlineAccentTwo": "rhythm",
-    "description": "Every Project we take on is shaped around the people who live in it. We don’t follow templates or fixed styles. Instead, we listen, observe, and design spaces that reflect your lifestyle, your rhythm, and your way of experiencing home.",
+    "description": "Every Project we take on is shaped around the people who live in it. We don\u2019t follow templates or fixed styles. Instead, we listen, observe, and design spaces that reflect your lifestyle, your rhythm, and your way of experiencing home.",
     "closingParagraphStart": "At House of Meda, We see design as a quiet, deliberate process. From the first conversation to the final handover, every step is guided by clarity, precision & care.",
     "closingParagraphMiddle": "We work with a carefully curated palette of materials, finishes and details to ensure each space feels ",
     "closingAccent": "balanced and crafted",
@@ -90,7 +90,7 @@
         "index": "01",
         "name": "INTEGRITY",
         "roleLabel": "OUR PHILOSOPHY",
-        "roleValue": "We build trust the same way we build homes — carefully, honestly, and to last.",
+        "roleValue": "We build trust the same way we build homes \u2014 carefully, honestly, and to last.",
         "educationLabel": "HOUSE OF MEDA",
         "educationValue": "Foundation & Trust",
         "image": ""

@@ -206,3 +206,75 @@
     border-left: 3px solid #d4af37 !important;
   }
 }
+
+
+/* House of Meda - About Page Story Layout Visibility Fix */
+.story-text-column {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  gap: 40px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.story-copy {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  margin-top: 24px !important;
+}
+.story-heading-shell {
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.story-heading {
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #111111 !important;
+}
+.story-heading-line-mask {
+  overflow: visible !important;
+  display: block !important;
+}
+.story-heading-line {
+  transform: none !important;
+  opacity: 1 !important;
+  color: #111111 !important;
+  visibility: visible !important;
+}
+.story-heading-accent {
+  color: #705335 !important;
+  font-family: 'Fraunces', serif !important;
+  font-style: italic !important;
+}
+.story-description,
+.story-description.about-scroll-reveal-text,
+.about-scroll-reveal-text {
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: rgba(20, 20, 20, 0.85) !important;
+}
+.about-story .scroll-reveal-text__segment--reveal {
+  color: rgba(20, 20, 20, 0.85) !important;
+}
+.about-story .scroll-reveal-text__glyph:after {
+  opacity: 1 !important;
+  color: #111111 !important;
+}
+.about-story .story-image-main,
+.about-story .story-image-column {
+  visibility: visible !important;
+  opacity: 1 !important;
+  background: #f0eee9 !important;
+}
+.about-story .story-image-main img,
+.about-story .story-image-column img {
+  opacity: 1 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
