@@ -208,73 +208,54 @@
 }
 
 
-/* House of Meda - About Page Story Layout Visibility Fix */
-.story-text-column {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-  gap: 40px !important;
-  visibility: visible !important;
+/* House of Meda - About Page Complete Layout, Visibility & Typography Permanence */
+.about-page .page-top-header,
+.about-page .page-top-header--pre-enter {
   opacity: 1 !important;
+  transform: translate3d(-50%, 0, 0) !important;
+  pointer-events: auto !important;
 }
-.story-copy {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 20px !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  margin-top: 24px !important;
-}
-.story-heading-shell {
-  overflow: visible !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.story-heading {
-  visibility: visible !important;
-  opacity: 1 !important;
-  color: #111111 !important;
-}
-.story-heading-line-mask {
-  overflow: visible !important;
-  display: block !important;
-}
-.story-heading-line {
+
+.about-page .about-hero-title-line,
+.about-page .about-intro-heading-line,
+.about-page .story-heading-line,
+.about-page .about-section-subtitle-line {
   transform: none !important;
   opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.about-page .about-hero-title-line-mask,
+.about-page .about-intro-heading-line-mask,
+.about-page .story-heading-line-mask,
+.about-page .about-section-subtitle-line-mask {
+  overflow: visible !important;
+}
+
+.about-page .about-scroll-reveal-text,
+.about-page .about-scroll-reveal-text .scroll-reveal-text__segment,
+.about-page .about-scroll-reveal-text .scroll-reveal-text__segment--reveal,
+.about-page .story-description,
+.about-page .story-paragraphs,
+.about-page .about-intro-description {
+  color: rgba(20, 20, 20, 0.88) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.about-page .about-scroll-reveal-text .scroll-reveal-text__glyph:after {
+  opacity: 1 !important;
   color: #111111 !important;
+}
+
+.about-page .story-image-main,
+.about-page .story-image-secondary {
+  opacity: 1 !important;
   visibility: visible !important;
 }
-.story-heading-accent {
-  color: #705335 !important;
-  font-family: 'Fraunces', serif !important;
-  font-style: italic !important;
-}
-.story-description,
-.story-description.about-scroll-reveal-text,
-.about-scroll-reveal-text {
+
+.about-page .story-image-main img,
+.about-page .story-image-secondary img {
+  opacity: 1 !important;
   visibility: visible !important;
-  opacity: 1 !important;
-  color: rgba(20, 20, 20, 0.85) !important;
-}
-.about-story .scroll-reveal-text__segment--reveal {
-  color: rgba(20, 20, 20, 0.85) !important;
-}
-.about-story .scroll-reveal-text__glyph:after {
-  opacity: 1 !important;
-  color: #111111 !important;
-}
-.about-story .story-image-main,
-.about-story .story-image-column {
-  visibility: visible !important;
-  opacity: 1 !important;
-  background: #f0eee9 !important;
-}
-.about-story .story-image-main img,
-.about-story .story-image-column img {
-  opacity: 1 !important;
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
 }
