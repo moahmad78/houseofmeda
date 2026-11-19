@@ -207,15 +207,77 @@
   }
 }
 
-
 /* House of Meda - About Page Complete Layout, Visibility & Typography Permanence */
+
+/* 1. Navbar Visibility & Contrast (Hero + Body) */
 .about-page .page-top-header,
-.about-page .page-top-header--pre-enter {
+.about-page .page-top-header--pre-enter,
+.about-page .page-top-header--hidden,
+.about-page .page-top-header--visible,
+.about-hero .page-top-header {
   opacity: 1 !important;
   transform: translate3d(-50%, 0, 0) !important;
   pointer-events: auto !important;
+  z-index: 90 !important;
 }
 
+/* Smart inversion so logo and menu are white on dark hero, and crisp black on light body */
+.about-page .page-top-header-logo img,
+.about-page .page-top-header-menu img {
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.95 !important;
+}
+
+.about-page .page-top-header {
+  mix-blend-mode: difference !important;
+}
+
+/* 2. Hero Background, Title & Scroll Indicator */
+.about-hero {
+  position: relative !important;
+  min-height: 720px !important;
+  height: 100svh !important;
+  background: #000000 !important;
+  overflow: hidden !important;
+}
+
+.about-hero-bg {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.about-hero-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.45) !important;
+  z-index: 1 !important;
+}
+
+.about-hero-title,
+.about-hero-title .line-mask-motion-text__mask,
+.about-hero-title .line-mask-motion-text__line,
+.about-hero-title-line {
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  z-index: 2 !important;
+  color: #ffffff !important;
+}
+
+.about-hero-scroll {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 2 !important;
+}
+
+/* 3. Story, Headings & Content Text Visibility */
 .about-page .about-hero-title-line,
 .about-page .about-intro-heading-line,
 .about-page .story-heading-line,
@@ -258,4 +320,47 @@
 .about-page .story-image-secondary img {
   opacity: 1 !important;
   visibility: visible !important;
+}
+
+/* 4. Footer Clean Formatting & Spacing */
+.hom-footer {
+  background: #ffffff !important;
+  color: #000000 !important;
+  min-height: auto !important;
+  padding-bottom: 40px !important;
+  position: relative !important;
+}
+
+.hom-footer .footer-container {
+  gap: 56px !important;
+  padding-top: 80px !important;
+}
+
+.hom-footer .footer-background {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 20px auto 0 !important;
+  padding: 1.5rem 1rem 2rem 1rem !important;
+  min-height: auto !important;
+}
+
+.hom-footer .footer-background .bg-tile {
+  max-width: min(850px, 85vw) !important;
+  max-height: 140px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  display: block !important;
+  opacity: 0.9 !important;
+  object-fit: contain !important;
+}
+
+/* 5. Hide Quotation Modal Until Triggered */
+.hom-modal-backdrop:not(.is-active),
+#hom-quotation-modal:not(.is-active) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
