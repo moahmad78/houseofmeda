@@ -376,15 +376,425 @@
   object-fit: contain !important;
 }
 
-/* 5. Hide Quotation Modal Until Triggered */
-.hom-modal-backdrop:not(.is-active),
-#hom-quotation-modal:not(.is-active) {
-  display: none !important;
-  visibility: hidden !important;
+/* 5. House of Meda Luxury Quotation Modal & Floating Badge (Full Editorial Theme) */
+.hom-modal-backdrop {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(12, 12, 12, 0.65) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
   opacity: 0 !important;
+  visibility: hidden !important;
   pointer-events: none !important;
+  transition: opacity 0.28s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.28s ease !important;
+  box-sizing: border-box !important;
 }
-</style>
+
+.hom-modal-backdrop.is-active,
+#hom-quotation-modal.is-active {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+.hom-modal-dialog {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.28), 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  width: 100% !important;
+  max-width: 580px !important;
+  max-height: min(92vh, 760px) !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+  padding: 40px 38px 34px 38px !important;
+  position: relative !important;
+  transform: translateY(18px) scale(0.97) !important;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
+  box-sizing: border-box !important;
+}
+
+.hom-modal-backdrop.is-active .hom-modal-dialog {
+  transform: translateY(0) scale(1) !important;
+}
+
+.hom-modal-close {
+  position: absolute !important;
+  top: 22px !important;
+  right: 22px !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: #f4f4f4 !important;
+  border: none !important;
+  color: #444444 !important;
+  font-size: 22px !important;
+  line-height: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease !important;
+  z-index: 10 !important;
+}
+
+.hom-modal-close:hover {
+  background: #111111 !important;
+  color: #ffffff !important;
+  transform: rotate(90deg) !important;
+}
+
+.hom-modal-header {
+  margin-bottom: 22px !important;
+  text-align: left !important;
+  padding-right: 44px !important;
+}
+
+.hom-modal-subtitle {
+  display: inline-block !important;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  color: #705335 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+}
+
+.hom-modal-title {
+  font-family: "Fraunces", "Cinzel", "Georgia", serif !important;
+  font-size: 30px !important;
+  font-weight: 400 !important;
+  color: #111111 !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.hom-modal-title em {
+  font-style: italic !important;
+  color: #705335 !important;
+}
+
+.hom-modal-desc {
+  font-size: 13.5px !important;
+  color: #666666 !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+  font-weight: 300 !important;
+}
+
+.hom-modal-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+}
+
+.hom-form-row {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 14px !important;
+}
+
+.hom-form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  text-align: left !important;
+}
+
+.hom-form-group label {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #333333 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+.hom-form-group input,
+.hom-form-group select,
+.hom-form-group textarea {
+  width: 100% !important;
+  background: #f8f8f8 !important;
+  color: #111111 !important;
+  border: 1px solid #dfdfdf !important;
+  border-radius: 8px !important;
+  padding: 11px 14px !important;
+  font-size: 13.5px !important;
+  font-family: inherit !important;
+  outline: none !important;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease !important;
+  box-sizing: border-box !important;
+}
+
+.hom-form-group input::placeholder,
+.hom-form-group textarea::placeholder {
+  color: #999999 !important;
+  font-weight: 300 !important;
+}
+
+.hom-form-group input:focus,
+.hom-form-group select:focus,
+.hom-form-group textarea:focus {
+  background: #ffffff !important;
+  border-color: #705335 !important;
+  box-shadow: 0 0 0 3px rgba(112, 83, 53, 0.14) !important;
+}
+
+.hom-form-group select {
+  cursor: pointer !important;
+  appearance: auto !important;
+}
+
+.hom-submit-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  margin-top: 4px !important;
+}
+
+.hom-submit-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  width: 100% !important;
+  background: #111111 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 9999px !important;
+  padding: 14px 24px !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  transition: background 0.22s ease, transform 0.18s ease, box-shadow 0.22s ease !important;
+  font-family: inherit !important;
+}
+
+.hom-submit-btn:hover {
+  background: #705335 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 8px 24px rgba(112, 83, 53, 0.28) !important;
+}
+
+.hom-submit-btn:active {
+  transform: translateY(0) !important;
+}
+
+.hom-submit-btn span.arrow {
+  font-size: 16px !important;
+  transition: transform 0.2s ease !important;
+}
+
+.hom-submit-btn:hover span.arrow {
+  transform: translateX(4px) !important;
+}
+
+.hom-modal-footer-note {
+  text-align: center !important;
+  font-size: 12px !important;
+  color: #777777 !important;
+  margin: 0 !important;
+}
+
+.hom-modal-footer-note a {
+  color: #705335 !important;
+  font-weight: 500 !important;
+  text-decoration: underline !important;
+}
+
+/* SUCCESS BOX */
+.hom-form-success {
+  background: #fbf8f5 !important;
+  border: 1px solid #705335 !important;
+  border-radius: 10px !important;
+  padding: 28px 24px !important;
+  text-align: center !important;
+  margin-top: 8px !important;
+}
+
+.hom-success-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: #705335 !important;
+  color: #ffffff !important;
+  font-size: 20px !important;
+  margin-bottom: 12px !important;
+}
+
+.hom-form-success h4 {
+  font-family: "Fraunces", "Georgia", serif !important;
+  font-size: 22px !important;
+  margin: 0 0 6px 0 !important;
+  color: #111111 !important;
+}
+
+.hom-form-success p {
+  font-size: 13px !important;
+  color: #666666 !important;
+  margin: 0 0 14px 0 !important;
+  line-height: 1.5 !important;
+}
+
+.hom-direct-contact a {
+  color: #705335 !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+}
+
+/* FLOATING QUOTATION BADGE */
+.hom-quotation-wrap,
+.awwwards-badge.hom-quotation-wrap {
+  line-height: 1 !important;
+  position: fixed !important;
+  right: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 99999 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.hom-quotation-badge {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 48px !important;
+  height: 160px !important;
+  padding: 16px 0 18px 0 !important;
+  background: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-right: none !important;
+  border-radius: 8px 0 0 8px !important;
+  box-shadow: -4px 8px 30px rgba(0, 0, 0, 0.08) !important;
+  cursor: pointer !important;
+  outline: none !important;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease !important;
+  user-select: none !important;
+}
+
+.hom-quotation-badge:hover,
+.hom-quotation-badge:focus-visible {
+  transform: translateX(-4px) !important;
+  background: #111111 !important;
+  color: #ffffff !important;
+  box-shadow: -8px 12px 32px rgba(0, 0, 0, 0.22) !important;
+}
+
+.hom-quotation-badge:hover .hom-badge-icon {
+  color: #c49a6c !important;
+}
+
+.hom-badge-icon {
+  font-family: "Fraunces", "Cinzel", "Georgia", serif !important;
+  font-size: 23px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.02em !important;
+  color: #705335 !important;
+  transition: color 0.2s ease !important;
+}
+
+.hom-badge-text {
+  writing-mode: vertical-rl !important;
+  transform: rotate(180deg) !important;
+  text-orientation: mixed !important;
+  font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 640px) {
+  .hom-modal-form {
+    gap: 11px !important;
+  }
+  .hom-form-row {
+    grid-template-columns: 1fr !important;
+    gap: 11px !important;
+  }
+  .hom-form-group {
+    gap: 4px !important;
+  }
+  .hom-form-group label {
+    font-size: 10px !important;
+  }
+  .hom-form-group input,
+  .hom-form-group select,
+  .hom-form-group textarea {
+    padding: 9px 12px !important;
+    font-size: 13px !important;
+    border-radius: 6px !important;
+  }
+  .hom-modal-dialog {
+    padding: 24px 18px 20px 18px !important;
+    max-height: 94vh !important;
+    border-radius: 12px !important;
+  }
+  .hom-modal-header {
+    padding-right: 36px !important;
+    margin-bottom: 12px !important;
+  }
+  .hom-modal-subtitle {
+    font-size: 9.5px !important;
+    margin-bottom: 4px !important;
+  }
+  .hom-modal-title {
+    font-size: 24px !important;
+    margin: 0 0 4px 0 !important;
+  }
+  .hom-modal-desc {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+  .hom-modal-close {
+    top: 14px !important;
+    right: 14px !important;
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 18px !important;
+  }
+  .hom-submit-wrap {
+    gap: 8px !important;
+    margin-top: 2px !important;
+  }
+  .hom-submit-btn {
+    padding: 12px 20px !important;
+    font-size: 11.5px !important;
+  }
+  .hom-modal-footer-note {
+    font-size: 11px !important;
+  }
+  .hom-quotation-badge {
+    width: 42px !important;
+    height: 140px !important;
+    padding: 12px 0 14px 0 !important;
+  }
+  .hom-badge-icon {
+    font-size: 20px !important;
+  }
+  .hom-badge-text {
+    font-size: 9.5px !important;
+  }
+}</style>
 <link href="/_nuxt/entry.LZZ4tNNH.css" rel="stylesheet"/>
 <link href="/_nuxt/default.ChOEbfpg.css" rel="stylesheet"/>
 <link href="/_nuxt/about.BufcynZ0.css" rel="stylesheet"/>
@@ -461,6 +871,7 @@
     if (modal) {
       modal.classList.add("is-active");
       modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
       var firstInput = document.getElementById("quote-name");
       if (firstInput) setTimeout(function() { firstInput.focus(); }, 120);
     }
@@ -471,6 +882,7 @@
     if (modal) {
       modal.classList.remove("is-active");
       modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
     }
   };
 
