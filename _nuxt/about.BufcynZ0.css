@@ -51,14 +51,79 @@
   margin: 0 auto !important;
 }
 
-/* ── House of Meda Turnkey Process (Light Editorial Theme & Step-Wise Path) ── */
-.hom-process-section {
+/* ── House of Meda Turnkey Process (Compact Spacing & Step-Wise Path) ── */
+.about-team.hom-process-section,
+.about-team[data-v-2103ac93].hom-process-section {
   position: relative !important;
   width: 100% !important;
   max-width: 1632px !important;
   margin: 0 auto !important;
   padding: 0 48px !important;
   box-sizing: border-box !important;
+  gap: 24px !important;
+  min-height: auto !important;
+}
+
+.hom-process-section .about-section-heading,
+.about-section-heading[data-v-2103ac93] {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  height: auto !important;
+  min-height: auto !important;
+}
+
+.hom-process-section .about-section-title,
+.about-section-title[data-v-2103ac93] {
+  font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
+  font-size: clamp(34px, 3.8vw, 54px) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.12 !important;
+  color: #111111 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+}
+
+.hom-process-section .about-section-subtitle,
+.about-section-subtitle[data-v-2103ac93],
+.about-section-subtitle {
+  font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
+  font-size: clamp(16px, 1.4vw, 20px) !important;
+  font-weight: 350 !important;
+  letter-spacing: -0.015em !important;
+  line-height: 1.4 !important;
+  color: rgba(20, 20, 20, 0.75) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: normal !important;
+  height: auto !important;
+  min-height: auto !important;
+}
+
+.hom-process-section .about-section-subtitle-line,
+.about-section-subtitle-line[data-v-2103ac93],
+.about-section-subtitle-line {
+  display: inline !important;
+  line-height: 1.4 !important;
+  height: auto !important;
+  white-space: normal !important;
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.hom-process-section .about-section-subtitle-accent,
+.about-section-subtitle-accent[data-v-2103ac93] {
+  font-family: "Fraunces", "Cinzel", "Georgia", serif !important;
+  font-size: 1.05em !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  color: #705335 !important;
+  letter-spacing: -0.02em !important;
 }
 
 .hom-process-path-shell {
@@ -66,39 +131,39 @@
   width: 100% !important;
   background: #faf8f5 !important;
   border: 1px solid rgba(112, 83, 53, 0.16) !important;
-  border-radius: 20px !important;
-  padding: 40px 48px 48px 48px !important;
+  border-radius: 18px !important;
+  padding: 32px 40px 36px 40px !important;
   box-sizing: border-box !important;
-  box-shadow: 0 6px 24px rgba(112, 83, 53, 0.04) !important;
-  margin-top: 16px !important;
+  box-shadow: 0 4px 20px rgba(112, 83, 53, 0.04) !important;
+  margin-top: 0 !important;
 }
 
 .hom-process-path-header {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  padding-bottom: 24px !important;
+  padding-bottom: 20px !important;
   border-bottom: 1px solid rgba(112, 83, 53, 0.12) !important;
-  margin-bottom: 40px !important;
+  margin-bottom: 32px !important;
 }
 
 .hom-process-path-badge {
   font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
-  font-size: 11px !important;
+  font-size: 10.5px !important;
   font-weight: 700 !important;
-  letter-spacing: 0.15em !important;
+  letter-spacing: 0.14em !important;
   text-transform: uppercase !important;
   color: #705335 !important;
 }
 
 .hom-process-path-scope {
   font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
-  font-size: 11px !important;
+  font-size: 10.5px !important;
   font-weight: 500 !important;
-  letter-spacing: 0.05em !important;
+  letter-spacing: 0.04em !important;
   color: rgba(20, 20, 20, 0.55) !important;
   background: rgba(112, 83, 53, 0.06) !important;
-  padding: 5px 14px !important;
+  padding: 4px 12px !important;
   border-radius: 999px !important;
   border: 1px solid rgba(112, 83, 53, 0.14) !important;
 }
@@ -111,7 +176,7 @@
 
 .hom-process-connector-line {
   position: absolute !important;
-  top: 28px !important;
+  top: 26px !important;
   left: 6% !important;
   right: 6% !important;
   height: 2px !important;
@@ -129,7 +194,7 @@
 .hom-process-steps-grid {
   display: grid !important;
   grid-template-columns: repeat(6, 1fr) !important;
-  gap: 16px !important;
+  gap: 14px !important;
   position: relative !important;
   z-index: 2 !important;
   width: 100% !important;
@@ -141,7 +206,7 @@
   align-items: center !important;
   text-align: center !important;
   position: relative !important;
-  padding: 0 6px !important;
+  padding: 0 4px !important;
   transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1) !important;
   cursor: default !important;
 }
@@ -151,29 +216,29 @@
 }
 
 .hom-node-circle {
-  width: 58px !important;
-  height: 58px !important;
+  width: 52px !important;
+  height: 52px !important;
   border-radius: 50% !important;
   background: #ffffff !important;
   border: 2px solid #705335 !important;
-  box-shadow: 0 4px 16px rgba(112, 83, 53, 0.18) !important;
+  box-shadow: 0 4px 14px rgba(112, 83, 53, 0.16) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 16px !important;
   transition: all 0.3s ease !important;
   position: relative !important;
 }
 
 .hom-process-step-node:hover .hom-node-circle {
   background: #705335 !important;
-  box-shadow: 0 6px 22px rgba(112, 83, 53, 0.35) !important;
+  box-shadow: 0 6px 20px rgba(112, 83, 53, 0.32) !important;
   transform: scale(1.08) !important;
 }
 
 .hom-node-num {
   font-family: "Fraunces", "Cinzel", "Georgia", serif !important;
-  font-size: 21px !important;
+  font-size: 19px !important;
   font-style: italic !important;
   font-weight: 500 !important;
   color: #705335 !important;
@@ -187,24 +252,24 @@
 
 .hom-node-phase {
   font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
-  font-size: 10px !important;
+  font-size: 9.5px !important;
   font-weight: 700 !important;
   letter-spacing: 0.12em !important;
   text-transform: uppercase !important;
   color: #705335 !important;
-  margin-bottom: 8px !important;
+  margin-bottom: 6px !important;
 }
 
 .hom-node-title {
   font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
-  font-size: 14px !important;
+  font-size: 13.5px !important;
   font-weight: 700 !important;
-  line-height: 1.28 !important;
+  line-height: 1.25 !important;
   letter-spacing: -0.01em !important;
   color: #111111 !important;
   text-transform: uppercase !important;
-  margin: 0 0 8px 0 !important;
-  min-height: 36px !important;
+  margin: 0 0 6px 0 !important;
+  min-height: 34px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -212,58 +277,60 @@
 
 .hom-node-sub {
   font-family: "Maison Neue", "Plus Jakarta Sans", sans-serif !important;
-  font-size: 12px !important;
+  font-size: 11.5px !important;
   font-weight: 400 !important;
-  line-height: 1.4 !important;
+  line-height: 1.35 !important;
   color: rgba(20, 20, 20, 0.65) !important;
 }
 
 /* Tablet (max-width: 1024px) */
 @media (max-width: 1024px) {
-  .hom-process-section {
+  .about-team.hom-process-section {
     padding: 0 32px !important;
+    gap: 20px !important;
   }
   .hom-process-path-shell {
-    padding: 32px 24px 36px 24px !important;
+    padding: 28px 24px 32px 24px !important;
   }
   .hom-process-connector-line {
     display: none !important;
   }
   .hom-process-steps-grid {
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 32px 16px !important;
+    gap: 24px 14px !important;
   }
 }
 
 /* Mobile (max-width: 680px) */
 @media (max-width: 680px) {
-  .hom-process-section {
+  .about-team.hom-process-section {
     padding: 0 20px !important;
+    gap: 16px !important;
   }
   .hom-process-path-shell {
-    padding: 24px 18px 28px 18px !important;
-    border-radius: 16px !important;
+    padding: 20px 16px 24px 16px !important;
+    border-radius: 14px !important;
   }
   .hom-process-path-header {
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 8px !important;
-    margin-bottom: 24px !important;
-    padding-bottom: 16px !important;
+    gap: 6px !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 12px !important;
   }
   .hom-process-steps-grid {
     grid-template-columns: 1fr !important;
-    gap: 20px !important;
+    gap: 16px !important;
     position: relative !important;
-    padding-left: 12px !important;
+    padding-left: 10px !important;
   }
   /* Vertical path line for mobile */
   .hom-process-track::before {
     content: "" !important;
     position: absolute !important;
-    top: 24px !important;
-    bottom: 24px !important;
-    left: 36px !important;
+    top: 22px !important;
+    bottom: 22px !important;
+    left: 32px !important;
     width: 2px !important;
     background: linear-gradient(180deg, #705335, #c49a6c) !important;
     z-index: 1 !important;
@@ -272,25 +339,25 @@
     flex-direction: row !important;
     text-align: left !important;
     align-items: flex-start !important;
-    gap: 16px !important;
+    gap: 14px !important;
     position: relative !important;
     z-index: 2 !important;
   }
   .hom-node-circle {
-    width: 48px !important;
-    height: 48px !important;
-    min-width: 48px !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
     margin-bottom: 0 !important;
-    box-shadow: 0 2px 10px rgba(112, 83, 53, 0.12) !important;
+    box-shadow: 0 2px 8px rgba(112, 83, 53, 0.12) !important;
   }
   .hom-node-num {
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
   .hom-node-title {
     min-height: auto !important;
     justify-content: flex-start !important;
-    font-size: 13.5px !important;
-    margin-bottom: 4px !important;
+    font-size: 13px !important;
+    margin-bottom: 2px !important;
   }
 }
 
