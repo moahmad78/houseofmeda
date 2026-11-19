@@ -12,3 +12,107 @@
 .project-info-loading {
   display: none !important;
 }
+
+
+/* House of Meda - Pinterest Masonry Grid Layout for Projects Page */
+
+/* 1. Masonry container */
+.projects-desktop .projects-pattern {
+  display: block !important;
+  column-count: 3 !important;
+  column-gap: 28px !important;
+  margin-top: 48px !important;
+  width: 100% !important;
+}
+
+@media (min-width: 1560px) {
+  .projects-desktop .projects-pattern {
+    column-count: 3 !important;
+    column-gap: 32px !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .projects-desktop .projects-pattern {
+    column-count: 2 !important;
+    column-gap: 24px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-desktop .projects-pattern {
+    column-count: 1 !important;
+    column-gap: 0 !important;
+  }
+}
+
+/* 2. Flatten pattern rows into seamless contents flow */
+.projects-desktop .projects-pattern-row {
+  display: contents !important;
+}
+
+/* 3. Each project card becomes an independent masonry tile */
+.projects-desktop .project-card,
+.projects-desktop .project-card-pattern {
+  display: inline-block !important;
+  width: 100% !important;
+  margin: 0 0 32px 0 !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+  -webkit-column-break-inside: avoid !important;
+  grid-column: auto !important;
+  grid-row: auto !important;
+  align-self: auto !important;
+  box-sizing: border-box !important;
+  vertical-align: top !important;
+}
+
+/* 4. Luxury Pinterest card image styling */
+.projects-desktop .project-image {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  position: relative !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-radius 0.35s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+.projects-desktop .project-card:hover .project-image,
+.projects-desktop .project-card:focus-visible .project-image {
+  transform: translateY(-4px) scale(1.015) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 12px 12px 12px 32px !important;
+}
+
+.projects-desktop .project-image img,
+.projects-desktop .project-image video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* 5. Typography below card */
+.projects-desktop .project-info {
+  margin-top: 14px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+
+.projects-desktop .project-category {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.12em !important;
+  color: #888888 !important;
+  text-transform: uppercase !important;
+}
+
+.projects-desktop .project-title {
+  font-size: 19px !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.02em !important;
+  color: #111111 !important;
+  line-height: 1.2 !important;
+  text-transform: uppercase !important;
+}
