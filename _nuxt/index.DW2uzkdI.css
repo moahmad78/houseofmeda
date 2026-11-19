@@ -322,3 +322,69 @@ div#home-projects-section {
     column-gap: 0 !important;
   }
 }
+
+
+/* House of Meda - Full Card Coverage Fix (Zero Half-Image / Zero Crop) */
+#home-projects-section .project-card,
+#home-projects-section .project-card-link,
+#home-projects-section .project-card--connected,
+.projects .project-card,
+.projects .project-card-link {
+  transform: none !important;
+  opacity: 1 !important;
+  transform-origin: center center !important;
+  will-change: auto !important;
+}
+
+#home-projects-section .project-image,
+.projects .project-image {
+  width: 100% !important;
+  height: auto !important;
+  overflow: hidden !important;
+  position: relative !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-radius 0.35s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+#home-projects-section .project-card:hover .project-image,
+#home-projects-section .project-card:focus-visible .project-image {
+  transform: translateY(-4px) scale(1.015) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 12px 12px 12px 32px !important;
+}
+
+#home-projects-section .project-media-crop,
+.projects .project-media-crop {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  inset: 0 !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  transform: none !important;
+  transform-origin: center center !important;
+  will-change: auto !important;
+}
+
+#home-projects-section .project-media-element,
+.projects .project-media-element,
+#home-projects-section .project-image img,
+#home-projects-section .project-image video,
+.projects .project-image img,
+.projects .project-image video {
+  position: absolute !important;
+  inset: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  transform: none !important;
+  display: block !important;
+}
