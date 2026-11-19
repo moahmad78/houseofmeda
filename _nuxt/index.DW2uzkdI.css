@@ -126,3 +126,187 @@
   filter: brightness(0) invert(1) !important;
   opacity: 0.95 !important;
 }
+
+
+/* ==========================================================================
+   House of Meda - Home Page Pinterest Masonry Grid Layout (Zero White Space)
+   ========================================================================== */
+
+/* 1. Fluid natural height container (removes fixed 4080px and bottom void) */
+#home-projects-section.home-page-shell,
+div#home-projects-section {
+  height: auto !important;
+  min-height: auto !important;
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+  padding-bottom: 60px !important;
+  background: #ffffff !important;
+}
+
+#home-projects-section .home-page-canvas {
+  transform: none !important;
+  width: 100% !important;
+  max-width: 1728px !important;
+  margin: 0 auto !important;
+  height: auto !important;
+  min-height: auto !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+#home-projects-section .projects {
+  height: auto !important;
+  min-height: auto !important;
+  overflow: visible !important;
+  position: relative !important;
+  width: 100% !important;
+  background: #ffffff !important;
+}
+
+#home-projects-section .projects-container {
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 auto !important;
+  padding: 160px 48px 80px !important;
+  width: 100% !important;
+  max-width: 1632px !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  gap: 48px !important;
+}
+
+/* 2. Seamless Pinterest Multi-Column Flow */
+#home-projects-section .projects-list {
+  display: block !important;
+  column-count: 3 !important;
+  column-gap: 28px !important;
+  width: 100% !important;
+  max-width: 1632px !important;
+  margin: 24px auto 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* 3. Flatten rows so all cards distribute continuously across columns */
+#home-projects-section .project-row {
+  display: contents !important;
+}
+
+/* 4. Independent Masonry Cards */
+#home-projects-section .project-card {
+  display: inline-block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 0 32px 0 !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+  -webkit-column-break-inside: avoid !important;
+  box-sizing: border-box !important;
+  vertical-align: top !important;
+  position: relative !important;
+}
+
+/* Override fixed width helper classes */
+#home-projects-section .project-card.w-804,
+#home-projects-section .project-card.w-390,
+#home-projects-section .project-card.w-942 {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* 5. Chota-Bada Pinterest Aspect Ratios for Dynamic Visual Rhythm */
+#home-projects-section .project-card-1 .project-image { aspect-ratio: 4 / 3 !important; height: auto !important; }
+#home-projects-section .project-card-2 .project-image { aspect-ratio: 3 / 4 !important; height: auto !important; }
+#home-projects-section .project-card-3 .project-image { aspect-ratio: 1 / 1 !important; height: auto !important; }
+#home-projects-section .project-card-4 .project-image { aspect-ratio: 1 / 1 !important; height: auto !important; }
+#home-projects-section .project-card-5 .project-image { aspect-ratio: 3 / 4 !important; height: auto !important; }
+#home-projects-section .project-card-6 .project-image { aspect-ratio: 3 / 4 !important; height: auto !important; }
+#home-projects-section .project-card-7 .project-image { aspect-ratio: 4 / 3 !important; height: auto !important; }
+
+/* 6. Luxury Pinterest Card Image Styling & Hover */
+#home-projects-section .project-image {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  position: relative !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-radius 0.35s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+#home-projects-section .project-card:hover .project-image,
+#home-projects-section .project-card:focus-visible .project-image {
+  transform: translateY(-4px) scale(1.015) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 12px 12px 12px 32px !important;
+}
+
+#home-projects-section .project-media-crop {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  inset: 0 !important;
+  clip-path: none !important;
+  transform: none !important;
+}
+
+#home-projects-section .project-media-element {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* 7. Typography Below Card */
+#home-projects-section .project-info {
+  margin-top: 14px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+
+#home-projects-section .project-info .cat {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.12em !important;
+  color: #888888 !important;
+  text-transform: uppercase !important;
+}
+
+#home-projects-section .project-info .title {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.02em !important;
+  color: #111111 !important;
+  line-height: 1.25 !important;
+  text-transform: uppercase !important;
+}
+
+/* 8. Call To Action Button Centered */
+#home-projects-section .projects-btn {
+  margin-top: 36px !important;
+  margin-left: 0 !important;
+  align-self: center !important;
+}
+
+/* 9. Responsive Breakpoints */
+@media (max-width: 1100px) {
+  #home-projects-section .projects-container {
+    padding: 100px 32px 60px !important;
+  }
+  #home-projects-section .projects-list {
+    column-count: 2 !important;
+    column-gap: 24px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  #home-projects-section .projects-container {
+    padding: 80px 20px 48px !important;
+  }
+  #home-projects-section .projects-list {
+    column-count: 1 !important;
+    column-gap: 0 !important;
+  }
+}
