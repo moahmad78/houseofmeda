@@ -61,137 +61,179 @@
     ]
   ],
   "desktopGallery": {
-    "height": 4050,
+    "height": 5812,
     "items": [
-      {
-        "id": "detail-1",
-        "image": "/assets/projects/detail/1777039763909-hom_thy-accounting_10.jpg",
-        "mediaType": "image",
-        "align": "center",
-        "hasBaseFill": false
-      },
       {
         "id": "detail-2",
         "image": "/assets/projects/detail/1777039773525-hom_thy-accounting_9.jpg",
         "mediaType": "image",
         "align": "start",
-        "hasBaseFill": false
+        "hasBaseFill": true,
+        "x": 0,
+        "y": 0,
+        "width": 1632,
+        "height": 794,
+        "radius": "soft"
       },
       {
         "id": "detail-3",
         "image": "/assets/projects/detail/1777039784347-hom_thy-accounting_15.jpg",
         "mediaType": "image",
         "align": "center",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "x": 0,
+        "y": 1034,
+        "width": 816,
+        "height": 1088,
+        "radius": "soft"
       },
       {
         "id": "detail-4",
         "image": "/assets/projects/detail/videos/1777377352739-thy-640-x-361.mp4",
         "mediaType": "video",
         "align": "start",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "x": 904,
+        "y": 1397.5,
+        "width": 640,
+        "height": 361,
+        "radius": "soft"
       },
       {
         "id": "detail-5",
         "image": "/assets/projects/detail/videos/1777377433129-thy-640-x-853.mp4",
         "mediaType": "video",
         "align": "center",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "x": 88,
+        "y": 2479.5,
+        "width": 640,
+        "height": 853,
+        "radius": "soft"
       },
       {
         "id": "detail-6",
         "image": "/assets/projects/detail/images/1777536198148-hom_thy-accounting_1.jpg",
         "mediaType": "image",
         "align": "start",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "x": 816,
+        "y": 2362,
+        "width": 816,
+        "height": 1088,
+        "radius": "soft"
       },
       {
         "id": "detail-7",
         "image": "/assets/projects/detail/1777039826131-hom_thy-accounting_4.jpg",
         "mediaType": "image",
         "align": "center",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "x": 0,
+        "y": 3690,
+        "width": 1632,
+        "height": 794,
+        "radius": "soft"
       },
       {
         "id": "detail-8",
         "image": "/assets/projects/detail/1777039847333-hom_thy-accounting_17.jpg",
         "mediaType": "image",
         "align": "start",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "x": 0,
+        "y": 4724,
+        "width": 816,
+        "height": 1088,
+        "radius": "soft"
       },
       {
         "id": "detail-9",
         "image": "/assets/projects/detail/videos/1777377566268-thy-390-x-520.mp4",
         "mediaType": "video",
         "align": "center",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "x": 1242,
+        "y": 4724,
+        "width": 390,
+        "height": 520,
+        "radius": "soft"
       }
     ]
   },
   "mobileGallery": {
     "items": [
       {
-        "id": "detail-1",
-        "image": "/assets/projects/detail/1777039763909-hom_thy-accounting_10.jpg",
-        "mediaType": "image",
-        "align": "center",
-        "hasBaseFill": false
-      },
-      {
         "id": "detail-2",
         "image": "/assets/projects/detail/1777039773525-hom_thy-accounting_9.jpg",
         "mediaType": "image",
         "align": "start",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "width": 392,
+        "height": 191
       },
       {
         "id": "detail-3",
         "image": "/assets/projects/detail/1777039784347-hom_thy-accounting_15.jpg",
         "mediaType": "image",
         "align": "center",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "width": 320,
+        "height": 427
       },
       {
         "id": "detail-4",
         "image": "/assets/projects/detail/videos/1777377352739-thy-640-x-361.mp4",
         "mediaType": "video",
         "align": "start",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "width": 320,
+        "height": 180
       },
       {
         "id": "detail-5",
         "image": "/assets/projects/detail/videos/1777377433129-thy-640-x-853.mp4",
         "mediaType": "video",
         "align": "center",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "width": 320,
+        "height": 427
       },
       {
         "id": "detail-6",
         "image": "/assets/projects/detail/images/1777536198148-hom_thy-accounting_1.jpg",
         "mediaType": "image",
         "align": "start",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "width": 320,
+        "height": 427
       },
       {
         "id": "detail-7",
         "image": "/assets/projects/detail/1777039826131-hom_thy-accounting_4.jpg",
         "mediaType": "image",
         "align": "center",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "width": 392,
+        "height": 191
       },
       {
         "id": "detail-8",
         "image": "/assets/projects/detail/1777039847333-hom_thy-accounting_17.jpg",
         "mediaType": "image",
         "align": "start",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "width": 320,
+        "height": 427
       },
       {
         "id": "detail-9",
         "image": "/assets/projects/detail/videos/1777377566268-thy-390-x-520.mp4",
         "mediaType": "video",
         "align": "center",
-        "hasBaseFill": false
+        "hasBaseFill": false,
+        "width": 260,
+        "height": 347
       }
     ]
   },
