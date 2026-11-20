@@ -1579,11 +1579,11 @@ body.hom-hero-in-view .page-top-header .page-top-header-menu img,
 <script id="hom-projects-hero-injector">
 (function() {
   function injectProjectsHero() {
-    var page = document.querySelector('.projects-page');
-    if (!page) return;
+    var main = document.querySelector('main');
+    if (!main || !main.parentElement) return;
     var hero = document.querySelector('.projects-hero');
     if (!hero) {
-      hero = document.createElement('section');
+      hero = document.createElement('div');
       hero.className = 'projects-hero';
       hero.innerHTML = [
         '<video class="projects-hero-video" autoplay loop muted playsinline disablepictureinpicture disableremoteplayback preload="auto">',
@@ -1602,11 +1602,7 @@ body.hom-hero-in-view .page-top-header .page-top-header-menu img,
         '  </div>',
         '</a>'
       ].join('\n');
-      if (page.parentElement) {
-        page.parentElement.insertBefore(hero, page);
-      } else {
-        page.insertBefore(hero, page.firstChild);
-      }
+      main.parentElement.insertBefore(hero, main);
       
       var scrollBtn = hero.querySelector('.projects-hero-scroll');
       if (scrollBtn) {
