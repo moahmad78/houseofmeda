@@ -1161,6 +1161,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if hit and self._wants_html_document() and str(hit).lower().endswith((".htc", ".bin")):
             hit = None
         if hit:
+            cand = ROOT / str(hit).lstrip("/")
+            if not cand.is_file() and (ROOT / (str(hit).lstrip("/") + ".json")).is_file():
+                hit = str(hit) + ".json"
             self.path = "/" + str(hit).lstrip("/")
             return super().do_GET()
         if self._alias_under_captured_page_dirs():
