@@ -1,0 +1,103 @@
+{
+  "header": {
+    "theme": "white"
+  },
+  "hero": {
+    "videoUrls": [
+      "/cdn/houseofmeda.com/hom_showcase_1.mp4",
+      "/cdn/houseofmeda.com/hom_showcase_2.mp4",
+      "/cdn/houseofmeda.com/hom_showcase_3.mp4",
+      "/cdn/houseofmeda.com/hom_showcase_4.mp4"
+    ],
+    "logoImage": "/assets/home/hero/logo.svg",
+    "menuLineImage": "/assets/home/hero/menu-line.svg",
+    "navLeftLabel": "EXPERTISE",
+    "navRightLabel": "PROJEcTS",
+    "scrollLabel": "SCROLL DOWN",
+    "scrollLineImage": "/assets/home/hero/scroll-line.svg",
+    "scrollHeadImage": "/assets/home/hero/scroll-head.svg"
+  },
+  "expertise": {
+    "menuIconImage": "/assets/home/expertise/menu-icon.svg",
+    "logoImage": "/assets/home/expertise/logo.svg",
+    "navLeftLabel": "EXPERTISE",
+    "navRightLabel": "PROJECTS",
+    "ctaLabel": "MORE DETAIL",
+    "ctaArrowLabel": "→",
+    "tabs": [
+      {
+        "id": "design",
+        "label": "DESIGN",
+        "copy": "Design begins with an idea, a possibility shaped through <red>exploration</red> and <red>intent.</red>"
+      },
+      {
+        "id": "build",
+        "label": "BUILD",
+        "copy": "If a building becomes <red>architecture</red>\nthen it is <red>art.</red>"
+      },
+      {
+        "id": "design-build",
+        "label": "DESIGN + BUILD",
+        "copy": "Design + Build = <red>Time</red>"
+      }
+    ]
+  },
+  "projects": {
+    "menuIconImage": "/assets/home/projects/menu-icon.svg",
+    "logoImage": "/assets/home/projects/logo.svg",
+    "bgWord": "SELECTED PROJECT -",
+    "bgPointer": "👆",
+    "navLeftLabel": "WHAT WE DO",
+    "navRightLabel": "PROJEcTS",
+    "introMainStart": "Offering ",
+    "introAccentOne": "perfectionist solutions,",
+    "introMainMiddle": " leveraging our global ",
+    "introAccentTwo": "experiences.",
+    "ctaLabel": "SEE ALL PROJECTS",
+    "ctaArrowLabel": "→",
+    "items": [
+      {
+        "id": "project-1",
+        "category": "RESIDENTIAL",
+        "title": "THE RESIDENCE AT KINGFISHER TOWERS",
+        "image": "/assets/home/projects/project-peninsula.png"
+      },
+      {
+        "id": "project-2",
+        "category": "HOSPITALITY",
+        "title": "THE TAJ MAHAL PALACE SIGNATURE SUITE",
+        "image": "/assets/home/projects/project-akedo.png"
+      },
+      {
+        "id": "project-3",
+        "category": "COMMERCIAL SPACE",
+        "title": "INFOSYS EXECUTIVE CAMPUS BENGALURU",
+        "image": "/assets/home/projects/project-nokta.jpg"
+      },
+      {
+        "id": "project-4",
+        "category": "EDUCATION SPACE",
+        "title": "AZIM PREMJI ACADEMY & CREATIVE HUB",
+        "image": "/assets/home/projects/project-stregis.jpg"
+      },
+      {
+        "id": "project-5",
+        "category": "RESIDENTIAL",
+        "title": "PRIVATE PENTHOUSE UB CITY",
+        "image": "/assets/home/projects/project-tekfen.jpg"
+      },
+      {
+        "id": "project-6",
+        "category": "COMMERCIAL SPACE",
+        "title": "TATA LEADERSHIP TOWER BENGALURU",
+        "image": "/assets/home/projects/project-thy.jpg"
+      },
+      {
+        "id": "project-7",
+        "category": "HOSPITALITY",
+        "title": "THE LEELA PALACE SIGNATURE DINING",
+        "image": "/assets/home/projects/project-louis-vuitton.png"
+      }
+    ]
+  }
+}

@@ -27,5 +27,6 @@
   "/api/projects/project-922200": "api/projects/project-922200.json",
   "/api/projects/tata-leadership-tower-bengaluru": "api/projects/tata-leadership-tower-bengaluru.json",
   "/api/projects/the-leela-palace-signature-dining": "api/projects/the-leela-palace-signature-dining.json",
-  "/api/projects/ub-city-luxury-pavilion": "api/projects/ub-city-luxury-pavilion.json"
+  "/api/projects/ub-city-luxury-pavilion": "api/projects/ub-city-luxury-pavilion.json",
+  "/api/content/homepage": "api/content/homepage"
 }
