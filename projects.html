@@ -1052,9 +1052,9 @@ img.bg-tile ~ img.bg-tile {
 
 
 
-<style id="hom-hero-video-styles">
-.projects-hero,
-.expertise-hero {
+
+<style id="hom-projects-hero-styles">
+.projects-hero {
   position: relative !important;
   width: 100% !important;
   height: 100svh !important;
@@ -1067,8 +1067,7 @@ img.bg-tile ~ img.bg-tile {
   justify-content: center !important;
   z-index: 10 !important;
 }
-.projects-hero-video,
-.expertise-hero-video {
+.projects-hero-video {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
@@ -1078,23 +1077,20 @@ img.bg-tile ~ img.bg-tile {
   z-index: 0 !important;
   pointer-events: none !important;
 }
-.projects-hero-overlay,
-.expertise-hero-overlay {
+.projects-hero-overlay {
   position: absolute !important;
   inset: 0 !important;
   background: rgba(0, 0, 0, 0.45) !important;
   z-index: 1 !important;
 }
-.projects-hero-content,
-.expertise-hero-content {
+.projects-hero-content {
   position: relative !important;
   z-index: 2 !important;
   text-align: center !important;
   width: min(calc(100% - 96px), 1632px) !important;
   padding: 0 24px !important;
 }
-.projects-hero-title,
-.expertise-hero-title {
+.projects-hero-title {
   color: #fff !important;
   font-family: 'Maison Neue', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-size: clamp(52px, 8.5vw, 120px) !important;
@@ -1105,23 +1101,7 @@ img.bg-tile ~ img.bg-tile {
   margin: 0 !important;
   text-shadow: 0 4px 24px rgba(0,0,0,0.4) !important;
 }
-.expertise-hero-subtitle {
-  color: rgba(255, 255, 255, 0.92) !important;
-  font-family: 'Maison Neue', -apple-system, sans-serif !important;
-  font-size: clamp(16px, 1.8vw, 24px) !important;
-  font-weight: 300 !important;
-  margin-top: 18px !important;
-  letter-spacing: -0.02em !important;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.3) !important;
-}
-.expertise-hero-subtitle .hero-accent {
-  font-family: 'Fraunces', serif !important;
-  font-style: italic !important;
-  color: #cbb48b !important;
-  font-weight: 400 !important;
-}
-.projects-hero-scroll,
-.expertise-hero-scroll {
+.projects-hero-scroll {
   position: absolute !important;
   bottom: 33px !important;
   left: 50% !important;
@@ -1134,8 +1114,7 @@ img.bg-tile ~ img.bg-tile {
   cursor: pointer !important;
   text-decoration: none !important;
 }
-.projects-hero-scroll p,
-.expertise-hero-scroll p {
+.projects-hero-scroll p {
   color: #fff !important;
   font-size: 11px !important;
   font-weight: 300 !important;
@@ -1146,8 +1125,7 @@ img.bg-tile ~ img.bg-tile {
   white-space: nowrap !important;
   opacity: 0.85 !important;
 }
-.projects-hero-scroll-bar,
-.expertise-hero-scroll-bar {
+.projects-hero-scroll-bar {
   height: 38px !important;
   width: 10px !important;
   position: relative !important;
@@ -1155,8 +1133,7 @@ img.bg-tile ~ img.bg-tile {
   display: flex !important;
   justify-content: center !important;
 }
-.projects-hero-scroll-track,
-.expertise-hero-scroll-track {
+.projects-hero-scroll-track {
   display: block !important;
   width: 1px !important;
   height: 100% !important;
@@ -1164,8 +1141,7 @@ img.bg-tile ~ img.bg-tile {
   position: relative !important;
   overflow: hidden !important;
 }
-.projects-hero-scroll-thumb,
-.expertise-hero-scroll-thumb {
+.projects-hero-scroll-thumb {
   display: block !important;
   width: 100% !important;
   height: 50% !important;
@@ -1181,7 +1157,7 @@ img.bg-tile ~ img.bg-tile {
   100% { transform: translateY(200%); }
 }
 
-/* Adjust projects main padding and hide duplicate title */
+/* Adjust projects main padding */
 .projects-desktop .projects-main {
   padding-top: clamp(64px, 6vw, 100px) !important;
 }
@@ -1193,23 +1169,6 @@ img.bg-tile ~ img.bg-tile {
 }
 .projects-mobile .projects-mobile-title {
   display: none !important;
-}
-
-/* Adjust expertise content padding and remove duplicate title/intro gap below hero */
-.expertise-page-content {
-  padding-top: clamp(48px, 5vw, 80px) !important;
-}
-.expertise-page-content .expertise-page-title,
-.expertise-page-content .expertise-page-intro-shell {
-  display: none !important;
-}
-.expertise-page-sections {
-  margin-top: 0 !important;
-}
-@media (max-width: 768px) {
-  .expertise-page-content {
-    padding-top: clamp(24px, 4vw, 40px) !important;
-  }
 }
 
 /* Navbar over hero should be visible with crisp white logo and menu icon */
@@ -1605,7 +1564,8 @@ body.hom-hero-in-view .page-top-header .page-top-header-menu img,
 
 
 
-<script id="hom-hero-video-injector">
+
+<script id="hom-projects-hero-injector">
 (function() {
   function injectProjectsHero() {
     var page = document.querySelector('.projects-page');
@@ -1649,51 +1609,8 @@ body.hom-hero-in-view .page-top-header .page-top-header-menu img,
     }
   }
 
-  function injectExpertiseHero() {
-    var shell = document.querySelector('.expertise-page-shell');
-    if (!shell) return;
-    var hero = document.querySelector('.expertise-hero');
-    if (!hero) {
-      hero = document.createElement('section');
-      hero.className = 'expertise-hero';
-      hero.innerHTML = [
-        '<video class="expertise-hero-video" autoplay loop muted playsinline disablepictureinpicture disableremoteplayback preload="auto">',
-        '  <source src="/assets/videos/hom_showcase_3.mp4" type="video/mp4">',
-        '</video>',
-        '<div class="expertise-hero-overlay"></div>',
-        '<div class="expertise-hero-content">',
-        '  <h1 class="expertise-hero-title">EXPERTISE</h1>',
-        '  <p class="expertise-hero-subtitle">Every line is a decision, <span class="hero-accent">Every decision is a feeling.</span></p>',
-        '</div>',
-        '<a class="expertise-hero-scroll" href="javascript:void(0)" aria-label="Scroll to expertise">',
-        '  <p>Scroll Down</p>',
-        '  <div class="expertise-hero-scroll-bar">',
-        '    <span class="expertise-hero-scroll-track">',
-        '      <span class="expertise-hero-scroll-thumb"></span>',
-        '    </span>',
-        '  </div>',
-        '</a>'
-      ].join('\n');
-      shell.insertBefore(hero, shell.firstChild);
-      
-      var scrollBtn = hero.querySelector('.expertise-hero-scroll');
-      if (scrollBtn) {
-        scrollBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          window.scrollTo({ top: hero.offsetHeight, behavior: 'smooth' });
-        });
-      }
-    }
-    
-    var v = hero.querySelector('video');
-    if (v && v.paused) {
-      v.muted = true;
-      v.play().catch(function() {});
-    }
-  }
-
   function updateNavTheme() {
-    var hero = document.querySelector('.projects-hero, .expertise-hero');
+    var hero = document.querySelector('.projects-hero');
     if (!hero) {
       document.body.classList.remove('hom-hero-in-view');
       return;
@@ -1721,7 +1638,6 @@ body.hom-hero-in-view .page-top-header .page-top-header-menu img,
 
   function run() {
     injectProjectsHero();
-    injectExpertiseHero();
     updateNavTheme();
   }
 

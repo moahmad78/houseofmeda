@@ -657,168 +657,10 @@ img.bg-tile ~ img.bg-tile {
 
 
 
-<style id="hom-hero-video-styles">
-.projects-hero,
-.expertise-hero {
-  position: relative !important;
-  width: 100% !important;
-  height: 100svh !important;
-  min-height: 640px !important;
-  max-height: 1080px !important;
-  overflow: hidden !important;
-  background: #000 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  z-index: 10 !important;
-}
-.projects-hero-video,
-.expertise-hero-video {
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  z-index: 0 !important;
-  pointer-events: none !important;
-}
-.projects-hero-overlay,
-.expertise-hero-overlay {
-  position: absolute !important;
-  inset: 0 !important;
-  background: rgba(0, 0, 0, 0.45) !important;
-  z-index: 1 !important;
-}
-.projects-hero-content,
-.expertise-hero-content {
-  position: relative !important;
-  z-index: 2 !important;
-  text-align: center !important;
-  width: min(calc(100% - 96px), 1632px) !important;
-  padding: 0 24px !important;
-}
-.projects-hero-title,
-.expertise-hero-title {
-  color: #fff !important;
-  font-family: 'Maison Neue', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: clamp(52px, 8.5vw, 120px) !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.05em !important;
-  line-height: 0.9 !important;
-  text-transform: uppercase !important;
-  margin: 0 !important;
-  text-shadow: 0 4px 24px rgba(0,0,0,0.4) !important;
-}
-.expertise-hero-subtitle {
-  color: rgba(255, 255, 255, 0.92) !important;
-  font-family: 'Maison Neue', -apple-system, sans-serif !important;
-  font-size: clamp(16px, 1.8vw, 24px) !important;
-  font-weight: 300 !important;
-  margin-top: 18px !important;
-  letter-spacing: -0.02em !important;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.3) !important;
-}
-.expertise-hero-subtitle .hero-accent {
-  font-family: 'Fraunces', serif !important;
-  font-style: italic !important;
-  color: #cbb48b !important;
-  font-weight: 400 !important;
-}
-.projects-hero-scroll,
-.expertise-hero-scroll {
-  position: absolute !important;
-  bottom: 33px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 10px !important;
-  z-index: 2 !important;
-  cursor: pointer !important;
-  text-decoration: none !important;
-}
-.projects-hero-scroll p,
-.expertise-hero-scroll p {
-  color: #fff !important;
-  font-size: 11px !important;
-  font-weight: 300 !important;
-  letter-spacing: -0.11px !important;
-  line-height: 1.1 !important;
-  margin: 0 !important;
-  text-transform: uppercase !important;
-  white-space: nowrap !important;
-  opacity: 0.85 !important;
-}
-.projects-hero-scroll-bar,
-.expertise-hero-scroll-bar {
-  height: 38px !important;
-  width: 10px !important;
-  position: relative !important;
-  opacity: 0.7 !important;
-  display: flex !important;
-  justify-content: center !important;
-}
-.projects-hero-scroll-track,
-.expertise-hero-scroll-track {
-  display: block !important;
-  width: 1px !important;
-  height: 100% !important;
-  background: rgba(255, 255, 255, 0.35) !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-.projects-hero-scroll-thumb,
-.expertise-hero-scroll-thumb {
-  display: block !important;
-  width: 100% !important;
-  height: 50% !important;
-  background: #fff !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  animation: homHeroScroll 2s cubic-bezier(0.65, 0, 0.35, 1) infinite !important;
-}
-@keyframes homHeroScroll {
-  0% { transform: translateY(-100%); }
-  50% { transform: translateY(100%); }
-  100% { transform: translateY(200%); }
-}
 
-/* Adjust projects main padding and hide duplicate title */
-.projects-desktop .projects-main {
-  padding-top: clamp(64px, 6vw, 100px) !important;
-}
-.projects-desktop .projects-title {
-  display: none !important;
-}
-.projects-mobile .projects-mobile-content {
-  padding-top: clamp(48px, 6vw, 80px) !important;
-}
-.projects-mobile .projects-mobile-title {
-  display: none !important;
-}
-
-/* Adjust expertise content padding and remove duplicate title/intro gap below hero */
-.expertise-page-content {
-  padding-top: clamp(48px, 5vw, 80px) !important;
-}
-.expertise-page-content .expertise-page-title,
-.expertise-page-content .expertise-page-intro-shell {
-  display: none !important;
-}
-.expertise-page-sections {
-  margin-top: 0 !important;
-}
-@media (max-width: 768px) {
-  .expertise-page-content {
-    padding-top: clamp(24px, 4vw, 40px) !important;
-  }
-}
-
-/* Navbar over hero should be visible with crisp white logo and menu icon */
-body.hom-hero-in-view .page-top-header {
+<style id="hom-expertise-permanence">
+/* House of Meda - Expertise Page Permanence */
+.expertise-page .page-top-header {
   position: fixed !important;
   top: var(--page-top-header-top, 48px) !important;
   left: 50% !important;
@@ -828,17 +670,32 @@ body.hom-hero-in-view .page-top-header {
   pointer-events: auto !important;
   z-index: 90 !important;
 }
-body.hom-hero-in-view .page-top-header .page-top-header-logo img,
-body.hom-hero-in-view .page-top-header .page-top-header-menu img,
-.page-top-header.hom-nav-hero-active .page-top-header-logo img,
-.page-top-header.hom-nav-hero-active .page-top-header-menu img {
-  filter: brightness(0) invert(1) !important;
-  opacity: 0.95 !important;
+.expertise-page .page-top-header-logo img,
+.expertise-page .page-top-header-menu img {
+  filter: none !important;
+  opacity: 1 !important;
 }
 @media (max-width: 768px) {
-  body.hom-hero-in-view .page-top-header {
+  .expertise-page .page-top-header {
     top: var(--page-top-header-top, 24px) !important;
   }
+}
+
+/* Ensure Title and Intro are always visible and sharp */
+.expertise-page-title .line-mask-motion-text__line,
+.expertise-page-title .line-mask-motion-text__mask span,
+.expertise-page-title {
+  opacity: 1 !important;
+  transform: translateY(0%) !important;
+  visibility: visible !important;
+}
+.expertise-page-intro-line-mask,
+.expertise-page-intro-line,
+.expertise-page-intro-shell,
+.expertise-page-intro {
+  opacity: 1 !important;
+  transform: translateY(0%) !important;
+  visibility: visible !important;
 }
 </style>
 </head><body style=""><!--teleport start anchor--><!----><!--teleport anchor--><div id="__nuxt"><div class="min-h-screen"><div class="public-layout-shell min-h-screen bg-[#f9f9f9] text-black" data-v-0670cf9d=""><main data-v-0670cf9d=""><!--[--><section class="expertise-page" data-node-id="1:1429" data-v-54ed2de9=""><div class="expertise-page-shell" data-v-54ed2de9=""><div aria-hidden="true" class="page-top-header page-top-header--hidden" data-v-396ee670="" data-v-54ed2de9="" inert=""><a aria-label="House of Meda" class="page-top-header-logo" data-v-396ee670="" href="/" tabindex="-1"><img alt="House Of Meda" data-v-396ee670="" src="/assets/expertise/header/logo.svg" decoding="async"/></a><button aria-expanded="false" aria-label="Menu" class="page-top-header-menu" data-v-396ee670="" tabindex="-1" type="button"><img alt="" aria-hidden="true" data-v-396ee670="" src="/assets/expertise/header/menu-icon.svg" decoding="async"/></button><!----></div><div class="expertise-page-content" data-v-54ed2de9=""><h1 class="expertise-page-title" data-node-id="1:1469" data-v-54ed2de9="" data-v-7beae6bc=""><span class="line-mask-motion-text__mask" data-v-7beae6bc=""><span class="line-mask-motion-text__line" data-v-7beae6bc="" style="opacity: 0; transform: translateY(150%);">EXPERTISE</span></span><span aria-hidden="true" class="line-mask-motion-text__measure" data-v-7beae6bc=""><span class="" data-copy-word-index="0" data-v-7beae6bc="">EXPERTISE</span></span></h1><div class="expertise-page-intro-shell" data-v-54ed2de9=""><p class="expertise-page-intro" data-node-id="1:1471" data-v-54ed2de9=""><span class="expertise-page-intro-line-mask" data-v-54ed2de9=""><span class="expertise-page-intro-line" data-v-54ed2de9="" style="opacity: 1; transform: translateY(100%);">Every line is a <span class="expertise-page-intro-accent" data-v-54ed2de9="">decision</span>,
@@ -1212,141 +1069,6 @@ body.hom-hero-in-view .page-top-header .page-top-header-menu img,
 
 
 
-<script id="hom-hero-video-injector">
-(function() {
-  function injectProjectsHero() {
-    var page = document.querySelector('.projects-page');
-    if (!page) return;
-    var hero = document.querySelector('.projects-hero');
-    if (!hero) {
-      hero = document.createElement('section');
-      hero.className = 'projects-hero';
-      hero.innerHTML = [
-        '<video class="projects-hero-video" autoplay loop muted playsinline disablepictureinpicture disableremoteplayback preload="auto">',
-        '  <source src="/assets/videos/hom_showcase_2.mp4" type="video/mp4">',
-        '</video>',
-        '<div class="projects-hero-overlay"></div>',
-        '<div class="projects-hero-content">',
-        '  <h1 class="projects-hero-title">PROJECTS</h1>',
-        '</div>',
-        '<a class="projects-hero-scroll" href="javascript:void(0)" aria-label="Scroll to projects">',
-        '  <p>Scroll Down</p>',
-        '  <div class="projects-hero-scroll-bar">',
-        '    <span class="projects-hero-scroll-track">',
-        '      <span class="projects-hero-scroll-thumb"></span>',
-        '    </span>',
-        '  </div>',
-        '</a>'
-      ].join('\n');
-      page.insertBefore(hero, page.firstChild);
-      
-      var scrollBtn = hero.querySelector('.projects-hero-scroll');
-      if (scrollBtn) {
-        scrollBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          window.scrollTo({ top: hero.offsetHeight, behavior: 'smooth' });
-        });
-      }
-    }
-    
-    var v = hero.querySelector('video');
-    if (v && v.paused) {
-      v.muted = true;
-      v.play().catch(function() {});
-    }
-  }
 
-  function injectExpertiseHero() {
-    var shell = document.querySelector('.expertise-page-shell');
-    if (!shell) return;
-    var hero = document.querySelector('.expertise-hero');
-    if (!hero) {
-      hero = document.createElement('section');
-      hero.className = 'expertise-hero';
-      hero.innerHTML = [
-        '<video class="expertise-hero-video" autoplay loop muted playsinline disablepictureinpicture disableremoteplayback preload="auto">',
-        '  <source src="/assets/videos/hom_showcase_3.mp4" type="video/mp4">',
-        '</video>',
-        '<div class="expertise-hero-overlay"></div>',
-        '<div class="expertise-hero-content">',
-        '  <h1 class="expertise-hero-title">EXPERTISE</h1>',
-        '  <p class="expertise-hero-subtitle">Every line is a decision, <span class="hero-accent">Every decision is a feeling.</span></p>',
-        '</div>',
-        '<a class="expertise-hero-scroll" href="javascript:void(0)" aria-label="Scroll to expertise">',
-        '  <p>Scroll Down</p>',
-        '  <div class="expertise-hero-scroll-bar">',
-        '    <span class="expertise-hero-scroll-track">',
-        '      <span class="expertise-hero-scroll-thumb"></span>',
-        '    </span>',
-        '  </div>',
-        '</a>'
-      ].join('\n');
-      shell.insertBefore(hero, shell.firstChild);
-      
-      var scrollBtn = hero.querySelector('.expertise-hero-scroll');
-      if (scrollBtn) {
-        scrollBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          window.scrollTo({ top: hero.offsetHeight, behavior: 'smooth' });
-        });
-      }
-    }
-    
-    var v = hero.querySelector('video');
-    if (v && v.paused) {
-      v.muted = true;
-      v.play().catch(function() {});
-    }
-  }
 
-  function updateNavTheme() {
-    var hero = document.querySelector('.projects-hero, .expertise-hero');
-    if (!hero) {
-      document.body.classList.remove('hom-hero-in-view');
-      return;
-    }
-    
-    var threshold = hero.offsetHeight - 80;
-    var y = window.scrollY || window.pageYOffset || 0;
-    var inHero = y < threshold;
-    
-    if (inHero) {
-      document.body.classList.add('hom-hero-in-view');
-    } else {
-      document.body.classList.remove('hom-hero-in-view');
-    }
-    
-    var headers = document.querySelectorAll('.page-top-header');
-    headers.forEach(function(header) {
-      if (inHero) {
-        header.classList.add('hom-nav-hero-active');
-      } else {
-        header.classList.remove('hom-nav-hero-active');
-      }
-    });
-  }
-
-  function run() {
-    injectProjectsHero();
-    injectExpertiseHero();
-    updateNavTheme();
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', run);
-  } else {
-    run();
-  }
-  [50, 150, 300, 600, 1000, 2000].forEach(function(t) { setTimeout(run, t); });
-  window.addEventListener('scroll', updateNavTheme, { passive: true });
-  window.addEventListener('resize', updateNavTheme, { passive: true });
-
-  var observer = new MutationObserver(function() {
-    run();
-  });
-  if (document.body) {
-    observer.observe(document.body, { childList: true, subtree: true });
-  }
-})();
-</script>
 </body></html>
