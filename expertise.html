@@ -652,15 +652,10 @@ img.bg-tile ~ img.bg-tile {
   }
 }
 </style>
-
-
-
-
-
-
-<style id="hom-expertise-permanence">
-/* House of Meda - Expertise Page Permanence */
-.expertise-page .page-top-header {
+<style id="hom-expertise-clean-layout">
+/* House of Meda - Clean Original Expertise Layout */
+.expertise-page .page-top-header,
+.page-top-header--hidden {
   position: fixed !important;
   top: var(--page-top-header-top, 48px) !important;
   left: 50% !important;
@@ -681,13 +676,23 @@ img.bg-tile ~ img.bg-tile {
   }
 }
 
-/* Ensure Title and Intro are always visible and sharp */
+/* Page Top Content Spacing */
+.expertise-page-content {
+  padding-top: clamp(140px, 14vw, 200px) !important;
+}
+
+/* Title: Clean, bold, centered, always visible */
 .expertise-page-title .line-mask-motion-text__line,
 .expertise-page-title .line-mask-motion-text__mask span,
 .expertise-page-title {
   opacity: 1 !important;
   transform: translateY(0%) !important;
   visibility: visible !important;
+}
+
+/* Intro: Generous spacing and breathing room */
+.expertise-page-intro-shell {
+  margin: clamp(40px, 4vw, 64px) 0 0 0 !important;
 }
 .expertise-page-intro-line-mask,
 .expertise-page-intro-line,
@@ -696,6 +701,11 @@ img.bg-tile ~ img.bg-tile {
   opacity: 1 !important;
   transform: translateY(0%) !important;
   visibility: visible !important;
+}
+
+/* Sections container: ample space below intro so no collision occurs */
+.expertise-page-sections {
+  margin-top: clamp(120px, 12vw, 180px) !important;
 }
 </style>
 </head><body style=""><!--teleport start anchor--><!----><!--teleport anchor--><div id="__nuxt"><div class="min-h-screen"><div class="public-layout-shell min-h-screen bg-[#f9f9f9] text-black" data-v-0670cf9d=""><main data-v-0670cf9d=""><!--[--><section class="expertise-page" data-node-id="1:1429" data-v-54ed2de9=""><div class="expertise-page-shell" data-v-54ed2de9=""><div aria-hidden="true" class="page-top-header page-top-header--hidden" data-v-396ee670="" data-v-54ed2de9="" inert=""><a aria-label="House of Meda" class="page-top-header-logo" data-v-396ee670="" href="/" tabindex="-1"><img alt="House Of Meda" data-v-396ee670="" src="/assets/expertise/header/logo.svg" decoding="async"/></a><button aria-expanded="false" aria-label="Menu" class="page-top-header-menu" data-v-396ee670="" tabindex="-1" type="button"><img alt="" aria-hidden="true" data-v-396ee670="" src="/assets/expertise/header/menu-icon.svg" decoding="async"/></button><!----></div><div class="expertise-page-content" data-v-54ed2de9=""><h1 class="expertise-page-title" data-node-id="1:1469" data-v-54ed2de9="" data-v-7beae6bc=""><span class="line-mask-motion-text__mask" data-v-7beae6bc=""><span class="line-mask-motion-text__line" data-v-7beae6bc="" style="opacity: 0; transform: translateY(150%);">EXPERTISE</span></span><span aria-hidden="true" class="line-mask-motion-text__measure" data-v-7beae6bc=""><span class="" data-copy-word-index="0" data-v-7beae6bc="">EXPERTISE</span></span></h1><div class="expertise-page-intro-shell" data-v-54ed2de9=""><p class="expertise-page-intro" data-node-id="1:1471" data-v-54ed2de9=""><span class="expertise-page-intro-line-mask" data-v-54ed2de9=""><span class="expertise-page-intro-line" data-v-54ed2de9="" style="opacity: 1; transform: translateY(100%);">Every line is a <span class="expertise-page-intro-accent" data-v-54ed2de9="">decision</span>,
@@ -1064,11 +1074,4 @@ img.bg-tile ~ img.bg-tile {
   }
 })();
 </script>
-
-
-
-
-
-
-
 </body></html>
