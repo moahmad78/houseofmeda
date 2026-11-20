@@ -1788,6 +1788,54 @@ img.bg-tile ~ img.bg-tile {
   }
 }
 </style>
+<style>
+/* COMPACT FULLSCREEN MENU (PERFECT FIT ON ALL SCREENS) */
+@media (min-width: 961px) {
+  .page-menu[data-v-4d9305ac],
+  .page-menu {
+    --page-menu-top: 76px !important;
+    --page-menu-bottom: 24px !important;
+  }
+
+  .page-menu__frame[data-v-4d9305ac],
+  .page-menu__frame {
+    height: 740px !important;
+    margin: var(--page-menu-top, 76px) auto var(--page-menu-bottom, 24px) !important;
+  }
+
+  .page-menu__inner[data-v-4d9305ac],
+  .page-menu__inner {
+    height: 740px !important;
+  }
+
+  .page-menu__left[data-v-4d9305ac],
+  .page-menu__left {
+    height: 740px !important;
+  }
+
+  .page-menu__cards[data-v-4d9305ac],
+  .page-menu__cards {
+    height: 740px !important;
+    gap: 20px !important;
+  }
+
+  .page-menu__card-column[data-v-4d9305ac],
+  .page-menu__card-column {
+    grid-template-rows: 360px 360px !important;
+    gap: 20px !important;
+  }
+
+  .page-menu__card[data-v-4d9305ac],
+  .page-menu__card {
+    height: 360px !important;
+  }
+
+  .page-menu__card--feature[data-v-4d9305ac],
+  .page-menu__card--feature {
+    height: 740px !important;
+  }
+}
+</style>
 </head><body  class="about-page-active"><!--teleport start anchor--><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><div id="__nuxt"><div class="min-h-screen"><div class="public-layout-shell min-h-screen bg-[#f9f9f9] text-black" data-v-0670cf9d><main data-v-0670cf9d><!--[--><section class="about-page" data-node-id="1:1956" style="--about-accent:#705335;" data-v-2103ac93><section class="about-hero" data-node-id="1:1997" data-v-2103ac93><video autoplay="True" loop="True" muted="True" playsinline="True" disablepictureinpicture="" disableremoteplayback="" preload="auto" class="about-hero-bg about-hero-video" poster="/assets/about/hero/hero-bg-desktop.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
   <source src="/assets/videos/hom_showcase_1.mp4" type="video/mp4">
   <img class="about-hero-bg about-hero-bg-desktop" src="/assets/about/hero/hero-bg-desktop.png" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;" decoding="async">

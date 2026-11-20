@@ -596,3 +596,51 @@ img.bg-tile ~ img.bg-tile {
     height: 18px !important;
   }
 }
+
+
+/* COMPACT FULLSCREEN MENU (PERFECT FIT ON ALL SCREENS) */
+@media (min-width: 961px) {
+  .page-menu[data-v-4d9305ac],
+  .page-menu {
+    --page-menu-top: 76px !important;
+    --page-menu-bottom: 24px !important;
+  }
+
+  .page-menu__frame[data-v-4d9305ac],
+  .page-menu__frame {
+    height: 740px !important;
+    margin: var(--page-menu-top, 76px) auto var(--page-menu-bottom, 24px) !important;
+  }
+
+  .page-menu__inner[data-v-4d9305ac],
+  .page-menu__inner {
+    height: 740px !important;
+  }
+
+  .page-menu__left[data-v-4d9305ac],
+  .page-menu__left {
+    height: 740px !important;
+  }
+
+  .page-menu__cards[data-v-4d9305ac],
+  .page-menu__cards {
+    height: 740px !important;
+    gap: 20px !important;
+  }
+
+  .page-menu__card-column[data-v-4d9305ac],
+  .page-menu__card-column {
+    grid-template-rows: 360px 360px !important;
+    gap: 20px !important;
+  }
+
+  .page-menu__card[data-v-4d9305ac],
+  .page-menu__card {
+    height: 360px !important;
+  }
+
+  .page-menu__card--feature[data-v-4d9305ac],
+  .page-menu__card--feature {
+    height: 740px !important;
+  }
+}
