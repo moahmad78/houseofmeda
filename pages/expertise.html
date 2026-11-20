@@ -655,8 +655,7 @@ img.bg-tile ~ img.bg-tile {
 
 <style id="hom-expertise-day1-engine">
 /* House of Meda - Clean Day 1 Expertise Page Layout */
-.expertise-page .page-top-header,
-.page-top-header--hidden {
+.expertise-page .page-top-header {
   position: fixed !important;
   top: var(--page-top-header-top, 48px) !important;
   left: 50% !important;
@@ -664,7 +663,17 @@ img.bg-tile ~ img.bg-tile {
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
+  transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1), transform 0.3s cubic-bezier(0.22, 1, 0.36, 1) !important;
   z-index: 90 !important;
+}
+
+/* Hide navbar completely as soon as page scrolls, exactly like About / Projects page */
+.expertise-page .page-top-header.hom-nav-scrolled,
+.expertise-page .page-top-header--hidden.hom-nav-scrolled {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translate3d(-50%, calc(-100% - 30px), 0) !important;
 }
 .expertise-page .page-top-header-logo img,
 .expertise-page .page-top-header-menu img {
@@ -801,6 +810,18 @@ img.bg-tile ~ img.bg-tile {
     }
 
     window.addEventListener('scroll', requestTick, { passive: true });
+    const header = document.querySelector('.page-top-header');
+    function handleNavScroll() {
+      if (!header) return;
+      const y = window.pageYOffset || document.documentElement.scrollTop || 0;
+      if (y > 30) {
+        header.classList.add('hom-nav-scrolled');
+      } else {
+        header.classList.remove('hom-nav-scrolled');
+      }
+    }
+    window.addEventListener('scroll', handleNavScroll, { passive: true });
+    handleNavScroll();
     window.addEventListener('resize', () => { items = measure(); requestTick(); });
     if (document.fonts && document.fonts.ready) {
       document.fonts.ready.then(() => { items = measure(); requestTick(); }).catch(() => {});
