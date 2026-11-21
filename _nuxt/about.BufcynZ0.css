@@ -301,28 +301,42 @@
   }
 }
 
-/* Mobile (max-width: 680px) */
-@media (max-width: 680px) {
-  .about-team.hom-process-section {
-    padding: 0 20px !important;
+/* Mobile (max-width: 768px) - Full-Width Process Path matching other sections (Step label & caption hidden) */
+@media (max-width: 768px) {
+  .about-team.hom-process-section,
+  .about-team[data-v-2103ac93].hom-process-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
     gap: 16px !important;
+    box-sizing: border-box !important;
   }
   .hom-process-path-shell {
-    padding: 20px 16px 24px 16px !important;
-    border-radius: 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px 18px 28px 18px !important;
+    border-radius: 16px !important;
+    box-sizing: border-box !important;
   }
   .hom-process-path-header {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 6px !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 22px !important;
     padding-bottom: 12px !important;
+  }
+  .hom-process-track {
+    position: relative !important;
+    width: 100% !important;
   }
   .hom-process-steps-grid {
     grid-template-columns: 1fr !important;
-    gap: 16px !important;
+    gap: 18px !important;
     position: relative !important;
-    padding-left: 10px !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
   /* Vertical path line for mobile */
   .hom-process-track::before {
@@ -330,18 +344,27 @@
     position: absolute !important;
     top: 22px !important;
     bottom: 22px !important;
-    left: 32px !important;
+    left: 21px !important;
     width: 2px !important;
     background: linear-gradient(180deg, #705335, #c49a6c) !important;
     z-index: 1 !important;
   }
+  .hom-node-phase {
+    display: none !important;
+  }
+  .hom-node-sub {
+    display: none !important;
+  }
   .hom-process-step-node {
     flex-direction: row !important;
     text-align: left !important;
-    align-items: flex-start !important;
-    gap: 14px !important;
+    align-items: center !important;
+    gap: 16px !important;
     position: relative !important;
     z-index: 2 !important;
+    width: 100% !important;
+    justify-content: flex-start !important;
+    box-sizing: border-box !important;
   }
   .hom-node-circle {
     width: 44px !important;
@@ -356,8 +379,13 @@
   .hom-node-title {
     min-height: auto !important;
     justify-content: flex-start !important;
-    font-size: 13px !important;
-    margin-bottom: 2px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+    line-height: 1.3 !important;
+    margin: 0 !important;
+    display: block !important;
+    text-align: left !important;
   }
 }
 
